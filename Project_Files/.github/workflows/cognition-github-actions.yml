@@ -1,0 +1,22 @@
+name: Deploy experiment to Cognition
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  cognition-deploy:
+    name: Deploy experiment to Cognition
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to Cognition
+        id: deploy
+        uses: javidalpe/cognition-deploy-action@v1.2.0
+        with:
+          personal-access-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: Output deployed task link
+        run: echo "The public link to the task is ${{ steps.deploy.outputs.link }}"

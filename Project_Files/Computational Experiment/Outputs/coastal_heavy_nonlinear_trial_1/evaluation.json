@@ -1,0 +1,492 @@
+{
+  "incremental_graph": {
+    "event_matching": {
+      "mapping": {
+        "E7": "E3",
+        "E4": "E5",
+        "E3": "E1",
+        "E6": "E4",
+        "E8": "E6",
+        "E2": "E7"
+      },
+      "unmatched_model": [
+        "E1",
+        "E5"
+      ],
+      "unmatched_gold": [
+        "E2",
+        "E8"
+      ],
+      "match_scores": {
+        "E7": {
+          "gold_id": "E3",
+          "similarity": 0.8
+        },
+        "E4": {
+          "gold_id": "E5",
+          "similarity": 0.75
+        },
+        "E3": {
+          "gold_id": "E1",
+          "similarity": 0.75
+        },
+        "E6": {
+          "gold_id": "E4",
+          "similarity": 0.286
+        },
+        "E8": {
+          "gold_id": "E6",
+          "similarity": 0.273
+        },
+        "E2": {
+          "gold_id": "E7",
+          "similarity": 0.269
+        }
+      }
+    },
+    "causal_edges": {
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "true_positives": 0,
+        "false_positives": 6,
+        "false_negatives": 8,
+        "tp_edges": [],
+        "fp_edges": [
+          [
+            "E1",
+            "E3",
+            "enables"
+          ],
+          [
+            "E1",
+            "E4",
+            "enables"
+          ],
+          [
+            "E1",
+            "E5",
+            "enables"
+          ],
+          [
+            "E1",
+            "E7",
+            "enables"
+          ],
+          [
+            "E3",
+            "E4",
+            "enables"
+          ],
+          [
+            "E3",
+            "E6",
+            "enables"
+          ]
+        ],
+        "fn_edges": [
+          [
+            "E1",
+            "E2",
+            "causes"
+          ],
+          [
+            "E1",
+            "E6",
+            "enables"
+          ],
+          [
+            "E3",
+            "E4",
+            "causes"
+          ],
+          [
+            "E4",
+            "E7",
+            "enables"
+          ],
+          [
+            "E5",
+            "E6",
+            "causes"
+          ],
+          [
+            "E5",
+            "E7",
+            "causes"
+          ],
+          [
+            "E6",
+            "E7",
+            "enables"
+          ],
+          [
+            "E7",
+            "E8",
+            "causes"
+          ]
+        ]
+      },
+      "relaxed": {
+        "precision": 0.167,
+        "recall": 0.125,
+        "f1": 0.143,
+        "true_positives": 1,
+        "false_positives": 5,
+        "false_negatives": 7,
+        "tp_edges": [
+          [
+            "E3",
+            "E4"
+          ]
+        ],
+        "fp_edges": [
+          [
+            "E1",
+            "E3"
+          ],
+          [
+            "E1",
+            "E4"
+          ],
+          [
+            "E1",
+            "E5"
+          ],
+          [
+            "E1",
+            "E7"
+          ],
+          [
+            "E3",
+            "E6"
+          ]
+        ],
+        "fn_edges": [
+          [
+            "E1",
+            "E2"
+          ],
+          [
+            "E1",
+            "E6"
+          ],
+          [
+            "E4",
+            "E7"
+          ],
+          [
+            "E5",
+            "E6"
+          ],
+          [
+            "E5",
+            "E7"
+          ],
+          [
+            "E6",
+            "E7"
+          ],
+          [
+            "E7",
+            "E8"
+          ]
+        ]
+      },
+      "unmappable_model_edges": 2
+    },
+    "ordering": {
+      "exact_match": 0.0,
+      "pairwise_accuracy": 0.467,
+      "n_events": 6,
+      "n_exact": 0
+    },
+    "temporal_labels": {
+      "accuracy": 0.167,
+      "n_correct": 1,
+      "n_events": 6,
+      "details": {
+        "E1": {
+          "gold": "medium",
+          "model": "long",
+          "match": false
+        },
+        "E3": {
+          "gold": "short",
+          "model": "long",
+          "match": false
+        },
+        "E4": {
+          "gold": "medium",
+          "model": "short",
+          "match": false
+        },
+        "E5": {
+          "gold": "short",
+          "model": "immediate",
+          "match": false
+        },
+        "E6": {
+          "gold": "short",
+          "model": "short",
+          "match": true
+        },
+        "E7": {
+          "gold": "long",
+          "model": "short",
+          "match": false
+        }
+      }
+    },
+    "model_event_count": 8,
+    "gold_event_count": 8,
+    "model_edge_count": 8,
+    "gold_edge_count": 8
+  },
+  "revised_graph": {
+    "event_matching": {
+      "mapping": {
+        "E7": "E3",
+        "E4": "E5",
+        "E3": "E1",
+        "E6": "E4",
+        "E8": "E6",
+        "E2": "E7"
+      },
+      "unmatched_model": [
+        "E1",
+        "E5"
+      ],
+      "unmatched_gold": [
+        "E2",
+        "E8"
+      ],
+      "match_scores": {
+        "E7": {
+          "gold_id": "E3",
+          "similarity": 0.8
+        },
+        "E4": {
+          "gold_id": "E5",
+          "similarity": 0.75
+        },
+        "E3": {
+          "gold_id": "E1",
+          "similarity": 0.75
+        },
+        "E6": {
+          "gold_id": "E4",
+          "similarity": 0.286
+        },
+        "E8": {
+          "gold_id": "E6",
+          "similarity": 0.273
+        },
+        "E2": {
+          "gold_id": "E7",
+          "similarity": 0.269
+        }
+      }
+    },
+    "causal_edges": {
+      "strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "true_positives": 0,
+        "false_positives": 6,
+        "false_negatives": 8,
+        "tp_edges": [],
+        "fp_edges": [
+          [
+            "E1",
+            "E3",
+            "enables"
+          ],
+          [
+            "E1",
+            "E4",
+            "enables"
+          ],
+          [
+            "E1",
+            "E5",
+            "enables"
+          ],
+          [
+            "E1",
+            "E7",
+            "enables"
+          ],
+          [
+            "E3",
+            "E4",
+            "enables"
+          ],
+          [
+            "E3",
+            "E6",
+            "enables"
+          ]
+        ],
+        "fn_edges": [
+          [
+            "E1",
+            "E2",
+            "causes"
+          ],
+          [
+            "E1",
+            "E6",
+            "enables"
+          ],
+          [
+            "E3",
+            "E4",
+            "causes"
+          ],
+          [
+            "E4",
+            "E7",
+            "enables"
+          ],
+          [
+            "E5",
+            "E6",
+            "causes"
+          ],
+          [
+            "E5",
+            "E7",
+            "causes"
+          ],
+          [
+            "E6",
+            "E7",
+            "enables"
+          ],
+          [
+            "E7",
+            "E8",
+            "causes"
+          ]
+        ]
+      },
+      "relaxed": {
+        "precision": 0.167,
+        "recall": 0.125,
+        "f1": 0.143,
+        "true_positives": 1,
+        "false_positives": 5,
+        "false_negatives": 7,
+        "tp_edges": [
+          [
+            "E3",
+            "E4"
+          ]
+        ],
+        "fp_edges": [
+          [
+            "E1",
+            "E3"
+          ],
+          [
+            "E1",
+            "E4"
+          ],
+          [
+            "E1",
+            "E5"
+          ],
+          [
+            "E1",
+            "E7"
+          ],
+          [
+            "E3",
+            "E6"
+          ]
+        ],
+        "fn_edges": [
+          [
+            "E1",
+            "E2"
+          ],
+          [
+            "E1",
+            "E6"
+          ],
+          [
+            "E4",
+            "E7"
+          ],
+          [
+            "E5",
+            "E6"
+          ],
+          [
+            "E5",
+            "E7"
+          ],
+          [
+            "E6",
+            "E7"
+          ],
+          [
+            "E7",
+            "E8"
+          ]
+        ]
+      },
+      "unmappable_model_edges": 2
+    },
+    "ordering": {
+      "exact_match": 0.0,
+      "pairwise_accuracy": 0.467,
+      "n_events": 6,
+      "n_exact": 0
+    },
+    "temporal_labels": {
+      "accuracy": 0.167,
+      "n_correct": 1,
+      "n_events": 6,
+      "details": {
+        "E1": {
+          "gold": "medium",
+          "model": "long",
+          "match": false
+        },
+        "E3": {
+          "gold": "short",
+          "model": "long",
+          "match": false
+        },
+        "E4": {
+          "gold": "medium",
+          "model": "short",
+          "match": false
+        },
+        "E5": {
+          "gold": "short",
+          "model": "immediate",
+          "match": false
+        },
+        "E6": {
+          "gold": "short",
+          "model": "short",
+          "match": true
+        },
+        "E7": {
+          "gold": "long",
+          "model": "short",
+          "match": false
+        }
+      }
+    },
+    "model_event_count": 8,
+    "gold_event_count": 8,
+    "model_edge_count": 8,
+    "gold_edge_count": 8
+  }
+}

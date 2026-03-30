@@ -1,0 +1,84 @@
+{
+  "schema_version": "0.2.0",
+  "temporal_distance_scale": {
+    "immediate": "minutes, same scene",
+    "short": "hours, same day/night",
+    "medium": "days",
+    "long": "weeks or more"
+  },
+  "causal_subtypes": {
+    "enables": "background condition that makes an outcome possible",
+    "causes": "proximate trigger that directly produces the outcome"
+  },
+
+  "domains": {
+
+    "medical": {
+      "events": [
+        { "id": "E1", "description": "A hospital administrator approves a policy reducing overnight staffing.", "canonical_position": 1, "time_to_next": "long" },
+        { "id": "E2", "description": "A contractor disables a ventilator alarm during maintenance.", "canonical_position": 2, "time_to_next": "immediate" },
+        { "id": "E3", "description": "The contractor leaves without re-enabling the alarm.", "canonical_position": 3, "time_to_next": "short" },
+        { "id": "E4", "description": "A nurse is assigned more patients than usual.", "canonical_position": 4, "time_to_next": "short" },
+        { "id": "E5", "description": "A brief power interruption occurs.", "canonical_position": 5, "time_to_next": "immediate" },
+        { "id": "E6", "description": "The ventilator stops without sounding an alarm.", "canonical_position": 6, "time_to_next": "short" },
+        { "id": "E7", "description": "The nurse discovers a patient in respiratory distress.", "canonical_position": 7, "time_to_next": "long" },
+        { "id": "E8", "description": "An inquest later reviews the incident.", "canonical_position": 8, "time_to_next": null }
+      ],
+      "edges": [
+        { "source": "E1", "target": "E4", "type": "causal", "subtype": "enables" },
+        { "source": "E2", "target": "E3", "type": "causal", "subtype": "enables" },
+        { "source": "E3", "target": "E6", "type": "causal", "subtype": "enables" },
+        { "source": "E5", "target": "E6", "type": "causal", "subtype": "causes" },
+        { "source": "E6", "target": "E7", "type": "causal", "subtype": "causes" },
+        { "source": "E4", "target": "E7", "type": "causal", "subtype": "enables" },
+        { "source": "E7", "target": "E8", "type": "causal", "subtype": "causes" }
+      ]
+    },
+
+    "workplace": {
+      "events": [
+        { "id": "E1", "description": "A manager approves a plan to consolidate server resources.", "canonical_position": 1, "time_to_next": "long" },
+        { "id": "E2", "description": "A technician updates configuration settings on a backup system.", "canonical_position": 2, "time_to_next": "immediate" },
+        { "id": "E3", "description": "The technician does not restart one service.", "canonical_position": 3, "time_to_next": "short" },
+        { "id": "E4", "description": "An analyst begins processing a large dataset.", "canonical_position": 4, "time_to_next": "immediate" },
+        { "id": "E5", "description": "System load increases across the network.", "canonical_position": 5, "time_to_next": "immediate" },
+        { "id": "E6", "description": "A critical service stops responding.", "canonical_position": 6, "time_to_next": "short" },
+        { "id": "E7", "description": "Users report being unable to access shared files.", "canonical_position": 7, "time_to_next": "long" },
+        { "id": "E8", "description": "An internal review examines the incident.", "canonical_position": 8, "time_to_next": null }
+      ],
+      "edges": [
+        { "source": "E1", "target": "E4", "type": "causal", "subtype": "enables" },
+        { "source": "E2", "target": "E3", "type": "causal", "subtype": "enables" },
+        { "source": "E3", "target": "E6", "type": "causal", "subtype": "enables" },
+        { "source": "E4", "target": "E5", "type": "causal", "subtype": "causes" },
+        { "source": "E5", "target": "E6", "type": "causal", "subtype": "causes" },
+        { "source": "E6", "target": "E7", "type": "causal", "subtype": "causes" },
+        { "source": "E4", "target": "E7", "type": "causal", "subtype": "enables" },
+        { "source": "E7", "target": "E8", "type": "causal", "subtype": "causes" }
+      ]
+    },
+
+    "coastal": {
+      "events": [
+        { "id": "E1", "description": "A city council approves a pilot floodgate project for a coastal road.", "canonical_position": 1, "time_to_next": "medium" },
+        { "id": "E2", "description": "Contractors install temporary barriers and signage near the road.", "canonical_position": 2, "time_to_next": "medium" },
+        { "id": "E3", "description": "A utilities team schedules a routine inspection of a pump station.", "canonical_position": 3, "time_to_next": "short" },
+        { "id": "E4", "description": "The inspection requires a temporary shutdown of the pump station.", "canonical_position": 4, "time_to_next": "medium" },
+        { "id": "E5", "description": "A weather service issues a coastal surge warning.", "canonical_position": 5, "time_to_next": "short" },
+        { "id": "E6", "description": "The floodgate is activated during the warning period.", "canonical_position": 6, "time_to_next": "short" },
+        { "id": "E7", "description": "Water enters the road area and traffic is halted.", "canonical_position": 7, "time_to_next": "long" },
+        { "id": "E8", "description": "A municipal review later examines the sequence of events.", "canonical_position": 8, "time_to_next": null }
+      ],
+      "edges": [
+        { "source": "E1", "target": "E2", "type": "causal", "subtype": "causes" },
+        { "source": "E1", "target": "E6", "type": "causal", "subtype": "enables" },
+        { "source": "E3", "target": "E4", "type": "causal", "subtype": "causes" },
+        { "source": "E4", "target": "E7", "type": "causal", "subtype": "enables" },
+        { "source": "E5", "target": "E6", "type": "causal", "subtype": "causes" },
+        { "source": "E5", "target": "E7", "type": "causal", "subtype": "causes" },
+        { "source": "E6", "target": "E7", "type": "causal", "subtype": "enables" },
+        { "source": "E7", "target": "E8", "type": "causal", "subtype": "causes" }
+      ]
+    }
+  }
+}

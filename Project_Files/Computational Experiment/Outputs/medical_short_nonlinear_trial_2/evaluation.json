@@ -1,0 +1,602 @@
+{
+  "incremental_graph": {
+    "edge_agreement": {
+      "temporal_strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "true_positives": 0,
+        "false_positives": 7,
+        "false_negatives": 7,
+        "tp_edges": [],
+        "fp_edges": [
+          [
+            "E2",
+            "E3",
+            "temporal",
+            "short",
+            "short"
+          ],
+          [
+            "E3",
+            "E1",
+            "temporal",
+            "short",
+            "short"
+          ],
+          [
+            "E4",
+            "E2",
+            "temporal",
+            "short",
+            "short"
+          ],
+          [
+            "E5",
+            "E4",
+            "temporal",
+            "short",
+            "short"
+          ],
+          [
+            "E6",
+            "E7",
+            "temporal",
+            "short",
+            "short"
+          ],
+          [
+            "E7",
+            "E5",
+            "temporal",
+            "short",
+            "short"
+          ],
+          [
+            "E8",
+            "E6",
+            "temporal",
+            "short",
+            "short"
+          ]
+        ],
+        "fn_edges": [
+          [
+            "E1",
+            "E2",
+            "temporal",
+            "before",
+            "long"
+          ],
+          [
+            "E2",
+            "E3",
+            "temporal",
+            "before",
+            "immediate"
+          ],
+          [
+            "E3",
+            "E4",
+            "temporal",
+            "before",
+            "short"
+          ],
+          [
+            "E4",
+            "E5",
+            "temporal",
+            "before",
+            "short"
+          ],
+          [
+            "E5",
+            "E6",
+            "temporal",
+            "before",
+            "immediate"
+          ],
+          [
+            "E6",
+            "E7",
+            "temporal",
+            "before",
+            "short"
+          ],
+          [
+            "E7",
+            "E8",
+            "temporal",
+            "before",
+            "long"
+          ]
+        ]
+      },
+      "temporal_relaxed": {
+        "precision": 0.286,
+        "recall": 0.286,
+        "f1": 0.286,
+        "true_positives": 2,
+        "false_positives": 5,
+        "false_negatives": 5,
+        "tp_edges": [
+          [
+            "E2",
+            "E3",
+            "temporal"
+          ],
+          [
+            "E6",
+            "E7",
+            "temporal"
+          ]
+        ],
+        "fp_edges": [
+          [
+            "E3",
+            "E1",
+            "temporal"
+          ],
+          [
+            "E4",
+            "E2",
+            "temporal"
+          ],
+          [
+            "E5",
+            "E4",
+            "temporal"
+          ],
+          [
+            "E7",
+            "E5",
+            "temporal"
+          ],
+          [
+            "E8",
+            "E6",
+            "temporal"
+          ]
+        ],
+        "fn_edges": [
+          [
+            "E1",
+            "E2",
+            "temporal"
+          ],
+          [
+            "E3",
+            "E4",
+            "temporal"
+          ],
+          [
+            "E4",
+            "E5",
+            "temporal"
+          ],
+          [
+            "E5",
+            "E6",
+            "temporal"
+          ],
+          [
+            "E7",
+            "E8",
+            "temporal"
+          ]
+        ]
+      },
+      "causal_strict": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 7,
+        "tp_edges": [],
+        "fp_edges": [],
+        "fn_edges": [
+          [
+            "E1",
+            "E4",
+            "causal",
+            "enables"
+          ],
+          [
+            "E2",
+            "E3",
+            "causal",
+            "enables"
+          ],
+          [
+            "E3",
+            "E6",
+            "causal",
+            "enables"
+          ],
+          [
+            "E4",
+            "E7",
+            "causal",
+            "enables"
+          ],
+          [
+            "E5",
+            "E6",
+            "causal",
+            "causes"
+          ],
+          [
+            "E6",
+            "E7",
+            "causal",
+            "causes"
+          ],
+          [
+            "E7",
+            "E8",
+            "causal",
+            "causes"
+          ]
+        ]
+      },
+      "causal_relaxed": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 7,
+        "tp_edges": [],
+        "fp_edges": [],
+        "fn_edges": [
+          [
+            "E1",
+            "E4",
+            "causal"
+          ],
+          [
+            "E2",
+            "E3",
+            "causal"
+          ],
+          [
+            "E3",
+            "E6",
+            "causal"
+          ],
+          [
+            "E4",
+            "E7",
+            "causal"
+          ],
+          [
+            "E5",
+            "E6",
+            "causal"
+          ],
+          [
+            "E6",
+            "E7",
+            "causal"
+          ],
+          [
+            "E7",
+            "E8",
+            "causal"
+          ]
+        ]
+      }
+    },
+    "ordering": {
+      "exact_match": 0.0,
+      "pairwise_accuracy": 0.071,
+      "n_events": 8,
+      "n_exact": 0
+    },
+    "model_event_count": 8,
+    "gold_event_count": 8,
+    "model_edge_count": 7,
+    "gold_edge_count": 14
+  },
+  "revised_graph": {
+    "edge_agreement": {
+      "temporal_strict": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0,
+        "true_positives": 0,
+        "false_positives": 7,
+        "false_negatives": 7,
+        "tp_edges": [],
+        "fp_edges": [
+          [
+            "E2",
+            "E3",
+            "temporal",
+            "short",
+            "short"
+          ],
+          [
+            "E3",
+            "E1",
+            "temporal",
+            "short",
+            "short"
+          ],
+          [
+            "E4",
+            "E2",
+            "temporal",
+            "short",
+            "short"
+          ],
+          [
+            "E5",
+            "E4",
+            "temporal",
+            "short",
+            "short"
+          ],
+          [
+            "E6",
+            "E7",
+            "temporal",
+            "short",
+            "short"
+          ],
+          [
+            "E7",
+            "E5",
+            "temporal",
+            "short",
+            "short"
+          ],
+          [
+            "E8",
+            "E6",
+            "temporal",
+            "short",
+            "short"
+          ]
+        ],
+        "fn_edges": [
+          [
+            "E1",
+            "E2",
+            "temporal",
+            "before",
+            "long"
+          ],
+          [
+            "E2",
+            "E3",
+            "temporal",
+            "before",
+            "immediate"
+          ],
+          [
+            "E3",
+            "E4",
+            "temporal",
+            "before",
+            "short"
+          ],
+          [
+            "E4",
+            "E5",
+            "temporal",
+            "before",
+            "short"
+          ],
+          [
+            "E5",
+            "E6",
+            "temporal",
+            "before",
+            "immediate"
+          ],
+          [
+            "E6",
+            "E7",
+            "temporal",
+            "before",
+            "short"
+          ],
+          [
+            "E7",
+            "E8",
+            "temporal",
+            "before",
+            "long"
+          ]
+        ]
+      },
+      "temporal_relaxed": {
+        "precision": 0.286,
+        "recall": 0.286,
+        "f1": 0.286,
+        "true_positives": 2,
+        "false_positives": 5,
+        "false_negatives": 5,
+        "tp_edges": [
+          [
+            "E2",
+            "E3",
+            "temporal"
+          ],
+          [
+            "E6",
+            "E7",
+            "temporal"
+          ]
+        ],
+        "fp_edges": [
+          [
+            "E3",
+            "E1",
+            "temporal"
+          ],
+          [
+            "E4",
+            "E2",
+            "temporal"
+          ],
+          [
+            "E5",
+            "E4",
+            "temporal"
+          ],
+          [
+            "E7",
+            "E5",
+            "temporal"
+          ],
+          [
+            "E8",
+            "E6",
+            "temporal"
+          ]
+        ],
+        "fn_edges": [
+          [
+            "E1",
+            "E2",
+            "temporal"
+          ],
+          [
+            "E3",
+            "E4",
+            "temporal"
+          ],
+          [
+            "E4",
+            "E5",
+            "temporal"
+          ],
+          [
+            "E5",
+            "E6",
+            "temporal"
+          ],
+          [
+            "E7",
+            "E8",
+            "temporal"
+          ]
+        ]
+      },
+      "causal_strict": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 7,
+        "tp_edges": [],
+        "fp_edges": [],
+        "fn_edges": [
+          [
+            "E1",
+            "E4",
+            "causal",
+            "enables"
+          ],
+          [
+            "E2",
+            "E3",
+            "causal",
+            "enables"
+          ],
+          [
+            "E3",
+            "E6",
+            "causal",
+            "enables"
+          ],
+          [
+            "E4",
+            "E7",
+            "causal",
+            "enables"
+          ],
+          [
+            "E5",
+            "E6",
+            "causal",
+            "causes"
+          ],
+          [
+            "E6",
+            "E7",
+            "causal",
+            "causes"
+          ],
+          [
+            "E7",
+            "E8",
+            "causal",
+            "causes"
+          ]
+        ]
+      },
+      "causal_relaxed": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 7,
+        "tp_edges": [],
+        "fp_edges": [],
+        "fn_edges": [
+          [
+            "E1",
+            "E4",
+            "causal"
+          ],
+          [
+            "E2",
+            "E3",
+            "causal"
+          ],
+          [
+            "E3",
+            "E6",
+            "causal"
+          ],
+          [
+            "E4",
+            "E7",
+            "causal"
+          ],
+          [
+            "E5",
+            "E6",
+            "causal"
+          ],
+          [
+            "E6",
+            "E7",
+            "causal"
+          ],
+          [
+            "E7",
+            "E8",
+            "causal"
+          ]
+        ]
+      }
+    },
+    "ordering": {
+      "exact_match": 0.0,
+      "pairwise_accuracy": 0.071,
+      "n_events": 8,
+      "n_exact": 0
+    },
+    "model_event_count": 8,
+    "gold_event_count": 8,
+    "model_edge_count": 7,
+    "gold_edge_count": 14
+  }
+}

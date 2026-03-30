@@ -1,0 +1,107 @@
+{
+  "events": [
+    {
+      "id": "E1",
+      "description": "A hospital administrator approved a policy to reduce overnight staffing levels on the ward.",
+      "canonical_position": 1
+    },
+    {
+      "id": "E2",
+      "description": "A maintenance contractor disabled a ventilator alarm during a routine test.",
+      "canonical_position": 2
+    },
+    {
+      "id": "E3",
+      "description": "After completing the test, the contractor left the room without re-enabling the alarm.",
+      "canonical_position": 3
+    },
+    {
+      "id": "E4",
+      "description": "A nurse was assigned more patients than usual on the night of the incident.",
+      "canonical_position": 4
+    },
+    {
+      "id": "E5",
+      "description": "A brief interruption in power occurred on the ward.",
+      "canonical_position": 5
+    },
+    {
+      "id": "E6",
+      "description": "The ventilator stopped operating without sounding an alarm after the power interruption.",
+      "canonical_position": 6
+    },
+    {
+      "id": "E7",
+      "description": "A nurse entered the room and found a patient experiencing respiratory distress.",
+      "canonical_position": 7
+    },
+    {
+      "id": "E8",
+      "description": "An inquest reviewed the sequence of events following the incident.",
+      "canonical_position": 8
+    }
+  ],
+  "edges": [
+    {
+      "source": "E1",
+      "target": "E2",
+      "type": "temporal",
+      "relation": "before",
+      "distance": "short"
+    },
+    {
+      "source": "E2",
+      "target": "E3",
+      "type": "temporal",
+      "relation": "before",
+      "distance": "immediate"
+    },
+    {
+      "source": "E1",
+      "target": "E4",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E2",
+      "target": "E5",
+      "type": "temporal",
+      "relation": "before",
+      "distance": "immediate"
+    },
+    {
+      "source": "E5",
+      "target": "E6",
+      "type": "temporal",
+      "relation": "before",
+      "distance": "immediate"
+    },
+    {
+      "source": "E2",
+      "target": "E6",
+      "type": "causal",
+      "subtype": "causes"
+    },
+    {
+      "source": "E4",
+      "target": "E7",
+      "type": "temporal",
+      "relation": "before",
+      "distance": "short"
+    },
+    {
+      "source": "E6",
+      "target": "E7",
+      "type": "temporal",
+      "relation": "before",
+      "distance": "immediate"
+    },
+    {
+      "source": "E7",
+      "target": "E8",
+      "type": "temporal",
+      "relation": "after",
+      "distance": "long"
+    }
+  ]
+}

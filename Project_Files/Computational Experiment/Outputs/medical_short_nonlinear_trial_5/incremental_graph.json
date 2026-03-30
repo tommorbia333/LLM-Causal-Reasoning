@@ -1,0 +1,91 @@
+{
+  "events": [
+    {
+      "id": "E8",
+      "description": "Earlier that same night, a brief interruption in power occurred on the ward.",
+      "canonical_position": 1,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E5",
+      "description": "On the night of the incident, a nurse was assigned more patients than usual.",
+      "canonical_position": 2,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E4",
+      "description": "A hospital administrator approved a policy to reduce overnight staffing levels on the ward.",
+      "canonical_position": 3,
+      "time_to_next": "long"
+    },
+    {
+      "id": "E1",
+      "description": "Some time earlier, the nurse entered the room and found a patient experiencing respiratory distress.",
+      "canonical_position": 4,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E2",
+      "description": "Later that night, the ventilator stopped operating without sounding an alarm.",
+      "canonical_position": 5,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E3",
+      "description": "An inquest reviewed the sequence of events.",
+      "canonical_position": 6,
+      "time_to_next": null
+    },
+    {
+      "id": "E6",
+      "description": "On a later day, a maintenance contractor disabled a ventilator alarm while performing a routine test.",
+      "canonical_position": 7,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E7",
+      "description": "After completing the test, the contractor left the room without re-enabling the alarm.",
+      "canonical_position": 8,
+      "time_to_next": "short"
+    }
+  ],
+  "edges": [
+    {
+      "source": "E4",
+      "target": "E1",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E5",
+      "target": "E1",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E8",
+      "target": "E5",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E2",
+      "target": "E3",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E6",
+      "target": "E2",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E6",
+      "target": "E7",
+      "type": "causal",
+      "subtype": "causes"
+    }
+  ],
+  "_repairs": []
+}

@@ -1,0 +1,78 @@
+{
+  "story_id": "medical_short_nonlinear",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "timestamp": "2026-03-14T13:58:43.840011",
+  "trial": 5,
+  "incremental_steps": [
+    {
+      "step": 0,
+      "expected_event": "E8",
+      "status": "ok",
+      "duration_s": 9.44,
+      "n_events": 1,
+      "n_edges": 0
+    },
+    {
+      "step": 1,
+      "expected_event": "E7",
+      "status": "ok",
+      "duration_s": 18.19,
+      "n_events": 2,
+      "n_edges": 0
+    },
+    {
+      "step": 2,
+      "expected_event": "E6",
+      "status": "ok",
+      "duration_s": 31.35,
+      "n_events": 3,
+      "n_edges": 1
+    },
+    {
+      "step": 3,
+      "expected_event": "E1",
+      "status": "ok",
+      "duration_s": 60.22,
+      "n_events": 4,
+      "n_edges": 2
+    },
+    {
+      "step": 4,
+      "expected_event": "E4",
+      "status": "ok",
+      "duration_s": 61.52,
+      "n_events": 5,
+      "n_edges": 3
+    },
+    {
+      "step": 5,
+      "expected_event": "E2",
+      "status": "ok",
+      "duration_s": 78.18,
+      "n_events": 6,
+      "n_edges": 4
+    },
+    {
+      "step": 6,
+      "expected_event": "E3",
+      "status": "ok",
+      "duration_s": 92.68,
+      "n_events": 7,
+      "n_edges": 5
+    },
+    {
+      "step": 7,
+      "expected_event": "E5",
+      "status": "ok",
+      "duration_s": 107.83,
+      "n_events": 8,
+      "n_edges": 6
+    }
+  ],
+  "revision": {
+    "status": "ok",
+    "duration_s": 104.89,
+    "n_events": 8,
+    "n_edges": 6
+  }
+}

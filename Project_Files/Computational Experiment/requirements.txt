@@ -1,0 +1,7 @@
+# Core inference (Hugging Face transformers)
+torch>=2.1.0
+transformers>=4.37.0
+accelerate>=0.25.0
+
+# Utilities
+tqdm

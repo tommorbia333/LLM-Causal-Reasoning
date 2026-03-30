@@ -1,0 +1,468 @@
+{
+  "story_id": "medical_short_nonlinear",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "timestamp": "2026-03-06T13:59:02.530141",
+  "final_graph": {
+    "events": [
+      {
+        "id": "E1",
+        "description": "An inquest reviewed the sequence of events.",
+        "canonical_position": 4
+      },
+      {
+        "id": "E2",
+        "description": "The nurse entered the room and found a patient experiencing respiratory distress.",
+        "canonical_position": 1
+      },
+      {
+        "id": "E3",
+        "description": "The ventilator stopped operating without sounding an alarm.",
+        "canonical_position": 2
+      },
+      {
+        "id": "E4",
+        "description": "A hospital administrator approved a policy to reduce overnight staffing levels on the ward.",
+        "canonical_position": 5
+      },
+      {
+        "id": "E5",
+        "description": "A nurse was assigned more patients than usual on the night of the incident.",
+        "canonical_position": 3
+      },
+      {
+        "id": "E6",
+        "description": "A maintenance contractor disabled a ventilator alarm while performing a routine test.",
+        "canonical_position": 6
+      },
+      {
+        "id": "E7",
+        "description": "After completing the test, the contractor left the room without re-enabling the alarm.",
+        "canonical_position": 7
+      },
+      {
+        "id": "E8",
+        "description": "A brief interruption in power occurred on the ward.",
+        "canonical_position": 2
+      }
+    ],
+    "edges": [
+      {
+        "source": "E4",
+        "target": "E3",
+        "type": "temporal",
+        "relation": "before",
+        "distance": "long"
+      },
+      {
+        "source": "E2",
+        "target": "E3",
+        "type": "temporal",
+        "relation": "before",
+        "distance": "immediate"
+      },
+      {
+        "source": "E3",
+        "target": "E1",
+        "type": "temporal",
+        "relation": "before",
+        "distance": "short"
+      },
+      {
+        "source": "E5",
+        "target": "E2",
+        "type": "temporal",
+        "relation": "before",
+        "distance": "immediate"
+      },
+      {
+        "source": "E6",
+        "target": "E3",
+        "type": "temporal",
+        "relation": "before",
+        "distance": "short"
+      },
+      {
+        "source": "E6",
+        "target": "E7",
+        "type": "temporal",
+        "relation": "before",
+        "distance": "immediate"
+      },
+      {
+        "source": "E8",
+        "target": "E3",
+        "type": "temporal",
+        "relation": "before",
+        "distance": "short"
+      }
+    ]
+  },
+  "step_metadata": [
+    {
+      "step": 0,
+      "expected_event": "E8",
+      "status": "ok",
+      "attempts": 1,
+      "duration_s": 9.55,
+      "n_events": 1,
+      "n_edges": 0
+    },
+    {
+      "step": 1,
+      "expected_event": "E7",
+      "status": "ok",
+      "attempts": 1,
+      "duration_s": 20.45,
+      "n_events": 2,
+      "n_edges": 1
+    },
+    {
+      "step": 2,
+      "expected_event": "E6",
+      "status": "ok",
+      "attempts": 1,
+      "duration_s": 34.63,
+      "n_events": 3,
+      "n_edges": 2
+    },
+    {
+      "step": 3,
+      "expected_event": "E1",
+      "status": "ok",
+      "attempts": 1,
+      "duration_s": 58.89,
+      "n_events": 4,
+      "n_edges": 3
+    },
+    {
+      "step": 4,
+      "expected_event": "E4",
+      "status": "ok",
+      "attempts": 1,
+      "duration_s": 71.29,
+      "n_events": 5,
+      "n_edges": 4
+    },
+    {
+      "step": 5,
+      "expected_event": "E2",
+      "status": "ok",
+      "attempts": 1,
+      "duration_s": 89.22,
+      "n_events": 6,
+      "n_edges": 5
+    },
+    {
+      "step": 6,
+      "expected_event": "E3",
+      "status": "ok",
+      "attempts": 1,
+      "duration_s": 106.84,
+      "n_events": 7,
+      "n_edges": 6
+    },
+    {
+      "step": 7,
+      "expected_event": "E5",
+      "status": "ok",
+      "attempts": 1,
+      "duration_s": 112.12,
+      "n_events": 8,
+      "n_edges": 7
+    }
+  ],
+  "evaluation": {
+    "edge_agreement": {
+      "temporal_strict": {
+        "precision": 0.143,
+        "recall": 0.143,
+        "f1": 0.143,
+        "true_positives": 1,
+        "false_positives": 6,
+        "false_negatives": 6,
+        "tp_edges": [
+          [
+            "E2",
+            "E3",
+            "temporal",
+            "before",
+            "immediate"
+          ]
+        ],
+        "fp_edges": [
+          [
+            "E3",
+            "E1",
+            "temporal",
+            "before",
+            "short"
+          ],
+          [
+            "E4",
+            "E3",
+            "temporal",
+            "before",
+            "long"
+          ],
+          [
+            "E5",
+            "E2",
+            "temporal",
+            "before",
+            "immediate"
+          ],
+          [
+            "E6",
+            "E3",
+            "temporal",
+            "before",
+            "short"
+          ],
+          [
+            "E6",
+            "E7",
+            "temporal",
+            "before",
+            "immediate"
+          ],
+          [
+            "E8",
+            "E3",
+            "temporal",
+            "before",
+            "short"
+          ]
+        ],
+        "fn_edges": [
+          [
+            "E1",
+            "E2",
+            "temporal",
+            "before",
+            "long"
+          ],
+          [
+            "E3",
+            "E4",
+            "temporal",
+            "before",
+            "short"
+          ],
+          [
+            "E4",
+            "E5",
+            "temporal",
+            "before",
+            "short"
+          ],
+          [
+            "E5",
+            "E6",
+            "temporal",
+            "before",
+            "immediate"
+          ],
+          [
+            "E6",
+            "E7",
+            "temporal",
+            "before",
+            "short"
+          ],
+          [
+            "E7",
+            "E8",
+            "temporal",
+            "before",
+            "long"
+          ]
+        ]
+      },
+      "temporal_relaxed": {
+        "precision": 0.286,
+        "recall": 0.286,
+        "f1": 0.286,
+        "true_positives": 2,
+        "false_positives": 5,
+        "false_negatives": 5,
+        "tp_edges": [
+          [
+            "E2",
+            "E3",
+            "temporal"
+          ],
+          [
+            "E6",
+            "E7",
+            "temporal"
+          ]
+        ],
+        "fp_edges": [
+          [
+            "E3",
+            "E1",
+            "temporal"
+          ],
+          [
+            "E4",
+            "E3",
+            "temporal"
+          ],
+          [
+            "E5",
+            "E2",
+            "temporal"
+          ],
+          [
+            "E6",
+            "E3",
+            "temporal"
+          ],
+          [
+            "E8",
+            "E3",
+            "temporal"
+          ]
+        ],
+        "fn_edges": [
+          [
+            "E1",
+            "E2",
+            "temporal"
+          ],
+          [
+            "E3",
+            "E4",
+            "temporal"
+          ],
+          [
+            "E4",
+            "E5",
+            "temporal"
+          ],
+          [
+            "E5",
+            "E6",
+            "temporal"
+          ],
+          [
+            "E7",
+            "E8",
+            "temporal"
+          ]
+        ]
+      },
+      "causal_strict": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 7,
+        "tp_edges": [],
+        "fp_edges": [],
+        "fn_edges": [
+          [
+            "E1",
+            "E4",
+            "causal",
+            "enables"
+          ],
+          [
+            "E2",
+            "E3",
+            "causal",
+            "enables"
+          ],
+          [
+            "E3",
+            "E6",
+            "causal",
+            "enables"
+          ],
+          [
+            "E4",
+            "E7",
+            "causal",
+            "enables"
+          ],
+          [
+            "E5",
+            "E6",
+            "causal",
+            "causes"
+          ],
+          [
+            "E6",
+            "E7",
+            "causal",
+            "causes"
+          ],
+          [
+            "E7",
+            "E8",
+            "causal",
+            "causes"
+          ]
+        ]
+      },
+      "causal_relaxed": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1": 0,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 7,
+        "tp_edges": [],
+        "fp_edges": [],
+        "fn_edges": [
+          [
+            "E1",
+            "E4",
+            "causal"
+          ],
+          [
+            "E2",
+            "E3",
+            "causal"
+          ],
+          [
+            "E3",
+            "E6",
+            "causal"
+          ],
+          [
+            "E4",
+            "E7",
+            "causal"
+          ],
+          [
+            "E5",
+            "E6",
+            "causal"
+          ],
+          [
+            "E6",
+            "E7",
+            "causal"
+          ],
+          [
+            "E7",
+            "E8",
+            "causal"
+          ]
+        ]
+      }
+    },
+    "ordering": {
+      "exact_match": 0.25,
+      "pairwise_accuracy": 0.643,
+      "n_events": 8,
+      "n_exact": 2
+    },
+    "model_event_count": 8,
+    "gold_event_count": 8,
+    "model_edge_count": 7,
+    "gold_edge_count": 14
+  }
+}

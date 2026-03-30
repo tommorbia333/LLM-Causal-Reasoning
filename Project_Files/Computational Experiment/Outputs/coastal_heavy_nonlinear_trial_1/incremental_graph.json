@@ -1,0 +1,103 @@
+{
+  "events": [
+    {
+      "id": "E1",
+      "description": "The coastal road ran alongside a low seawall, with a pedestrian path on the inland side and a line of salt-tolerant shrubs planted at regular intervals. A small electronic signboard near the bus stop displayed service changes when construction work was active.",
+      "canonical_position": 1,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E2",
+      "description": "Water entered the road area and traffic was halted. Drivers were redirected to an inland route, and buses skipped the coastal stop while the closure remained active.",
+      "canonical_position": 2,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E3",
+      "description": "The city council approved a pilot floodgate project for the coastal road.",
+      "canonical_position": 3,
+      "time_to_next": "long"
+    },
+    {
+      "id": "E4",
+      "description": "A weather service issued a coastal surge warning.",
+      "canonical_position": 4,
+      "time_to_next": "immediate"
+    },
+    {
+      "id": "E5",
+      "description": "Contractors installed temporary barriers and signage near the road. The barriers created a narrower corridor for vehicles, and pedestrians were guided to a marked crossing point that remained in the same place throughout the works. At different times of day, the area alternated between quiet stretches and brief clusters of activity around the crossing.",
+      "canonical_position": 5,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E6",
+      "description": "A temporary shutdown of the pump station was required for inspection. A short entry noting the shutdown window was added to a maintenance log, and the pump station status indicator was set to 'offline' during that period.",
+      "canonical_position": 6,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E7",
+      "description": "A utilities team scheduled a routine inspection of a pump station.",
+      "canonical_position": 7,
+      "time_to_next": "long"
+    },
+    {
+      "id": "E8",
+      "description": "The floodgate was activated during the warning period. A work crew followed a checklist, and the activation was recorded with a timestamp in a routine operations form.",
+      "canonical_position": 8,
+      "time_to_next": "short"
+    }
+  ],
+  "edges": [
+    {
+      "source": "E3",
+      "target": "E2",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E3",
+      "target": "E4",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E3",
+      "target": "E5",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E3",
+      "target": "E6",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E3",
+      "target": "E7",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E7",
+      "target": "E8",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E7",
+      "target": "E5",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E7",
+      "target": "E6",
+      "type": "causal",
+      "subtype": "enables"
+    }
+  ],
+  "_repairs": []
+}

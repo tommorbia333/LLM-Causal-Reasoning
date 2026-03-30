@@ -1,0 +1,91 @@
+{
+  "events": [
+    {
+      "id": "E1",
+      "description": "The city council approved a pilot floodgate project for the coastal road.",
+      "canonical_position": 1,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E2",
+      "description": "Contractors installed temporary barriers and signage near the road.",
+      "canonical_position": 2,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E3",
+      "description": "A utilities team scheduled a routine inspection of a pump station.",
+      "canonical_position": 3,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E4",
+      "description": "A utilities team temporarily shut down the pump station for inspection.",
+      "canonical_position": 4,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E5",
+      "description": "A weather service issued a coastal surge warning.",
+      "canonical_position": 5,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E6",
+      "description": "The floodgate was activated during the warning period.",
+      "canonical_position": 6,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E7",
+      "description": "Water entered the road area and traffic was halted; drivers were redirected and buses skipped the coastal stop.",
+      "canonical_position": 7,
+      "time_to_next": "short"
+    },
+    {
+      "id": "E8",
+      "description": "A municipal review examined the sequence of events and compiled a timeline.",
+      "canonical_position": 8,
+      "time_to_next": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "E1",
+      "target": "E2",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E3",
+      "target": "E4",
+      "type": "causal",
+      "subtype": "causes"
+    },
+    {
+      "source": "E5",
+      "target": "E4",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E5",
+      "target": "E6",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E6",
+      "target": "E7",
+      "type": "causal",
+      "subtype": "enables"
+    },
+    {
+      "source": "E5",
+      "target": "E8",
+      "type": "causal",
+      "subtype": "enables"
+    }
+  ],
+  "_repairs": []
+}

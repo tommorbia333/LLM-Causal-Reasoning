@@ -1,0 +1,75 @@
+Stuff I need to fix:
+- The prompt is too explicit about the non-linearity of the narrative. Don't explicitly say "some things might be out of order"
+- Repair function (check claude) bc some of them are having validation issues (wrong edges)
+    - wtf is going on here. ned to really fix this
+    - I'm gonna try to fix this through the prompt (adding an example). I only worry that this might cause the model to be less 'original', and more
+    a result of the prompt.. idk if that makes sense but yea I just want to make sure what it makes is a product of its own reasoning, not our
+    input
+- Is it worth using a more powerful model?
+- The model is just placing things in the order in which they appear, not reordering them at all. Check to see if this final output fixes that;
+regardless, this is something that has to be ironed out
+- We could try to not segment the story (feed the story as a whole) and see the outputted graph just to have a comparison; see impact
+of segmentation on graph reconstruction
+- There's also the issue of definitions. We are inherently reducing the quality of the reasoning of the model by trapping them in a graph representation,
+and then further reducing that quality through semantics like the words 'cause' or 'enables'. We should find a way to fix that
+
+
+- Test on different Models
+- Look at dataset creation especially from that paper and from aspect comprehension
+- Start with extracting activations for each node/event and store them (for each story/temporal sequence) (?)
+    - Extract at layer 22 (?) check model size and layers
+    - Think about the dataset/narrative creation to create training data
+
+Ideas:
+- I think I now need to focus on the research grounding of the project. It could help to write another project proposal for it where I 
+put together all the inspirations/research/background and rationale for the project, just so that it becomes more clear what I'm doing/how
+- I need to look more into aspect comprehension especially in regard to narratives (rather than just grammatically). I'm sure there must be some
+dataset I can use, potentially even eye tracking data that I can compare to attention that the LM places on sentences? 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+label attachment score
+causation strength (figure out whether or not to add weights to edges between nodes)
+
+
+test larger model on current structure
+think about nature of extracted graphs & graphs extracted from behavioural questions
+different levels of analysis:
+1. behavioural (derived from giving model the text and then asking the behavioural questions)
+2. extracted hidden states (derived from giving model text then extracting at x layer)
+3. intermediate (current structure)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+adding a temporal marker to each event rather than adding edges for temporal distance
+- dynamic bayesian network
+- time is guide to cause
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Stage 1 — Stimulus preparation and gold annotation. Formalize the event segmentation for each story. Create gold-standard event graphs (JSON format). Define the question
+sets with expected answers. This is all pen-and-paper/spreadsheet work, no code needed yet, but it's the foundation for everything.
+
+Stage 2 (analysis 3) — Prompted graph construction pipeline. Write the incremental prompting loop: for each segment, the model receives the current graph state plus the new segment
+and outputs an updated graph. Implement JSON parsing and validation. Test with 2–3 stories and compare model-generated graphs against gold standard. Iterate on prompt design until
+reliability is acceptable.
+
+Stage 3 (analysis 2) — Hidden-state extraction and GNN graph prediction.
+    - Forward pass each narrative through the model with output_hidden_states=True (no generation, just a plain forward pass).
+    - Extract hidden states at layer x. For Qwen 2.5 7B: 28 transformer layers, hidden_dim=3584. Use a forward hook on a single layer if memory is tight.
+    - Map token-level states to event-level node embeddings. Use span-based pooling over each segment's token range (mean/max/last-token).
+      The existing segmentation boundaries give us natural event spans.
+    - Train a GNN (e.g., GATv2Conv via PyTorch Geometric) on those node embeddings to predict edges (link prediction task).
+      Edge decoder: concatenate [h_i, h_j, h_i * h_j] -> MLP -> predict edge class (no_edge / temporal / causal) + attribute heads for relation/distance/subtype.
+      Gold-standard graphs provide supervision.
+    - Sweep across multiple layers (e.g., 0, 7, 14, 21, 28) to profile when relational/temporal knowledge crystallises inside the model.
+    - Sanity check: try a simple bilinear probe (score(i,j) = h_i^T W h_j) before the full GNN to see how much structure is linearly decodable.
+
+Stage 4 (analysis 1) — Behavioural question-derived graphs. Feed the model the full narrative, then ask targeted behavioural questions (temporal ordering, causal attribution).
+    Derive an event graph from the model's answers. This tests what the model can articulate explicitly, vs. what it represents internally (stage 3).
+
+Stage 5 — Cross-level comparison. Compare graphs from all 3 levels of analysis (behavioural, hidden-state, prompted) against each other and against gold standard / human outputs.
+    Key question: where do the levels diverge? Does the model internally represent structure it fails to articulate (gap between stage 3 and stages 2/4)?
+
+Stage 6 — Geometric analysis? 
