@@ -86,3 +86,11 @@ The experiment is designed for deployment on [Cognition.run](https://www.cogniti
 ## Licence
 
 The human experiment uses [jsPsych](https://github.com/jspsych/jsPsych) (MIT licence). See `Project_Files/Licensing/` for details.
+
+
+
+
+
+
+
+NOTE: need to fix the file structure, duplicate files are currently showing. For readers, please focus on the Project_Files folder; the computational experiment/human experiment folders are outdated and irrelevant. 
