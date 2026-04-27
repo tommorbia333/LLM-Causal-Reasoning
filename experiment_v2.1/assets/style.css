@@ -408,26 +408,101 @@ a { color: #2a4d80; }
 }
 
 .pair-btn {
-  min-width: 44px;
-  padding: 0.55em 0.9em !important;
-  margin: 0.25em 0.15em !important;
+  min-width: 2.25em;
+  padding: 0.5em 0.35em !important;
+  margin: 0.1em 0.08em !important;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 15px;
+  box-sizing: border-box;
 }
 
-/* Anchors (no causal link / enables / direct cause) under the 7-button row. */
-.pair-scale-anchors {
-  display: flex;
-  justify-content: space-between;
-  max-width: 420px;
-  margin: 0.6em auto 0 auto;
-  font-size: 11px;
-  color: #6c6655;
-  font-style: italic;
+/*
+ * Causal pair scale: one horizontal row 0–6, Back on its own row above (so
+ * the verbal anchors line up with 0 / 3 / 6, not the Back control).
+ * Only the pair task uses .pair-scaling-container in the stimulus; .pair-btn
+ * is the fallback for hosts without :has() on the stim div.
+ */
+#jspsych-html-button-response-stimulus:has(.pair-scaling-container) + #jspsych-html-button-response-btngroup,
+.jspsych-content #jspsych-html-button-response-btngroup:has(.pair-btn) {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  align-items: stretch;
+  justify-content: center;
+  margin: 0.4em 0 0.15em 0;
+  padding: 0.4em 0.15em 0.5em 0.15em;
+  border: 1px solid #e3e1dc;
+  border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  background: #fbf9f2;
+  gap: 0;
 }
-.pair-anchor { flex: 1; text-align: center; }
-.pair-anchor-left  { text-align: left; }
-.pair-anchor-right { text-align: right; }
+
+#jspsych-html-button-response-stimulus:has(.pair-scaling-container) + #jspsych-html-button-response-btngroup .back-btn,
+.jspsych-content #jspsych-html-button-response-btngroup:has(.pair-btn) .back-btn {
+  flex: 0 0 100% !important;
+  order: 0;
+  text-align: center;
+  max-width: none;
+  width: 100% !important;
+  margin: 0 0 0.4em 0 !important;
+}
+
+#jspsych-html-button-response-stimulus:has(.pair-scaling-container) + #jspsych-html-button-response-btngroup .pair-btn,
+.jspsych-content #jspsych-html-button-response-btngroup:has(.pair-btn) .pair-btn {
+  flex: 1 1 0;
+  min-width: 0;
+  order: 1;
+  margin: 0.1em 0.06em !important;
+}
+
+/* Legend: one 7-col grid, visually part of the same “scale” panel as the numbers. */
+.pair-scale-legend {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 0.5em 0;
+  padding: 0.4em 0.45em 0.4em 0.45em;
+  box-sizing: border-box;
+  border: 1px solid #e3e1dc;
+  border-top: 1px dashed #d4cfc2;
+  border-radius: 0 0 8px 8px;
+  background: #fbf9f2;
+}
+
+.pair-scale-anchors {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  column-gap: 0.1em;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 0;
+  font-size: 9.5px;
+  line-height: 1.25;
+  color: #5a5548;
+  font-style: italic;
+  box-sizing: border-box;
+  align-items: start;
+}
+
+@media (min-width: 500px) {
+  .pair-scale-anchors { font-size: 10.5px; }
+}
+
+@media (min-width: 700px) {
+  .pair-scale-anchors { font-size: 11.5px; }
+}
+
+.pair-anchor {
+  text-align: center;
+  display: block;
+  padding: 0 0.1em;
+  min-width: 0;
+  word-wrap: break-word;
+  hyphens: auto;
+}
 
 /* ============================================================
    8. Counterfactual

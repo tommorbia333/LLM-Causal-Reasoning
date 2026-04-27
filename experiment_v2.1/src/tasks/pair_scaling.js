@@ -51,12 +51,16 @@ var PairScalingTask = (function () {
   }
 
   function renderAnchorPromptHTML() {
-    // Anchors aligned under 0, 3, 6 of the 7-button row.
+    // One column per scale point (0–6); text labels sit under 0, 3, and 6.
+    // CSS .pair-scale-anchors uses a 7-column grid so this lines up with the
+    // horizontal row of seven number buttons.
     return [
-      '<div class="pair-scale-anchors" aria-hidden="true">',
-      '  <span class="pair-anchor pair-anchor-left">no causal link</span>',
-      '  <span class="pair-anchor pair-anchor-mid">enables / contributes</span>',
-      '  <span class="pair-anchor pair-anchor-right">direct cause</span>',
+      '<div class="pair-scale-legend" aria-hidden="true">',
+      '  <div class="pair-scale-anchors">',
+      '    <span class="pair-anchor" style="grid-column: 1 / 2">no causal link</span>',
+      '    <span class="pair-anchor" style="grid-column: 4 / 5">enables / contributes</span>',
+      '    <span class="pair-anchor" style="grid-column: 7 / 8">direct cause</span>',
+      '  </div>',
       '</div>',
     ].join('\n');
   }
@@ -105,9 +109,10 @@ var PairScalingTask = (function () {
 
     var loopTrial = Utils.buildLoopWithBack({
       items: pairs,
-      button_layout: 'grid',
-      grid_rows: 2,
-      grid_columns: 4,
+      // Flex (default): one full-width Back row, then 0–6 in a single row; see
+      // .pair-scaling-btngroup in style.css. Grid 2×4 put Back in the first cell
+      // and misaligned the verbal anchors with the scale.
+      button_layout: 'flex',
       header: {
         storyPosition: opts.storyPosition,
         totalStories:  opts.totalStories,
