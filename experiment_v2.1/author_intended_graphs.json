@@ -1,0 +1,724 @@
+{
+  "schema_note": "Author-intended causal graphs \u2014 design blueprints for story generation, NOT evaluation rubrics. The gold standard for analysis will come from human response distributions.",
+  "schema_version": "0.4.0",
+  "edge_types": {
+    "causes": "Proximate trigger that directly produces the outcome",
+    "enables": "Background condition that makes the outcome possible"
+  },
+  "domains": {
+    "hospital_incident": {
+      "topology": "convergent \u2014 two enabling threads merge at crisis",
+      "narrator": "The nurse (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "description": "A hospital administrator approves a policy reducing overnight staffing.",
+          "canonical_position": 1
+        },
+        {
+          "id": "E2",
+          "description": "A contractor disables a ventilator alarm during maintenance.",
+          "canonical_position": 2
+        },
+        {
+          "id": "E3",
+          "description": "The contractor leaves without re-enabling the alarm.",
+          "canonical_position": 3
+        },
+        {
+          "id": "E4",
+          "description": "The nurse is assigned more patients than usual.",
+          "canonical_position": 4
+        },
+        {
+          "id": "E5",
+          "description": "A brief power interruption occurs.",
+          "canonical_position": 5
+        },
+        {
+          "id": "E6",
+          "description": "The ventilator stops without sounding an alarm.",
+          "canonical_position": 6
+        },
+        {
+          "id": "E7",
+          "description": "The nurse discovers a patient in respiratory distress.",
+          "canonical_position": 7
+        },
+        {
+          "id": "E8",
+          "description": "An inquest later reviews the incident.",
+          "canonical_position": 8
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E4",
+          "type": "enables"
+        },
+        {
+          "source": "E2",
+          "target": "E3",
+          "type": "enables"
+        },
+        {
+          "source": "E3",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E4",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "causes"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "care_home_incident": {
+      "topology": "convergent \u2014 structural replicate of hospital_incident",
+      "narrator": "The care assistant (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "canonical_position": 1,
+          "description": "A care home manager announces reduced overnight staffing."
+        },
+        {
+          "id": "E2",
+          "canonical_position": 2,
+          "description": "A visiting GP lowers a resident's sedative dose."
+        },
+        {
+          "id": "E3",
+          "canonical_position": 3,
+          "description": "The medication chart is not updated to reflect the new dose."
+        },
+        {
+          "id": "E4",
+          "canonical_position": 4,
+          "description": "The care assistant administers the dose written on the chart."
+        },
+        {
+          "id": "E5",
+          "canonical_position": 5,
+          "description": "The resident's breathing slows during the night."
+        },
+        {
+          "id": "E6",
+          "canonical_position": 6,
+          "description": "The care assistant reaches the resident's room after checking larger rooms first."
+        },
+        {
+          "id": "E7",
+          "canonical_position": 7,
+          "description": "The care assistant finds the resident unresponsive and emergency services are called."
+        },
+        {
+          "id": "E8",
+          "canonical_position": 8,
+          "description": "The manager convenes a meeting with a regional inspector."
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E4",
+          "type": "enables"
+        },
+        {
+          "source": "E1",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E2",
+          "target": "E3",
+          "type": "enables"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "enables"
+        },
+        {
+          "source": "E4",
+          "target": "E5",
+          "type": "causes"
+        },
+        {
+          "source": "E5",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "community_fair": {
+      "topology": "three-thread convergence",
+      "narrator": "The event organiser (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "canonical_position": 1,
+          "description": "The organiser books an outdoor venue for the community fair."
+        },
+        {
+          "id": "E2",
+          "canonical_position": 2,
+          "description": "A first-aid team is assigned to the event by the volunteer office."
+        },
+        {
+          "id": "E3",
+          "canonical_position": 3,
+          "description": "The first-aid team is called away to another incident."
+        },
+        {
+          "id": "E4",
+          "canonical_position": 4,
+          "description": "A replacement first-aid team takes nearly two hours to arrive."
+        },
+        {
+          "id": "E5",
+          "canonical_position": 5,
+          "description": "The temperature by midday is higher than forecast."
+        },
+        {
+          "id": "E6",
+          "canonical_position": 6,
+          "description": "The organiser opens the rest area and hands out water."
+        },
+        {
+          "id": "E7",
+          "canonical_position": 7,
+          "description": "An elderly man becomes unresponsive in the sun and an ambulance is called."
+        },
+        {
+          "id": "E8",
+          "canonical_position": 8,
+          "description": "The council convenes a review of the event."
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E2",
+          "type": "enables"
+        },
+        {
+          "source": "E1",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "causes"
+        },
+        {
+          "source": "E3",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E4",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "causes"
+        },
+        {
+          "source": "E5",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "restaurant_fire": {
+      "topology": "long chain \u2014 minimal branching, sequential causation",
+      "narrator": "The sous chef (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "description": "A health inspector flags the kitchen ventilation as substandard.",
+          "canonical_position": 1
+        },
+        {
+          "id": "E2",
+          "description": "The owner schedules a rushed repair to meet the compliance deadline.",
+          "canonical_position": 2
+        },
+        {
+          "id": "E3",
+          "description": "The repair technician installs a replacement gas connector improperly.",
+          "canonical_position": 3
+        },
+        {
+          "id": "E4",
+          "description": "A slow gas leak develops near one of the burner lines.",
+          "canonical_position": 4
+        },
+        {
+          "id": "E5",
+          "description": "The evening rush begins and all burners are lit.",
+          "canonical_position": 5
+        },
+        {
+          "id": "E6",
+          "description": "Grease from an overloaded pan catches fire near the leak.",
+          "canonical_position": 6
+        },
+        {
+          "id": "E7",
+          "description": "The fire escalates rapidly through the poorly ventilated kitchen.",
+          "canonical_position": 7
+        },
+        {
+          "id": "E8",
+          "description": "A fire investigation later traces the chain of failures.",
+          "canonical_position": 8
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E2",
+          "type": "causes"
+        },
+        {
+          "source": "E2",
+          "target": "E3",
+          "type": "causes"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "causes"
+        },
+        {
+          "source": "E4",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E1",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "school_trip": {
+      "topology": "fan-out \u2014 early decision diverges into multiple consequences",
+      "narrator": "The teacher (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "description": "I choose a mountain trail despite an uncertain weather forecast.",
+          "canonical_position": 1
+        },
+        {
+          "id": "E2",
+          "description": "The group sets out without full wet-weather gear.",
+          "canonical_position": 2
+        },
+        {
+          "id": "E3",
+          "description": "The weather deteriorates faster than forecast.",
+          "canonical_position": 3
+        },
+        {
+          "id": "E4",
+          "description": "A student slips on wet rock and injures their ankle.",
+          "canonical_position": 4
+        },
+        {
+          "id": "E5",
+          "description": "The group's mobile signal drops out in the valley.",
+          "canonical_position": 5
+        },
+        {
+          "id": "E6",
+          "description": "I split the group to send two runners for help.",
+          "canonical_position": 6
+        },
+        {
+          "id": "E7",
+          "description": "A student in the remaining group becomes hypothermic.",
+          "canonical_position": 7
+        },
+        {
+          "id": "E8",
+          "description": "A review board later examines my decisions.",
+          "canonical_position": 8
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E2",
+          "type": "causes"
+        },
+        {
+          "source": "E1",
+          "target": "E4",
+          "type": "enables"
+        },
+        {
+          "source": "E1",
+          "target": "E5",
+          "type": "enables"
+        },
+        {
+          "source": "E2",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "causes"
+        },
+        {
+          "source": "E3",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E4",
+          "target": "E6",
+          "type": "causes"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "family_conflict": {
+      "topology": "chain with feedback \u2014 early enabling conditions gain causal weight retroactively",
+      "narrator": "Adult sibling / the caregiver (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "description": "My father is diagnosed with early-stage dementia.",
+          "canonical_position": 1
+        },
+        {
+          "id": "E2",
+          "description": "I move closer to home to take on his daily care.",
+          "canonical_position": 2
+        },
+        {
+          "id": "E3",
+          "description": "My sister promises to help with weekend visits but cancels repeatedly.",
+          "canonical_position": 3
+        },
+        {
+          "id": "E4",
+          "description": "I confront my sister about the broken promises; she accuses me of being controlling.",
+          "canonical_position": 4
+        },
+        {
+          "id": "E5",
+          "description": "A decision arises about changing my father's medication.",
+          "canonical_position": 5
+        },
+        {
+          "id": "E6",
+          "description": "I authorise the medication change without consulting my sister.",
+          "canonical_position": 6
+        },
+        {
+          "id": "E7",
+          "description": "My sister finds out from a neighbour and calls me furious.",
+          "canonical_position": 7
+        },
+        {
+          "id": "E8",
+          "description": "We meet weeks later to try to talk through what happened.",
+          "canonical_position": 8
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E2",
+          "type": "causes"
+        },
+        {
+          "source": "E1",
+          "target": "E5",
+          "type": "causes"
+        },
+        {
+          "source": "E2",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "causes"
+        },
+        {
+          "source": "E3",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E4",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "causes"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "power_cut": {
+      "topology": "chain with critical distal enabler",
+      "narrator": "A resident and community council member (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "description": "The council defers tree maintenance near power lines to save budget.",
+          "canonical_position": 1
+        },
+        {
+          "id": "E2",
+          "description": "A neighbour installs a home medical device requiring constant power.",
+          "canonical_position": 2
+        },
+        {
+          "id": "E3",
+          "description": "An autumn storm brings heavy winds to the area.",
+          "canonical_position": 3
+        },
+        {
+          "id": "E4",
+          "description": "An unmaintained branch falls across a power line.",
+          "canonical_position": 4
+        },
+        {
+          "id": "E5",
+          "description": "The local transformer trips and cuts power to the street.",
+          "canonical_position": 5
+        },
+        {
+          "id": "E6",
+          "description": "The neighbour's medical device shuts down without backup.",
+          "canonical_position": 6
+        },
+        {
+          "id": "E7",
+          "description": "I call emergency services when the neighbour becomes unresponsive.",
+          "canonical_position": 7
+        },
+        {
+          "id": "E8",
+          "description": "A council inquiry later reviews the maintenance deferral.",
+          "canonical_position": 8
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E4",
+          "type": "enables"
+        },
+        {
+          "source": "E1",
+          "target": "E8",
+          "type": "enables"
+        },
+        {
+          "source": "E2",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "causes"
+        },
+        {
+          "source": "E4",
+          "target": "E5",
+          "type": "causes"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "causes"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "missed_flight": {
+      "topology": "hourglass \u2014 independent causes converge, then consequences diverge",
+      "narrator": "The traveller (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "description": "A highway accident causes major traffic delays that morning.",
+          "canonical_position": 1
+        },
+        {
+          "id": "E2",
+          "description": "The airline's check-in system goes down for scheduled maintenance.",
+          "canonical_position": 2
+        },
+        {
+          "id": "E3",
+          "description": "I leave for the airport later than I planned.",
+          "canonical_position": 3
+        },
+        {
+          "id": "E4",
+          "description": "I am stuck in traffic and cannot reach the terminal in time.",
+          "canonical_position": 4
+        },
+        {
+          "id": "E5",
+          "description": "The check-in system comes back online too late for me to board.",
+          "canonical_position": 5
+        },
+        {
+          "id": "E6",
+          "description": "I miss my flight.",
+          "canonical_position": 6
+        },
+        {
+          "id": "E7",
+          "description": "I miss the client meeting that was the purpose of the trip.",
+          "canonical_position": 7
+        },
+        {
+          "id": "E8",
+          "description": "The client signs with a competitor the following week.",
+          "canonical_position": 8
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E4",
+          "type": "causes"
+        },
+        {
+          "source": "E2",
+          "target": "E5",
+          "type": "causes"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "enables"
+        },
+        {
+          "source": "E4",
+          "target": "E6",
+          "type": "causes"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E6",
+          "target": "E8",
+          "type": "enables"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,355 @@
+/* style.css — basic styling for the experiment.
+   Keeps the story presentation neutral: no visual hierarchy between events.
+*/
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 2em 1.5em;
+  line-height: 1.6;
+  color: #222;
+  background: #fdfdfd;
+}
+
+.story-container {
+  margin: 0 0 2em 0;
+}
+
+.story-scroll {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 1em 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.story-event {
+  margin: 0 0 1em 0;
+  font-size: 17px;
+  /* Deliberately no visual difference between events — no bullets, no numbers.
+     Events are a single flow of prose. */
+}
+.story-event:last-child { margin-bottom: 0; }
+
+.reading-footer {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.reading-instruction {
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+
+.continue-btn[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.debug-note {
+  color: #999;
+  font-family: monospace;
+}
+
+/* jsPsych default button refinements */
+.jspsych-btn {
+  padding: 0.6em 2em;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+h2 {
+  font-weight: 400;
+  color: #333;
+}
+
+/* Comprehension check */
+.comp-container {
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 2em 1.5em;
+}
+
+.comp-prompt {
+  font-size: 19px;
+  line-height: 1.6;
+  margin: 0 0 2em 0;
+  color: #222;
+}
+
+.comp-btn {
+  min-width: 120px;
+  margin: 0 0.5em;
+}
+
+/* Chronological ordering task */
+.ordering-container {
+  max-width: 680px;
+  margin: 2em auto;
+  text-align: left;
+}
+
+.ordering-heading {
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0 0 0.3em 0;
+  color: #222;
+}
+
+.ordering-instruction {
+  color: #555;
+  font-size: 15px;
+  margin: 0 0 1.5em 0;
+}
+
+.order-list {
+  list-style: decimal inside;
+  padding: 0;
+  margin: 0 0 2em 0;
+  counter-reset: order-counter;
+}
+
+.order-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  padding: 0.9em 1em;
+  margin: 0.5em 0;
+  cursor: grab;
+  user-select: none;
+  font-size: 16px;
+  line-height: 1.4;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  transition: box-shadow 0.15s, background 0.15s;
+}
+
+.order-card:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  background: #fafafa;
+}
+
+.order-card:active {
+  cursor: grabbing;
+}
+
+.order-card-grip {
+  color: #aaa;
+  font-size: 18px;
+  margin-right: 0.8em;
+  letter-spacing: -2px;
+}
+
+.order-card-label {
+  flex: 1;
+}
+
+.order-card-ghost {
+  opacity: 0.3;
+  background: #e8f0fe;
+}
+
+.order-card-chosen {
+  background: #f0f4ff;
+}
+
+.order-card-drag {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Confidence slider */
+.confidence-container {
+  margin-top: 2em;
+  padding: 1.2em 1em;
+  background: #f7f7f7;
+  border-radius: 4px;
+}
+
+.confidence-prompt {
+  margin: 0 0 0.8em 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.confidence-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+
+.slider-end-label {
+  font-size: 13px;
+  color: #666;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.confidence-slider {
+  flex: 1;
+  min-width: 200px;
+}
+
+.slider-value-display {
+  font-size: 14px;
+  color: #666;
+  margin: 0.3em 0 0 0;
+  text-align: center;
+}
+.slider-value-display span {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Pair scaling task */
+.pair-scaling-container {
+  max-width: 560px;
+  margin: 1em auto 1.5em auto;
+  text-align: center;
+}
+
+.pair-card {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  padding: 1em 1.2em;
+  margin: 0.3em auto;
+  max-width: 520px;
+  font-size: 16px;
+  line-height: 1.4;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.pair-card-source {
+  background: #fdfdfd;
+}
+
+.pair-card-target {
+  background: #fdfdfd;
+}
+
+.pair-arrow {
+  font-size: 28px;
+  color: #999;
+  line-height: 1;
+  margin: 0.3em 0;
+  user-select: none;
+}
+
+.pair-prompt {
+  font-size: 16px;
+  color: #333;
+  margin: 1.3em auto 0.8em auto;
+  max-width: 480px;
+}
+
+.pair-btn {
+  min-width: 44px;
+  padding: 0.6em 0.9em;
+  margin: 0 0.15em;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 16px;
+}
+
+/* Scale anchors under buttons. Flex-end positioning aligns to 0, 3, 6. */
+.pair-scale-anchors {
+  display: flex;
+  justify-content: space-between;
+  max-width: 420px;
+  margin: 0.6em auto 0 auto;
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+}
+.pair-anchor {
+  flex: 1;
+  text-align: center;
+}
+.pair-anchor-left  { text-align: left; }
+.pair-anchor-right { text-align: right; }
+
+/* Counterfactual task */
+.cf-container {
+  max-width: 620px;
+  margin: 2em auto;
+  padding: 1.5em 1em;
+  text-align: center;
+}
+
+.cf-prompt {
+  font-size: 17px;
+  line-height: 1.55;
+  color: #222;
+  margin: 0 0 1.5em 0;
+}
+
+.cf-btn {
+  min-width: 110px;
+  margin: 0.3em;
+  padding: 0.6em 1em;
+  font-size: 14px;
+}
+
+/* Intro / outro shared */
+.consent-box,
+.debrief-box {
+  max-width: 640px;
+  margin: 1em auto;
+  text-align: left;
+  line-height: 1.55;
+}
+.consent-box p,
+.debrief-box p {
+  font-size: 15px;
+  margin: 0.8em 0;
+}
+
+.demog-form p {
+  margin: 1em 0;
+}
+.demog-form input,
+.demog-form select {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 0.3em 0.5em;
+  margin-top: 0.3em;
+}
+
+.attn-check {
+  max-width: 560px;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.inter-story {
+  max-width: 520px;
+  margin: 3em auto;
+  text-align: center;
+}
+.progress-indicator {
+  display: inline-block;
+  padding: 0.3em 1em;
+  background: #eef4ff;
+  color: #2a4d80;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 1.5em;
+}
+
+.prolific-link {
+  display: inline-block;
+  padding: 0.8em 1.4em;
+  background: #2a4d80;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1em;
+}
+.prolific-link:hover { background: #3a5d90; }
