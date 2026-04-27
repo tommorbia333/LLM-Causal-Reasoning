@@ -3,27 +3,24 @@
 // Per task design §6:
 //   - All 56 ordered pairs (8 × 7, diagonal excluded), one per screen.
 //   - Prompt: "How much did [A] cause or contribute to [B]?"
-//   - Scale 0-6 with anchors: 0 = no causal link, 3 = enables/contributes,
+//   - Scale 0–6 with anchors: 0 = no causal link, 3 = enables/contributes,
 //     6 = direct cause.
 //   - Pair order randomised per participant; A/B direction randomised via
 //     shuffling the 56 directed pairs (not 28 unordered).
+//   - Back button on pairs 2..56 (not on pair 1, never crosses task boundary).
+//   - "Pair N of 56" indicator + "Story X of Y · Causal pairs" badge.
 //
-// Output:
-//   - 56 item rows per story (task: 'pair_scaling_item')
-//   - 1 summary row per story (task: 'pair_scaling_summary') containing the
+// Output (driven by the LATEST visit per pair):
+//   - One data row per visit (action: 'answer' or 'back').
+//   - One summary row per story (task: 'pair_scaling_summary') containing the
 //     full 8×8 directed causal matrix as a nested array, RSA-ready.
 
 var PairScalingTask = (function () {
 
   var EVENT_IDS = ['E1','E2','E3','E4','E5','E6','E7','E8'];
 
-  function escapeHtml(s) {
-    return String(s)
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-  }
+  function escapeHtml(s) { return Utils.escapeHtml(s); }
 
-  /** Build all 56 ordered pairs (diagonal excluded). */
   function buildAllOrderedPairs() {
     var pairs = [];
     for (var i = 0; i < 8; i++) {
@@ -54,7 +51,7 @@ var PairScalingTask = (function () {
   }
 
   function renderAnchorPromptHTML() {
-    // Rendered below the 7 button row. Anchor labels align under 0, 3, 6.
+    // Anchors aligned under 0, 3, 6 of the 7-button row.
     return [
       '<div class="pair-scale-anchors" aria-hidden="true">',
       '  <span class="pair-anchor pair-anchor-left">no causal link</span>',
@@ -64,94 +61,18 @@ var PairScalingTask = (function () {
     ].join('\n');
   }
 
-  function buildItemTrial(storyId, cards, pair, pairIndex, stateRef) {
-    var rushedMs = 500; // pairs faster than 0.5s flagged as implausibly fast
-
-    return {
-      type: jsPsychHtmlButtonResponse,
-      stimulus: renderStimulusHTML(cards, pair.source, pair.target),
-      choices: ['0', '1', '2', '3', '4', '5', '6'],
-      button_html: function (choice) {
-        return '<button class="jspsych-btn pair-btn" data-rating="' + choice + '">' + choice + '</button>';
-      },
-      prompt: renderAnchorPromptHTML(),
-      data: {
-        task: 'pair_scaling_item',
-        story_id: storyId,
-        source_event_id: pair.source,
-        target_event_id: pair.target,
-        pair_index: pairIndex,
-        n_pairs_total: stateRef.state.n_total_pairs,
-      },
-      on_finish: function (data) {
-        var rating = parseInt(data.response, 10);
-        var rushed = data.rt != null && data.rt < rushedMs;
-
-        // Minimal event log: item_shown, response_clicked
-        var events = [
-          { t: 0, type: 'item_shown', source: pair.source, target: pair.target },
-          { t: data.rt, type: 'response_clicked', rating: rating },
-        ];
-
-        var row = DataHelpers.composeTrialRow({
-          trial_type: 'pair_scaling_item',
-          task: 'pair_scaling_item',
-          story_id: storyId,
-          source_event_id: pair.source,
-          target_event_id: pair.target,
-          pair_index: pairIndex,
-          rating: rating,
-          rt_ms: data.rt,
-          rushed_flag: rushed,
-          events: events,
-        });
-        Object.keys(row).forEach(function (k) { data[k] = row[k]; });
-
-        // Accumulate into the shared state for the summary trial.
-        var s = stateRef.state;
-        if (s.first_item_t === null) s.first_item_t = data.time_elapsed - (data.rt || 0);
-        s.last_item_t = data.time_elapsed;
-        s.n_completed += 1;
-        if (rushed) s.n_rushed += 1;
-        // Matrix[source_idx][target_idx] = rating.
-        var i = EVENT_IDS.indexOf(pair.source);
-        var j = EVENT_IDS.indexOf(pair.target);
-        if (i >= 0 && j >= 0) s.matrix[i][j] = rating;
-      },
-    };
-  }
-
-  function buildSummaryTrial(storyId, stateRef) {
-    return {
-      type: jsPsychCallFunction,
-      func: function () {
-        // No-op during runtime; the work happens in on_finish.
-        return null;
-      },
-      on_finish: function (data) {
-        var s = stateRef.state;
-        data.trial_type = 'pair_scaling_summary';
-        data.task = 'pair_scaling_summary';
-        data.story_id = storyId;
-        data.n_pairs = s.n_completed;
-        data.n_pairs_expected = s.n_total_pairs;
-        data.n_rushed = s.n_rushed;
-        data.block_rt_ms = s.last_item_t > s.first_item_t
-          ? Math.round(s.last_item_t - s.first_item_t)
-          : null;
-        // The 8×8 directed causal matrix — the primary RSA object for this story.
-        data.directed_matrix = s.matrix.map(function (row) { return row.slice(); });
-        data.matrix_event_ids = EVENT_IDS.slice();
-        data.presentation_order = s.presentation_order.slice();
-      },
-    };
-  }
-
   /**
-   * Build a full pair-scaling block for one story: 56 randomised item trials
-   * followed by a block-summary trial that emits the 8×8 directed matrix.
+   * Build a full pair-scaling block for one story: a single dynamic loop trial
+   * iterating through 56 pairs (with Back navigation), followed by a summary
+   * trial that emits the 8×8 directed causal matrix.
+   *
+   * @param {string} storyId
+   * @param {Object} [opts]
+   * @param {number} [opts.storyPosition]
+   * @param {number} [opts.totalStories]
    */
-  function buildBlock(storyId) {
+  function buildBlock(storyId, opts) {
+    opts = opts || {};
     var cards = EVENT_CARDS[storyId];
     if (!cards) throw new Error('No event cards for story_id=' + storyId);
 
@@ -160,27 +81,114 @@ var PairScalingTask = (function () {
       pairs = Utils.shuffle(pairs);
     }
 
-    // Initialise 8×8 matrix with nulls (diagonal stays null; off-diagonal fills in).
-    var matrix = [];
-    for (var i = 0; i < 8; i++) {
-      matrix.push(new Array(8).fill(null));
+    var rushedMs = 500;
+
+    // Final ratings per pair — index aligns with `pairs` ordering.
+    var finalRatings = new Array(pairs.length).fill(null);
+    var firstItemTime = null;
+    var lastItemTime  = null;
+
+    // 8×8 matrix: rebuilt at summary time from finalRatings (avoids stale
+    // values when a participant goes back and changes a rating).
+    function buildMatrixFromFinals() {
+      var m = [];
+      for (var i = 0; i < 8; i++) m.push(new Array(8).fill(null));
+      for (var k = 0; k < pairs.length; k++) {
+        var r = finalRatings[k];
+        if (r == null) continue;
+        var i0 = EVENT_IDS.indexOf(pairs[k].source);
+        var j0 = EVENT_IDS.indexOf(pairs[k].target);
+        if (i0 >= 0 && j0 >= 0) m[i0][j0] = r;
+      }
+      return m;
     }
 
-    var stateRef = { state: {
-      n_total_pairs: pairs.length,
-      n_completed: 0,
-      n_rushed: 0,
-      first_item_t: null,
-      last_item_t: null,
-      matrix: matrix,
-      presentation_order: pairs.map(function (p) { return [p.source, p.target]; }),
-    }};
+    var loopTrial = Utils.buildLoopWithBack({
+      items: pairs,
+      button_layout: 'grid',
+      grid_rows: 2,
+      grid_columns: 4,
+      header: {
+        storyPosition: opts.storyPosition,
+        totalStories:  opts.totalStories,
+        taskLabel:     'Causal pairs',
+        stepNoun:      'Pair',
+      },
+      render: function (pair /*, idx, total */) {
+        return renderStimulusHTML(cards, pair.source, pair.target);
+      },
+      choices: ['0', '1', '2', '3', '4', '5', '6'],
+      buttonClass: 'pair-btn',
+      prompt: renderAnchorPromptHTML(),
+      data: function (pair, idx) {
+        return {
+          task:            'pair_scaling_item',
+          story_id:        storyId,
+          source_event_id: pair.source,
+          target_event_id: pair.target,
+          pair_index:      idx,
+          n_pairs_total:   pairs.length,
+        };
+      },
+      onAnswer: function (data, pair, idx, choiceIdx) {
+        var rating = choiceIdx;            // 0..6 maps directly
+        var rushed = data.rt != null && data.rt < rushedMs;
 
-    var trials = pairs.map(function (p, idx) {
-      return buildItemTrial(storyId, cards, p, idx, stateRef);
+        var events = [
+          { t: 0,       type: 'item_shown', source: pair.source, target: pair.target },
+          { t: data.rt, type: 'response_clicked', rating: rating },
+        ];
+
+        var row = DataHelpers.composeTrialRow({
+          trial_type:      'pair_scaling_item',
+          task:            'pair_scaling_item',
+          story_id:        storyId,
+          source_event_id: pair.source,
+          target_event_id: pair.target,
+          pair_index:      idx,
+          rating:          rating,
+          rt_ms:           data.rt,
+          rushed_flag:     rushed,
+          events:          events,
+        });
+        Object.keys(row).forEach(function (k) { data[k] = row[k]; });
+
+        finalRatings[idx] = rating;
+        if (firstItemTime === null) {
+          firstItemTime = data.time_elapsed - (data.rt || 0);
+        }
+        lastItemTime = data.time_elapsed;
+      },
+      onBack: function (data, pair, idx) {
+        data.trial_type      = 'pair_scaling_back';
+        data.task            = 'pair_scaling_item';
+        data.story_id        = storyId;
+        data.source_event_id = pair.source;
+        data.target_event_id = pair.target;
+        data.pair_index      = idx;
+      },
     });
-    trials.push(buildSummaryTrial(storyId, stateRef));
-    return trials;
+
+    var summaryTrial = {
+      type: jsPsychCallFunction,
+      func: function () { return null; },
+      on_finish: function (data) {
+        var nDone = finalRatings.filter(function (r) { return r != null; }).length;
+        data.trial_type        = 'pair_scaling_summary';
+        data.task              = 'pair_scaling_summary';
+        data.story_id          = storyId;
+        data.n_pairs           = nDone;
+        data.n_pairs_expected  = pairs.length;
+        data.block_rt_ms       = (lastItemTime != null && firstItemTime != null)
+          ? Math.round(lastItemTime - firstItemTime)
+          : null;
+        data.directed_matrix   = buildMatrixFromFinals();
+        data.matrix_event_ids  = EVENT_IDS.slice();
+        data.presentation_order = pairs.map(function (p) { return [p.source, p.target]; });
+      },
+    };
+
+    return [loopTrial, summaryTrial];
   }
 
   return {

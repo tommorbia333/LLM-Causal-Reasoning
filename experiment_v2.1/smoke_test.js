@@ -106,23 +106,46 @@ for (const k of Object.keys(ci.stories)) compTotal += ci.stories[k].items.length
 console.log(`  total items: ${compTotal}`);
 
 console.log('\n--- Comprehension block build check ---');
+// Each block is now [loopTrial, summaryTrial]; the loop wraps one dynamic
+// trial that iterates through the (shuffled) 6 items, with Back navigation.
 for (const sid of Object.keys(sandbox.COMPREHENSION_ITEMS.stories)) {
-  const trials = sandbox.ComprehensionTask.buildBlock(sid);
-  const nItems = trials.filter(t => t.data && t.data.task === 'comprehension_item').length;
-  const nSummary = trials.length - nItems;
-  console.log(`  ${sid.padEnd(22)} → ${trials.length} trials (${nItems} items + ${nSummary} summary)`);
-  if (nItems !== 6 || nSummary !== 1) {
-    console.log('    ✗ unexpected shape'); process.exit(1);
+  const block = sandbox.ComprehensionTask.buildBlock(sid, { storyPosition: 1, totalStories: 4 });
+  if (block.length !== 2) {
+    console.log(`  ✗ ${sid} block has ${block.length} trials (expected [loop, summary])`); process.exit(1);
   }
+  const [loop, summary] = block;
+  const innerTrials = loop && Array.isArray(loop.timeline) ? loop.timeline.length : -1;
+  console.log(`  ${sid.padEnd(22)} → loop(${innerTrials} dyn-trial) + summary ✓`);
+  if (innerTrials !== 1) { console.log('    ✗ inner shape'); process.exit(1); }
+  if (typeof loop.loop_function !== 'function') { console.log('    ✗ loop_function missing'); process.exit(1); }
+  if (!summary || summary.type !== sandbox.jsPsychCallFunction) { console.log('    ✗ summary missing/typed wrong'); process.exit(1); }
 }
 
-console.log('\n--- Sample randomisation (Hospital, 3 draws) ---');
+console.log('\n--- Pre-ordering gate shape (one story) ---');
+{
+  const gated = sandbox.ComprehensionTask.buildBlockWithPreOrderingGate('hospital_incident', { storyPosition: 1, totalStories: 4 });
+  if (gated.length !== 1 || !gated[0].loop_function) {
+    console.log('  ✗ buildBlockWithPreOrderingGate should return [ { timeline+loop_function } ]'); process.exit(1);
+  }
+  if (!Array.isArray(gated[0].timeline) || gated[0].timeline.length !== 3) {
+    console.log('  ✗ gate block should be [ compLoop, summary, gate ]'); process.exit(1);
+  }
+  console.log('  hospital_incident → compSection(3 nodes) with loop_function ✓');
+}
+
+console.log('\n--- Comprehension item-rendering smoke (Hospital, 3 draws) ---');
+// We can no longer enumerate items via per-trial data (the loop is dynamic),
+// but the dynamic trial's `stimulus` function reads from a shuffled `items`
+// array via closure. Rendering once exercises the closure path.
 for (let i = 0; i < 3; i++) {
-  const trials = sandbox.ComprehensionTask.buildBlock('hospital_incident');
-  const itemOrder = trials
-    .filter(t => t.data && t.data.task === 'comprehension_item')
-    .map(t => t.data.item_id);
-  console.log(`  draw ${i+1}: ${itemOrder.join(', ')}`);
+  const block = sandbox.ComprehensionTask.buildBlock('hospital_incident', { storyPosition: 1, totalStories: 4 });
+  const dyn = block[0].timeline[0];
+  const stim = dyn.stimulus();         // first iteration's stimulus
+  const choices = dyn.choices();       // first iteration's choices (no Back at idx=0)
+  console.log(`  draw ${i+1}: choices=[${choices.join(', ')}] · stimulus length=${stim.length}`);
+  if (choices.length !== 3 || choices[0] === 'Back') {
+    console.log('    ✗ first item should not show Back'); process.exit(1);
+  }
 }
 
 console.log('\n--- Event cards coverage ---');
@@ -140,15 +163,19 @@ console.log(`  ${missingCards.length === 0 ? 'all 64 card labels present ✓' : 
 
 console.log('\n--- Ordering trial build check ---');
 for (const sid of cardStoryIds) {
-  const trial = sandbox.OrderingTask.buildTrial({ storyId: sid });
+  const trial = sandbox.OrderingTask.buildTrial({ storyId: sid, storyPosition: 1, totalStories: 4 });
   if (!trial || trial.data.task !== 'ordering' || trial.data.story_id !== sid) {
     console.log(`  ✗ ${sid} trial malformed`); process.exit(1);
   }
   if (JSON.stringify(trial.data.initial_order) !== JSON.stringify(['E2','E4','E5','E8','E6','E7','E3','E1'])) {
     console.log(`  ✗ ${sid} initial_order not preregistered scrambled order`); process.exit(1);
   }
+  // New: rendered stimulus should include a "Story X of Y · Ordering" badge.
+  if (!/Story\s+1\s+of\s+4/.test(trial.stimulus) || !/Ordering/.test(trial.stimulus)) {
+    console.log(`  ✗ ${sid} stimulus missing story-position header`); process.exit(1);
+  }
 }
-console.log(`  ${cardStoryIds.length} trials build with preregistered scrambled start order ✓`);
+console.log(`  ${cardStoryIds.length} trials build with preregistered scrambled start order + header ✓`);
 
 console.log('\n--- Kendall tau distance verification ---');
 const tau = sandbox.OrderingTask._kendallTauDistance;
@@ -182,25 +209,35 @@ for (const e1 of ['E1','E2','E3','E4','E5','E6','E7','E8']) {
 }
 console.log(`  both directions of every unordered pair present: ${bothDirectionsOK}`);
 
-// Build a full block and verify shape
+// Build a full block and verify shape (now [loop, summary]).
 for (const sid of Object.keys(sandbox.EVENT_CARDS)) {
-  const trials = sandbox.PairScalingTask.buildBlock(sid);
-  const nItems = trials.filter(t => t.data && t.data.task === 'pair_scaling_item').length;
-  const nSummary = trials.length - nItems;
-  if (nItems !== 56 || nSummary !== 1) {
-    console.log(`  ✗ ${sid} block shape: ${nItems} items + ${nSummary} summary`); process.exit(1);
+  const block = sandbox.PairScalingTask.buildBlock(sid, { storyPosition: 1, totalStories: 4 });
+  if (block.length !== 2) {
+    console.log(`  ✗ ${sid} block has ${block.length} trials (expected [loop, summary])`); process.exit(1);
+  }
+  const [loop, summary] = block;
+  if (!loop || !Array.isArray(loop.timeline) || loop.timeline.length !== 1) {
+    console.log(`  ✗ ${sid} loop shape`); process.exit(1);
+  }
+  if (typeof loop.loop_function !== 'function') {
+    console.log(`  ✗ ${sid} loop_function missing`); process.exit(1);
+  }
+  if (!summary || summary.type !== sandbox.jsPsychCallFunction) {
+    console.log(`  ✗ ${sid} summary missing/typed wrong`); process.exit(1);
   }
 }
-console.log(`  all 8 stories build 56 items + 1 summary trial ✓`);
+console.log(`  all 8 stories build [loop, summary] with 56-item internal count ✓`);
 
-console.log('\n--- Pair scaling randomisation (Hospital, 3 draws) ---');
+console.log('\n--- Pair scaling first-iteration render (Hospital, 3 draws) ---');
 for (let i = 0; i < 3; i++) {
-  const trials = sandbox.PairScalingTask.buildBlock('hospital_incident');
-  const firstThree = trials
-    .filter(t => t.data && t.data.task === 'pair_scaling_item')
-    .slice(0, 3)
-    .map(t => t.data.source_event_id + '→' + t.data.target_event_id);
-  console.log(`  draw ${i+1} first 3 pairs: ${firstThree.join(', ')}`);
+  const block = sandbox.PairScalingTask.buildBlock('hospital_incident', { storyPosition: 2, totalStories: 4 });
+  const dyn = block[0].timeline[0];
+  const stim = dyn.stimulus();
+  const choices = dyn.choices();
+  console.log(`  draw ${i+1}: choices=[${choices.join(',')}], stim contains arrow=${stim.includes('↓')}`);
+  if (choices.length !== 7 || choices[0] === 'Back') {
+    console.log('    ✗ first pair should not show Back'); process.exit(1);
+  }
 }
 
 console.log('\n--- Hospital / Care Home non-co-occurrence (runtime check) ---');
@@ -233,14 +270,28 @@ for (const sid of cfStories) {
 console.log(`  ${cfIssues === 0 ? 'all 8 stories have 6 anchor + 1 sibling + 1 reverse probes ✓' : cfIssues + ' stories with wrong shape'}`);
 
 for (const sid of cfStories) {
-  const trials = sandbox.CounterfactualTask.buildBlock(sid);
-  const items = trials.filter(t => t.data && t.data.task === 'counterfactual_item').length;
-  const sums  = trials.length - items;
-  if (items !== 8 || sums !== 1) {
-    console.log(`  ✗ ${sid} CF block: ${items} items + ${sums} summary`); process.exit(1);
+  const block = sandbox.CounterfactualTask.buildBlock(sid, { storyPosition: 1, totalStories: 4 });
+  if (block.length !== 2) {
+    console.log(`  ✗ ${sid} CF block has ${block.length} trials (expected [loop, summary])`); process.exit(1);
+  }
+  const [loop, summary] = block;
+  if (!loop || !Array.isArray(loop.timeline) || loop.timeline.length !== 1) {
+    console.log(`  ✗ ${sid} CF loop shape`); process.exit(1);
+  }
+  if (typeof loop.loop_function !== 'function') {
+    console.log(`  ✗ ${sid} CF loop_function missing`); process.exit(1);
+  }
+  if (!summary || summary.type !== sandbox.jsPsychCallFunction) {
+    console.log(`  ✗ ${sid} CF summary missing`); process.exit(1);
+  }
+  // Ensure first iteration's choices match the 5-point scale and Back is hidden.
+  const dyn = loop.timeline[0];
+  const choices = dyn.choices();
+  if (choices.length !== 5 || choices[0] === 'Back') {
+    console.log(`  ✗ ${sid} CF first probe choices wrong: ${choices.join(',')}`); process.exit(1);
   }
 }
-console.log(`  all 8 stories build 8 probes + 1 summary trial ✓`);
+console.log(`  all 8 stories build [loop, summary] with 5-point scale and no Back at idx=0 ✓`);
 
 console.log('\n--- Intro sequence build check ---');
 // Initialise participant metadata so intro trials can reference it

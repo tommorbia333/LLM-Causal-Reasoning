@@ -58,7 +58,20 @@ var StoryReadingTask = (function () {
     var continueClickedAt = null;
     var detachTracker = null;
 
+    var totalStories = (opts.totalStories != null)
+      ? opts.totalStories
+      : CONFIG.n_stories_per_participant;
+    var headerHTML = Utils.storyHeaderHTML({
+      storyPosition: storyPosition,
+      totalStories:  totalStories,
+      taskLabel:     'Reading',
+      stepNoun:      'Page',
+      stepIndex:     0,
+      stepTotal:     1,
+    });
+
     var stimulus = [
+      headerHTML,
       renderStoryHTML(storyData),
       '<div class="reading-footer">',
       '  <p class="reading-instruction" id="reading-instruction">' +

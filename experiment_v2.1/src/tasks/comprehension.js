@@ -8,123 +8,31 @@
 // Implementation choices:
 //   - One item per screen (clean per-item RT).
 //   - Fixed answer order: [Yes, No, Unsure] left-to-right.
-//   - Emits 6 item-level rows + 1 block-level summary row per story.
+//   - Back button is offered on items 2..N (NOT on item 1, and never crosses
+//     the task boundary into the story-reading screen — the story is read once).
+//   - "Question N of 6" indicator + "Story X of Y · Comprehension" badge.
+//   - A pre-ordering gate (buildBlockWithPreOrderingGate) lets participants
+//     return to the comprehension block before ordering; the story is not shown
+//     again. State resets on repeat (see Utils.buildLoopWithBack._resetIteration).
+//   - Emits one data row per visit (forward + back), plus a summary row whose
+//     stats are computed from the LATEST response per item.
 //   - Rushed (< 1.5 s) and Slow (> 30 s) responses are FLAGGED, not excluded.
-//   - Per Research Notes §5, items are pre-audited for subtle-cue neutrality.
 
 var ComprehensionTask = (function () {
 
-  /** Build a single item trial (one item per screen). */
-  function buildItemTrial(storyId, itemData, onFinishHook) {
-    var options = CONFIG.comprehension.response_options; // ['Yes','No','Unsure']
-    var rushedMs = CONFIG.comprehension.response_time_flag_ms;
-    var slowMs   = CONFIG.comprehension.response_time_slow_flag_ms;
-
-    return {
-      type: jsPsychHtmlButtonResponse,
-      stimulus: [
-        '<div class="comp-container">',
-        '  <p class="comp-prompt">' + escapeHtml(itemData.text) + '</p>',
-        '</div>',
-      ].join('\n'),
-      choices: options,
-      button_html: function (choice) {
-        return '<button class="jspsych-btn comp-btn">' + choice + '</button>';
-      },
-      data: {
-        task: 'comprehension_item',
-        story_id: storyId,
-        item_id: itemData.id,
-        item_role: itemData.role,
-        item_events: itemData.events,   // array of event IDs this item covers
-        correct_response: itemData.correct,
-      },
-      on_finish: function (data) {
-        // jsPsych 8: data.response is the 0-indexed button chosen.
-        var chosen = options[data.response];
-        var isCorrect = (chosen === itemData.correct);
-        var rushed = data.rt != null && data.rt < rushedMs;
-        var slow   = data.rt != null && data.rt > slowMs;
-
-        // Item-level event log (minimal — item_shown and response_clicked).
-        var events = [
-          { t: 0, type: 'item_shown' },
-          { t: data.rt, type: 'response_clicked', choice: chosen },
-        ];
-
-        var row = DataHelpers.composeTrialRow({
-          trial_type: 'comprehension_item',
-          task: 'comprehension_item',
-          story_id: storyId,
-          item_id: itemData.id,
-          item_text: itemData.text,
-          item_role: itemData.role,
-          item_events: itemData.events,
-          response: chosen,
-          response_index: data.response,
-          correct_response: itemData.correct,
-          is_correct: isCorrect,
-          rt_ms: data.rt,
-          rushed_flag: rushed,
-          slow_flag: slow,
-          events: events,
-        });
-
-        Object.keys(row).forEach(function (k) { data[k] = row[k]; });
-
-        // Hook: allow caller to accumulate per-item stats for block summary.
-        if (onFinishHook) onFinishHook(data);
-      },
-    };
-  }
-
-  /** Build a block-summary trial that doesn't display anything but emits a summary row. */
-  function buildSummaryTrial(storyId, stateRef) {
-    return {
-      type: jsPsychCallFunction,
-      func: function () {
-        var s = stateRef.state;
-        var blockRT = s.last_item_t - s.first_item_t;
-        var row = DataHelpers.composeTrialRow({
-          trial_type: 'comprehension_summary',
-          task: 'comprehension_summary',
-          story_id: storyId,
-          n_items: s.n_total,
-          n_correct: s.n_correct,
-          n_rushed: s.n_rushed,
-          n_slow: s.n_slow,
-          accuracy: s.n_total > 0 ? (s.n_correct / s.n_total) : null,
-          block_rt_ms: Math.round(blockRT),
-          presentation_order: s.presentation_order,
-        });
-        // jsPsych callFunction data is sparse; attach via on_finish alternative.
-        // Here we use a post hoc data update below.
-        return row;
-      },
-      on_finish: function (data) {
-        // Copy summary fields into the data record.
-        var s = stateRef.state;
-        data.trial_type = 'comprehension_summary';
-        data.task = 'comprehension_summary';
-        data.story_id = storyId;
-        data.n_items = s.n_total;
-        data.n_correct = s.n_correct;
-        data.n_rushed = s.n_rushed;
-        data.n_slow = s.n_slow;
-        data.accuracy = s.n_total > 0 ? (s.n_correct / s.n_total) : null;
-        data.block_rt_ms = s.last_item_t > s.first_item_t
-          ? Math.round(s.last_item_t - s.first_item_t)
-          : null;
-        data.presentation_order = s.presentation_order.slice();
-      },
-    };
-  }
+  function escapeHtml(s) { return Utils.escapeHtml(s); }
 
   /**
-   * Build a full comprehension block for one story: 6 randomised item trials
-   * followed by a block-summary trial. Returns an array of trials (push onto timeline).
+   * Build the full comprehension block for one story: a single dynamic loop
+   * trial covering the 6 items, followed by a summary trial.
+   *
+   * @param {string} storyId
+   * @param {Object} [opts]
+   * @param {number} [opts.storyPosition]  Index 1..N for the story header badge.
+   * @param {number} [opts.totalStories]
    */
-  function buildBlock(storyId) {
+  function buildBlock(storyId, opts) {
+    opts = opts || {};
     var storyItems = COMPREHENSION_ITEMS.stories[storyId];
     if (!storyItems) {
       throw new Error('No comprehension items found for story_id=' + storyId);
@@ -134,41 +42,190 @@ var ComprehensionTask = (function () {
       items = Utils.shuffle(items);
     }
 
-    // Shared mutable state object so summary trial can see item-level accumulation.
-    var stateRef = { state: {
-      n_total: 0,
-      n_correct: 0,
-      n_rushed: 0,
-      n_slow: 0,
-      first_item_t: null,
-      last_item_t: null,
-      presentation_order: items.map(function (it) { return it.id; }),
-    }};
+    var options  = CONFIG.comprehension.response_options;        // ['Yes','No','Unsure']
+    var rushedMs = CONFIG.comprehension.response_time_flag_ms;
+    var slowMs   = CONFIG.comprehension.response_time_slow_flag_ms;
 
-    function recordItem(data) {
-      var s = stateRef.state;
-      s.n_total += 1;
-      if (data.is_correct) s.n_correct += 1;
-      if (data.rushed_flag) s.n_rushed += 1;
-      if (data.slow_flag) s.n_slow += 1;
-      if (s.first_item_t === null) s.first_item_t = data.time_elapsed - (data.rt || 0);
-      s.last_item_t = data.time_elapsed;
-    }
+    // Final-response store keyed by item index in the (possibly shuffled) list.
+    var finalResponses = new Array(items.length).fill(null);
+    var firstItemTime  = null;
+    var lastItemTime   = null;
 
-    var trials = items.map(function (it) {
-      return buildItemTrial(storyId, it, recordItem);
+    var loopTrial = Utils.buildLoopWithBack({
+      items: items,
+      header: {
+        storyPosition: opts.storyPosition,
+        totalStories:  opts.totalStories,
+        taskLabel:     'Comprehension',
+        stepNoun:      'Question',
+      },
+      onLoopStart: function () {
+        for (var r = 0; r < finalResponses.length; r++) finalResponses[r] = null;
+        firstItemTime = null;
+        lastItemTime = null;
+      },
+      render: function (item /*, idx, total */) {
+        return [
+          '<div class="comp-container">',
+          '  <p class="comp-prompt">' + escapeHtml(item.text) + '</p>',
+          '</div>',
+        ].join('\n');
+      },
+      choices: options,
+      buttonClass: 'comp-btn',
+      data: function (item, idx) {
+        return {
+          task:           'comprehension_item',
+          story_id:       storyId,
+          item_id:        item.id,
+          item_role:      item.role,
+          item_events:    item.events,
+          item_text:      item.text,
+          correct_response: item.correct,
+          item_index:     idx,
+          n_items_total:  items.length,
+        };
+      },
+      onAnswer: function (data, item, idx, choiceIdx) {
+        var chosen    = options[choiceIdx];
+        var isCorrect = (chosen === item.correct);
+        var rushed    = data.rt != null && data.rt < rushedMs;
+        var slow      = data.rt != null && data.rt > slowMs;
+
+        var events = [
+          { t: 0,        type: 'item_shown' },
+          { t: data.rt,  type: 'response_clicked', choice: chosen },
+        ];
+
+        var row = DataHelpers.composeTrialRow({
+          trial_type:       'comprehension_item',
+          task:             'comprehension_item',
+          story_id:         storyId,
+          item_id:          item.id,
+          item_text:        item.text,
+          item_role:        item.role,
+          item_events:      item.events,
+          response:         chosen,
+          response_index:   choiceIdx,
+          correct_response: item.correct,
+          is_correct:       isCorrect,
+          rt_ms:            data.rt,
+          rushed_flag:      rushed,
+          slow_flag:        slow,
+          events:           events,
+        });
+        Object.keys(row).forEach(function (k) { data[k] = row[k]; });
+
+        // Latest visit's response wins for the summary.
+        finalResponses[idx] = {
+          item_id:    item.id,
+          item_role:  item.role,
+          item_text:  item.text,
+          correct:    item.correct,
+          chosen:     chosen,
+          is_correct: isCorrect,
+          rushed:     rushed,
+          slow:       slow,
+          rt:         data.rt,
+        };
+        if (firstItemTime === null) {
+          firstItemTime = data.time_elapsed - (data.rt || 0);
+        }
+        lastItemTime = data.time_elapsed;
+      },
+      onBack: function (data, item, idx) {
+        data.trial_type = 'comprehension_back';
+        data.task       = 'comprehension_item';
+        data.story_id   = storyId;
+        data.item_id    = item.id;
+        data.item_index = idx;
+      },
     });
-    trials.push(buildSummaryTrial(storyId, stateRef));
-    return trials;
+
+    var summaryTrial = {
+      type: jsPsychCallFunction,
+      func: function () { return null; },
+      on_finish: function (data) {
+        var responded = finalResponses.filter(function (r) { return r != null; });
+        var nTotal    = responded.length;
+        var nCorrect  = responded.filter(function (r) { return r.is_correct; }).length;
+        var nRushed   = responded.filter(function (r) { return r.rushed; }).length;
+        var nSlow     = responded.filter(function (r) { return r.slow; }).length;
+
+        data.trial_type    = 'comprehension_summary';
+        data.task          = 'comprehension_summary';
+        data.story_id      = storyId;
+        data.n_items       = nTotal;
+        data.n_correct     = nCorrect;
+        data.n_rushed      = nRushed;
+        data.n_slow        = nSlow;
+        data.accuracy      = nTotal > 0 ? (nCorrect / nTotal) : null;
+        data.block_rt_ms   = (lastItemTime != null && firstItemTime != null)
+          ? Math.round(lastItemTime - firstItemTime)
+          : null;
+        data.presentation_order = items.map(function (it) { return it.id; });
+        data.final_responses = finalResponses.map(function (r, i) {
+          return r ? {
+            item_id:    r.item_id,
+            item_role:  r.item_role,
+            chosen:     r.chosen,
+            is_correct: r.is_correct,
+          } : { item_id: items[i].id, chosen: null, is_correct: null };
+        });
+      },
+    };
+
+    return [loopTrial, summaryTrial];
   }
 
-  function escapeHtml(s) {
-    return String(s)
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  /**
+   * Comprehension + summary, then a gate: participants may return to the
+   * comprehension block (the story is not re-shown). The outer node repeats
+   * while "Back" is selected on the gate. Uses loop._resetIteration to reset
+   * state when a repeat runs (see Utils.buildLoopWithBack).
+   */
+  function buildBlockWithPreOrderingGate(storyId, opts) {
+    var block = buildBlock(storyId, opts);
+    var loop = block[0];
+    var summary = block[1];
+
+    var gate = {
+      type: jsPsychHtmlButtonResponse,
+      stimulus: [
+        '<div class="comp-ordering-gate">',
+        '<h3>Ready for the next task?</h3>',
+        '<p>Next you will <strong>arrange the events in chronological order</strong> (drag and drop). ',
+        'If you need to, you can <strong>go back to the comprehension questions</strong> to change an answer. ',
+        'The <strong>story text will not be shown again</strong>.</p>',
+        '</div>',
+      ].join('\n'),
+      choices: [
+        'Back to the comprehension questions',
+        'Continue to the ordering task',
+      ],
+      button_layout: 'flex',
+      data: { task: 'comp_pre_ordering_gate' },
+    };
+
+    var compSection = {
+      timeline: [loop, summary, gate],
+      loop_function: function (data) {
+        var d = Utils.lastDataFromSessionIter(data);
+        if (d && d.task === 'comp_pre_ordering_gate' && d.response === 0) {
+          if (loop && typeof loop._resetIteration === 'function') {
+            loop._resetIteration();
+          }
+          return true; // re-run [comp, summary, gate] without re-showing the story
+        }
+        return false;
+      },
+    };
+
+    return [compSection];
   }
 
   return {
     buildBlock: buildBlock,
+    buildBlockWithPreOrderingGate: buildBlockWithPreOrderingGate,
   };
 })();

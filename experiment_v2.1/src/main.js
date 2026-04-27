@@ -5,7 +5,7 @@
 //   For each story i = 1..4:
 //     Inter-story break screen (progress indicator)
 //     Story reading
-//     Comprehension (6 items + summary)
+//     Comprehension (6 items + summary) + optional gate to re-enter comp before ordering
 //     Ordering (8-card drag + confidence slider)
 //     Pair scaling (56 pairs + 8x8 matrix summary)
 //     Counterfactual probes (8 probes + summary)
@@ -66,12 +66,20 @@ var jsPsych;  // exposed as a global so sub-modules (intro, outro) can end early
       storyId: storyId,
       condition: condition,
       storyPosition: storyPosition,
+      totalStories: totalStories,
     }));
 
-    ComprehensionTask.buildBlock(storyId).forEach(function (t) { timeline.push(t); });
-    timeline.push(OrderingTask.buildTrial({ storyId: storyId }));
-    PairScalingTask.buildBlock(storyId).forEach(function (t) { timeline.push(t); });
-    CounterfactualTask.buildBlock(storyId).forEach(function (t) { timeline.push(t); });
+    var taskOpts = { storyPosition: storyPosition, totalStories: totalStories };
+    ComprehensionTask.buildBlockWithPreOrderingGate(storyId, taskOpts).forEach(function (t) {
+      timeline.push(t);
+    });
+    timeline.push(OrderingTask.buildTrial({
+      storyId: storyId,
+      storyPosition: storyPosition,
+      totalStories: totalStories,
+    }));
+    PairScalingTask.buildBlock(storyId, taskOpts).forEach(function (t) { timeline.push(t); });
+    CounterfactualTask.buildBlock(storyId, taskOpts).forEach(function (t) { timeline.push(t); });
   });
 
   OutroSequence.buildAll().forEach(function (t) { timeline.push(t); });

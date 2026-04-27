@@ -21,7 +21,7 @@ var OrderingTask = (function () {
       .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
-  function renderStimulusHTML(storyId, cards, scrambledOrder) {
+  function renderStimulusHTML(storyId, cards, scrambledOrder, header) {
     var cardItems = scrambledOrder.map(function (eid) {
       var label = cards[eid];
       return (
@@ -38,6 +38,7 @@ var OrderingTask = (function () {
     var sMaxLabel = CONFIG.ordering.confidence_scale_max_label;
 
     return [
+      Utils.storyHeaderHTML(header || {}),
       '<div class="ordering-container">',
       '  <h3 class="ordering-heading">Arrange the events in the order you think they happened.</h3>',
       '  <p class="ordering-instruction">Drag and drop the cards so that the earliest event is at the top and the latest at the bottom.</p>',
@@ -64,6 +65,14 @@ var OrderingTask = (function () {
     var cards = EVENT_CARDS[storyId];
     if (!cards) throw new Error('No event cards for story_id=' + storyId);
     var scrambledOrder = CONFIG.ordering.scrambled_start_order.slice();
+    var header = {
+      storyPosition: opts.storyPosition,
+      totalStories:  opts.totalStories,
+      taskLabel:     'Ordering',
+      stepNoun:      'Part',
+      stepIndex:     0,
+      stepTotal:     1,
+    };
 
     // Closure state
     var t0 = null;
@@ -74,7 +83,7 @@ var OrderingTask = (function () {
 
     return {
       type: jsPsychHtmlButtonResponse,
-      stimulus: renderStimulusHTML(storyId, cards, scrambledOrder),
+      stimulus: renderStimulusHTML(storyId, cards, scrambledOrder, header),
       choices: ['Continue'],
       button_html: function (choice) {
         return '<button id="order-continue-btn" class="jspsych-btn continue-btn" disabled="disabled">' + choice + '</button>';
