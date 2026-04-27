@@ -2,15 +2,74 @@ name: Deploy experiment to Cognition
 
 on:
   push:
+    paths:
+      - 'experiment_v2.1/**'
+      - '.github/workflows/cognition-github-actions.yml'
   workflow_dispatch:
 
 jobs:
   cognition-deploy:
-    name: Deploy experiment to Cognition
+    name: Deploy experiment_v2.1 to Cognition
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout only experiment_v2.1
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: experiment_v2.1
+          sparse-checkout-cone-mode: false
+
+      - name: Stage flat payload for Cognition
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Cognition serves uploaded files from a flat namespace
+          # ("external libraries"), so we flatten experiment_v2.1/ into
+          # the workspace root and rewrite index.html accordingly.
+          # The repo-side layout (src/, src/tasks/, stimuli/, assets/)
+          # stays untouched on main; only the deploy payload is flattened.
+
+          # Entry point and stylesheet.
+          cp experiment_v2.1/index.html ./index.html
+          cp experiment_v2.1/assets/style.css ./style.css
+
+          # Stimuli modules (no collisions within this folder).
+          for f in experiment_v2.1/stimuli/*.js; do
+            cp "$f" "./$(basename "$f")"
+          done
+
+          # Top-level src/ modules.
+          for f in experiment_v2.1/src/*.js; do
+            cp "$f" "./$(basename "$f")"
+          done
+
+          # Task modules. Rename src/tasks/comprehension.js to
+          # comprehension_task.js so it does not collide with
+          # stimuli/comprehension.js once both are at the same level.
+          for f in experiment_v2.1/src/tasks/*.js; do
+            base=$(basename "$f")
+            if [ "$base" = "comprehension.js" ]; then
+              cp "$f" ./comprehension_task.js
+            else
+              cp "$f" "./$base"
+            fi
+          done
+
+          # Rewrite references in index.html to match the flat layout.
+          sed -i 's|href="assets/style.css"|href="style.css"|g' index.html
+          sed -i 's|src="src/tasks/comprehension.js"|src="comprehension_task.js"|g' index.html
+          sed -i 's|src="src/tasks/\([^"]*\)"|src="\1"|g' index.html
+          sed -i 's|src="src/\([^"]*\)"|src="\1"|g' index.html
+          sed -i 's|src="stimuli/\([^"]*\)"|src="\1"|g' index.html
+
+          # Remove the original nested directory and the local git metadata
+          # so the deploy action's recursive glob does not pick them up.
+          rm -rf experiment_v2.1 .git
+
+          echo "=== Staged files at workspace root ==="
+          ls -la
+          echo "=== Resolved references in index.html ==="
+          grep -E '(<script|<link)' index.html
 
       - name: Deploy to Cognition
         id: deploy
