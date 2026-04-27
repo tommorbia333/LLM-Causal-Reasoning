@@ -509,20 +509,103 @@ a { color: #2a4d80; }
    ============================================================ */
 
 .cf-container {
-  margin: 0.4em 0 1.2em 0;
+  margin: 0.4em 0 0.6em 0;
   text-align: center;
 }
 .cf-prompt {
   font-size: 17px;
   line-height: 1.55;
   color: #1a2230;
-  margin: 0.4em auto 1.5em auto;
+  margin: 0.4em auto 0.6em auto;
   max-width: 600px;
 }
+
+/*
+ * Match pair scaling: Back on its own row, five Likert buttons in one row,
+ * light panel, numeric 1–5 row aligned below (5 cols).
+ * Stimulus is only counterfactual when it contains .cf-container.
+ */
+#jspsych-html-button-response-stimulus:has(.cf-container) + #jspsych-html-button-response-btngroup,
+.jspsych-content #jspsych-html-button-response-btngroup:has(.cf-btn) {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  align-items: stretch;
+  justify-content: center;
+  margin: 0.3em 0 0.15em 0;
+  padding: 0.4em 0.15em 0.5em 0.15em;
+  border: 1px solid #e3e1dc;
+  border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  background: #fbf9f2;
+  gap: 0;
+}
+
+#jspsych-html-button-response-stimulus:has(.cf-container) + #jspsych-html-button-response-btngroup .back-btn,
+.jspsych-content #jspsych-html-button-response-btngroup:has(.cf-btn) .back-btn {
+  flex: 0 0 100% !important;
+  order: 0;
+  text-align: center;
+  max-width: none;
+  width: 100% !important;
+  margin: 0 0 0.4em 0 !important;
+}
+
+#jspsych-html-button-response-stimulus:has(.cf-container) + #jspsych-html-button-response-btngroup .cf-btn,
+.jspsych-content #jspsych-html-button-response-btngroup:has(.cf-btn) .cf-btn {
+  flex: 1 1 0;
+  min-width: 0;
+  order: 1;
+  margin: 0.1em 0.06em !important;
+  padding: 0.5em 0.35em !important;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  box-sizing: border-box;
+}
+
+/* Numeric reference row under the five main buttons. */
+.cf-scale-legend {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 0.5em 0;
+  padding: 0.35em 0.4em 0.4em 0.4em;
+  box-sizing: border-box;
+  border: 1px solid #e3e1dc;
+  border-top: 1px dashed #d4cfc2;
+  border-radius: 0 0 8px 8px;
+  background: #fbf9f2;
+}
+
+.cf-scale-nums {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  column-gap: 0.15em;
+  width: 100%;
+  font-size: 11px;
+  line-height: 1.2;
+  color: #5a5548;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+}
+
+@media (min-width: 600px) {
+  #jspsych-html-button-response-stimulus:has(.cf-container) + #jspsych-html-button-response-btngroup .cf-btn,
+  .jspsych-content #jspsych-html-button-response-btngroup:has(.cf-btn) .cf-btn {
+    font-size: 12.5px;
+  }
+}
+
+/* Fallback when rules above do not apply (e.g. older CSS without :not(:has))): */
 .cf-btn {
-  min-width: 110px;
-  padding: 0.55em 1em !important;
-  font-size: 13px;
+  min-width: 0;
+  padding: 0.5em 0.45em !important;
+  font-size: 12px;
+  line-height: 1.2;
+  box-sizing: border-box;
 }
 
 /* ============================================================

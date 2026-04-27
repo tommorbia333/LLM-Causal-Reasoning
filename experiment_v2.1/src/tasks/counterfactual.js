@@ -8,6 +8,8 @@
 //   - Probe prompt: "If [antecedent], would [consequent] still have occurred?"
 //   - Back button on probes 2..8 (not on probe 1, never crosses task boundary).
 //   - "Probe N of 8" indicator + "Story X of Y · Counterfactual" badge.
+//   - UI matches pair scaling: Back on its own row, five options in one band,
+//     1–5 code row in the legend below the buttons (see renderResponseLegendHTML).
 //
 // Output (driven by the LATEST visit per probe):
 //   - One data row per visit (action: 'answer' or 'back').
@@ -24,6 +26,17 @@ var CounterfactualTask = (function () {
     return [
       '<div class="cf-container">',
       '  <p class="cf-prompt">' + escapeHtml(probe.prompt) + '</p>',
+      '</div>',
+    ].join('\n');
+  }
+
+  /** Small 1–5 row under the five response buttons (same column alignment as the pair task legend). */
+  function renderResponseLegendHTML() {
+    return [
+      '<div class="cf-scale-legend" aria-hidden="true">',
+      '  <div class="cf-scale-nums" title="1 = most negative, 3 = no change, 5 = most positive">',
+      '    <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>',
+      '  </div>',
       '</div>',
     ].join('\n');
   }
@@ -50,8 +63,9 @@ var CounterfactualTask = (function () {
 
     var loopTrial = Utils.buildLoopWithBack({
       items: probes,
-      // Flex wrap: 5–6 buttons depending on whether Back is shown; grid cells would look ragged.
+      // Back on its own row, five scale buttons on the next; legend under (see style.css).
       button_layout: 'flex',
+      prompt: renderResponseLegendHTML(),
       header: {
         storyPosition: opts.storyPosition,
         totalStories:  opts.totalStories,
