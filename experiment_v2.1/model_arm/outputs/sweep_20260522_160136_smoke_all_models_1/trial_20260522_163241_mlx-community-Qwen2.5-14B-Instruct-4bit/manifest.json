@@ -1,0 +1,25 @@
+{
+  "trial_dir": "outputs/sweep_20260522_160136_smoke_all_models_1/trial_20260522_163241_mlx-community-Qwen2.5-14B-Instruct-4bit",
+  "timestamp": "2026-05-22T16:32:52.926048Z",
+  "model_id": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+  "story_ids": [
+    "hospital_incident"
+  ],
+  "conditions": [
+    "linear"
+  ],
+  "seeds": [
+    0
+  ],
+  "temperature": 0.7,
+  "max_new_tokens": 80,
+  "pair_scaling_variant": "v1_original",
+  "n_story_runs": 1,
+  "elapsed_seconds": 11.5,
+  "tasks_run": {
+    "comprehension": false,
+    "ordering": true,
+    "pair_scaling": false,
+    "counterfactual": false
+  }
+}

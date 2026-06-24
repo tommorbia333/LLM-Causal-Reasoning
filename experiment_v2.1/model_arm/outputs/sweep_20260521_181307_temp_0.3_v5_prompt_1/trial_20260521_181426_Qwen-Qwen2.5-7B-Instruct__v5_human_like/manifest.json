@@ -1,0 +1,31 @@
+{
+  "trial_dir": "outputs/sweep_20260521_181307_main_run_v5_prompt_4/trial_20260521_181426_Qwen-Qwen2.5-7B-Instruct__v5_human_like",
+  "timestamp": "2026-05-21T18:33:24.467082Z",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "story_ids": [
+    "hospital_incident"
+  ],
+  "conditions": [
+    "linear",
+    "nonlinear",
+    "atemporal"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "temperature": 0.3,
+  "max_new_tokens": 80,
+  "pair_scaling_variant": "v5_human_like",
+  "n_story_runs": 15,
+  "elapsed_seconds": 1137.7,
+  "tasks_run": {
+    "comprehension": true,
+    "ordering": true,
+    "pair_scaling": true,
+    "counterfactual": true
+  }
+}

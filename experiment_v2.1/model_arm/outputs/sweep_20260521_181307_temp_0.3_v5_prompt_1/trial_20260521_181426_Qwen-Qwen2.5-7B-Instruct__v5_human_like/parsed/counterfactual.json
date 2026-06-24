@@ -1,0 +1,257 @@
+[
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      2
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      2
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      2
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  }
+]

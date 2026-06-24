@@ -1,0 +1,2 @@
+2026-05-25 01:20:01,764 | trial | INFO | Trial spec: model=Qwen/Qwen3-8B stories=['hospital_incident', 'community_fair', 'restaurant_fire', 'school_trip', 'power_cut', 'missed_flight'] conditions=['linear', 'nonlinear', 'atemporal'] seeds=[0, 1, 2, 3, 4] temperature=0.7 max_new_tokens=80
+2026-05-25 01:20:01,773 | trial | INFO | [1/90] hospital_incident | linear | seed=0

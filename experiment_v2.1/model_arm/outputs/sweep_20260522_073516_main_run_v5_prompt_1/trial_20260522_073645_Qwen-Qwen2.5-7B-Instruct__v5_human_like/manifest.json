@@ -1,0 +1,38 @@
+{
+  "trial_dir": "outputs/sweep_20260522_073516_main_run_v5_prompt_1/trial_20260522_073645_Qwen-Qwen2.5-7B-Instruct__v5_human_like",
+  "timestamp": "2026-05-22T10:12:49.917984Z",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "story_ids": [
+    "hospital_incident",
+    "care_home_incident",
+    "community_fair",
+    "restaurant_fire",
+    "school_trip",
+    "family_conflict",
+    "power_cut",
+    "missed_flight"
+  ],
+  "conditions": [
+    "linear",
+    "nonlinear",
+    "atemporal"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "temperature": 0.7,
+  "max_new_tokens": 80,
+  "pair_scaling_variant": "v5_human_like",
+  "n_story_runs": 120,
+  "elapsed_seconds": 9363.6,
+  "tasks_run": {
+    "comprehension": true,
+    "ordering": true,
+    "pair_scaling": true,
+    "counterfactual": true
+  }
+}

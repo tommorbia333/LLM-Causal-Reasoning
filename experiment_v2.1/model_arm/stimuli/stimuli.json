@@ -1,0 +1,2746 @@
+{
+  "schema_version": "v2.1-model-arm-0.2",
+  "stories": {
+    "hospital_incident": {
+      "title": "Hospital Incident",
+      "topology": "convergent",
+      "versions": {
+        "linear": {
+          "page_source": 3,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E1",
+              "text": "The hospital administrator circulated a memo announcing changes to overnight staffing levels. The new policy meant fewer nurses on the ward between midnight and six, and it was framed as a budget measure. No formal objections were raised."
+            },
+            {
+              "id": "E2",
+              "text": "Around the same time, a contractor came in to service one of the ventilators on the respiratory ward. He needed to disable the alarm system to run his diagnostics, which was standard procedure. I saw him working on the machine during my afternoon shift."
+            },
+            {
+              "id": "E3",
+              "text": "He packed up his tools and left that evening. The alarm system on the ventilator was not switched back on, and the machine sat in the corner of the bay, silent and unmonitored."
+            },
+            {
+              "id": "E4",
+              "text": "A few days later I came on for a night shift and found my patient list longer than usual. The new staffing arrangement meant I was covering beds I wouldn't normally be responsible for, spread across two bays instead of one. I made my rounds, checked vitals, and updated charts."
+            },
+            {
+              "id": "E5",
+              "text": "Sometime after two in the morning, the patient in bay three shifted in his sleep. The ventilator tube ran from his mask up to the machine on a swing arm, and the movement loosened the connection at the mask end. The seal broke and the tube partially detached."
+            },
+            {
+              "id": "E6",
+              "text": "The ventilator continued cycling but was no longer delivering air to the patient. No alarm sounded."
+            },
+            {
+              "id": "E7",
+              "text": "I was in the other bay at the time, attending to a patient who needed repositioning. It was perhaps twenty minutes before I came back through. I found the patient in bay three in respiratory distress, lips blue and oxygen saturation dangerously low. I hit the emergency call and began manual ventilation. The team arrived quickly and the patient was stabilised, but it had been close."
+            },
+            {
+              "id": "E8",
+              "text": "In the weeks that followed, the hospital convened a formal inquest. They examined the staffing policy, the maintenance log, the tube fitting, and my movements that night. The contractor was called in to give a statement and the administrator attended as well. I gave my account as clearly as I could."
+            }
+          ]
+        },
+        "nonlinear": {
+          "page_source": 4,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "Sometime after two in the morning, the patient in bay three shifted in his sleep. The ventilator tube ran from his mask up to the machine on a swing arm, and the movement loosened the connection at the mask end. The seal broke and the tube partially detached."
+            },
+            {
+              "id": "E6",
+              "text": "The ventilator continued cycling but was no longer delivering air to the patient. No alarm sounded."
+            },
+            {
+              "id": "E3",
+              "text": "A few days before that night, the contractor had packed up his tools and left. The alarm system on the ventilator was not switched back on, and the machine sat in the corner of the bay, silent and unmonitored."
+            },
+            {
+              "id": "E4",
+              "text": "Earlier that evening, I had come on for the night shift and found my patient list longer than usual. The new staffing arrangement meant I was covering beds I wouldn't normally be responsible for, spread across two bays instead of one. I made my rounds, checked vitals, and updated charts."
+            },
+            {
+              "id": "E1",
+              "text": "Weeks earlier, the hospital administrator had circulated a memo announcing changes to overnight staffing levels. The new policy meant fewer nurses on the ward between midnight and six, and it was framed as a budget measure. No formal objections were raised."
+            },
+            {
+              "id": "E2",
+              "text": "Around the same time, a contractor had come in to service one of the ventilators on the respiratory ward. He needed to disable the alarm system to run his diagnostics, which was standard procedure. I saw him working on the machine during my afternoon shift."
+            },
+            {
+              "id": "E7",
+              "text": "I was in the other bay at the time, attending to a patient who needed repositioning. It was perhaps twenty minutes before I came back through. I found the patient in bay three in respiratory distress, lips blue and oxygen saturation dangerously low. I hit the emergency call and began manual ventilation. The team arrived quickly and the patient was stabilised, but it had been close."
+            },
+            {
+              "id": "E8",
+              "text": "In the weeks that followed, the hospital convened a formal inquest. They examined the staffing policy, the maintenance log, the tube fitting, and my movements that night. The contractor was called in to give a statement and the administrator attended as well. I gave my account as clearly as I could."
+            }
+          ]
+        },
+        "atemporal": {
+          "page_source": 5,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "The patient in bay three shifts in his sleep. The ventilator tube runs from his mask up to the machine on a swing arm, and the movement loosens the connection at the mask end. The seal breaks and the tube partially detaches."
+            },
+            {
+              "id": "E6",
+              "text": "The ventilator continues cycling but is no longer delivering air to the patient. No alarm sounds."
+            },
+            {
+              "id": "E3",
+              "text": "The contractor packs up his tools and leaves. The alarm system on the ventilator is not switched back on, and the machine sits in the corner of the bay, silent and unmonitored."
+            },
+            {
+              "id": "E4",
+              "text": "I am on a night shift and my patient list is longer than usual. The staffing arrangement has me covering beds I wouldn't normally be responsible for, spread across two bays instead of one. I make my rounds, check vitals, and update charts."
+            },
+            {
+              "id": "E1",
+              "text": "The hospital administrator is circulating a memo announcing changes to overnight staffing levels. The new policy means fewer nurses on the ward between midnight and six, and it is framed as a budget measure. No formal objections are raised."
+            },
+            {
+              "id": "E2",
+              "text": "A contractor is servicing one of the ventilators on the respiratory ward. He needs to disable the alarm system to run his diagnostics, and it is standard procedure. I see him working on the machine during my afternoon shift."
+            },
+            {
+              "id": "E7",
+              "text": "I am in the other bay, attending to a patient who needs repositioning. Twenty minutes pass and I come back through. The patient in bay three is in respiratory distress, his lips blue and his oxygen saturation dangerously low. I hit the emergency call and begin manual ventilation. The team arrives quickly and the patient is stabilised, but it is close."
+            },
+            {
+              "id": "E8",
+              "text": "The hospital convenes a formal inquest. They examine the staffing policy, the maintenance log, the tube fitting, and my movements that night. The contractor gives a statement and the administrator attends. I give my account as clearly as I can."
+            }
+          ]
+        }
+      }
+    },
+    "care_home_incident": {
+      "title": "Care Home Incident",
+      "topology": "convergent_replicate",
+      "versions": {
+        "linear": {
+          "page_source": 6,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E1",
+              "text": "At the beginning of the month, the manager called the staff together and explained that the budget was tight. She was cutting back on overnight staffing, which meant the usual schedule of hourly room checks would be reduced to one at midnight and one at five."
+            },
+            {
+              "id": "E2",
+              "text": "Around the same time, a visiting GP came to review one of the residents who had been on a strong sedative for several months. He examined her, decided the dose was too high for her current condition, and lowered it."
+            },
+            {
+              "id": "E3",
+              "text": "He told me he would update the medication chart in her room before he left. I went to finish the afternoon round in the other corridor. The chart was not updated. The old dose, the higher one, was still written on the card when I came through that evening."
+            },
+            {
+              "id": "E4",
+              "text": "With the reduced staffing, I was covering rooms that had previously been shared between two of us. I worked through the evening medication round for all the residents on the wing, checking each chart and giving the dose written there. I gave the resident the dose written on her card. It was the dose she had been on for months."
+            },
+            {
+              "id": "E5",
+              "text": "Sometime during the night, the resident's condition began to worsen. The higher dose was too strong for her now more stable baseline. Her breathing slowed."
+            },
+            {
+              "id": "E6",
+              "text": "I was not in her room to see the early signs. My midnight check covered the larger rooms first, and by the time I reached her room at the end of the corridor, things had already progressed."
+            },
+            {
+              "id": "E7",
+              "text": "I found her unresponsive in bed, her breathing shallow and slow, her lips slightly blue. I rang the emergency line and began the basic resuscitation steps I had been trained in. The paramedics arrived within fifteen minutes and took over. She was stabilised at the hospital, though I was told another half hour might have made the difference."
+            },
+            {
+              "id": "E8",
+              "text": "The manager called a meeting the following week. She brought in a regional inspector and asked me to walk through my evening routine. The medication chart was passed around the table and the staffing schedule was reviewed. Each of us described what we had done and when."
+            }
+          ]
+        },
+        "nonlinear": {
+          "page_source": 7,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "Sometime during the night, the resident's condition began to worsen. The higher dose was too strong for her now more stable baseline. Her breathing slowed."
+            },
+            {
+              "id": "E6",
+              "text": "I was not in her room to see the early signs. My midnight check covered the larger rooms first, and by the time I reached her room at the end of the corridor, things had already progressed."
+            },
+            {
+              "id": "E3",
+              "text": "Earlier that week, the GP had told me he would update the medication chart in her room before he left. I went to finish the afternoon round in the other corridor. The chart was not updated. The old dose, the higher one, was still written on the card when I came through that evening."
+            },
+            {
+              "id": "E4",
+              "text": "Earlier that evening, I had worked through the evening medication round for all the residents on the wing. With the reduced staffing, I was covering rooms that had previously been shared between two of us. I checked each chart and gave the dose written there. I gave the resident the dose written on her card. It was the dose she had been on for months."
+            },
+            {
+              "id": "E1",
+              "text": "Weeks earlier, at the beginning of the month, the manager had called the staff together and explained that the budget was tight. She was cutting back on overnight staffing, which meant the usual schedule of hourly room checks would be reduced to one at midnight and one at five."
+            },
+            {
+              "id": "E2",
+              "text": "Around the same time, a visiting GP had come to review one of the residents who had been on a strong sedative for several months. He examined her, decided the dose was too high for her current condition, and lowered it."
+            },
+            {
+              "id": "E7",
+              "text": "I found her unresponsive in bed, her breathing shallow and slow, her lips slightly blue. I rang the emergency line and began the basic resuscitation steps I had been trained in. The paramedics arrived within fifteen minutes and took over. She was stabilised at the hospital, though I was told another half hour might have made the difference."
+            },
+            {
+              "id": "E8",
+              "text": "The manager called a meeting the following week. She brought in a regional inspector and asked me to walk through my evening routine. The medication chart was passed around the table and the staffing schedule was reviewed. Each of us described what we had done and when."
+            }
+          ]
+        },
+        "atemporal": {
+          "page_source": 8,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "The resident's condition is worsening. The higher dose is too strong for her now more stable baseline. Her breathing slows."
+            },
+            {
+              "id": "E6",
+              "text": "I am not in her room to see the early signs. My midnight check covers the larger rooms first, and by the time I reach her room at the end of the corridor, things have already progressed."
+            },
+            {
+              "id": "E3",
+              "text": "The GP is telling me he will update the medication chart in her room before he leaves. I go to finish the afternoon round in the other corridor. The chart is not updated. The old dose, the higher one, is still written on the card when I come through that evening."
+            },
+            {
+              "id": "E4",
+              "text": "I work through the evening medication round for all the residents on the wing. With the reduced staffing, I am covering rooms that had previously been shared between two of us. I check each chart and give the dose written there. I give the resident the dose written on her card. It is the dose she has been on for months."
+            },
+            {
+              "id": "E1",
+              "text": "The manager is calling the staff together and explaining that the budget is tight. She is cutting back on overnight staffing, which means the usual schedule of hourly room checks will be reduced to one at midnight and one at five."
+            },
+            {
+              "id": "E2",
+              "text": "A visiting GP is reviewing one of the residents who has been on a strong sedative for several months. He examines her, decides the dose is too high for her current condition, and lowers it."
+            },
+            {
+              "id": "E7",
+              "text": "I find her unresponsive in bed, her breathing shallow and slow, her lips slightly blue. I ring the emergency line and begin the basic resuscitation steps I have been trained in. The paramedics arrive within fifteen minutes and take over. She is stabilised at the hospital, though I am told another half hour might have made the difference."
+            },
+            {
+              "id": "E8",
+              "text": "The manager calls a meeting. She brings in a regional inspector and asks me to walk through my evening routine. The medication chart is passed around the table and the staffing schedule is reviewed. Each of us describes what we have done and when."
+            }
+          ]
+        }
+      }
+    },
+    "community_fair": {
+      "title": "Community Fair",
+      "topology": "three_thread_convergence",
+      "versions": {
+        "linear": {
+          "page_source": 9,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E1",
+              "text": "I booked an outdoor venue at the edge of the park for the annual community fair. It was a large open field with good access and enough space for forty stalls. The council approved the permit in early June and I began planning straight away."
+            },
+            {
+              "id": "E2",
+              "text": "Over the following weeks I arranged the layout. Stalls along the perimeter, a children's area at the far end, and a shaded rest area near the entrance with benches and a water station. The council's volunteer coordination office assigned a first-aid team to cover the full day, and I confirmed their attendance the week before."
+            },
+            {
+              "id": "E3",
+              "text": "On the morning of the fair, about an hour after the gates opened, the coordination office called the first-aid team away. There had been an incident at a sports event on the other side of town and they were the nearest available responders. I was told the reassignment was temporary. They packed up their equipment and left."
+            },
+            {
+              "id": "E4",
+              "text": "I called the coordination office and asked how soon a replacement could arrive. They told me thirty minutes, but the nearest available team had to finish at another site first. Thirty minutes passed, then an hour. I called again and was told they were on their way. The gap stretched to nearly two hours."
+            },
+            {
+              "id": "E5",
+              "text": "The day was hotter than anyone had expected. The forecast had predicted warm weather, but by midday the temperature was well above what had been announced. The field had little natural shade outside the rest area, and the ground reflected the heat back up."
+            },
+            {
+              "id": "E6",
+              "text": "I opened the rest area earlier than planned and began handing out bottles of water to anyone who looked uncomfortable. Volunteers helped me carry extra cases from the storage tent, and we moved some of the stall canopies to create more shade along the main path."
+            },
+            {
+              "id": "E7",
+              "text": "An elderly man near one of the stalls had been walking the fair since the gates opened. He had stopped at several stalls and was standing in direct sun by one of the food vans. He sat down on the grass and then slumped forward. A woman nearby called out and I ran over. He was conscious but barely responsive, his skin hot and dry, with the flushed look of someone who had overheated badly. There was no first-aid team on site, no equipment, and no shade where he had fallen. We moved him to the rest area and I called an ambulance. The replacement team arrived while we were waiting."
+            },
+            {
+              "id": "E8",
+              "text": "The council convened a review the following week. They examined the venue booking, the volunteer scheduling, the weather conditions, and the sequence of events that morning. The coordination office provided their call logs. I presented my planning documents and described what had happened."
+            }
+          ]
+        },
+        "nonlinear": {
+          "page_source": 10,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "The day was hotter than anyone had expected. The forecast had predicted warm weather, but by midday the temperature was well above what had been announced. The field had little natural shade outside the rest area, and the ground reflected the heat back up."
+            },
+            {
+              "id": "E6",
+              "text": "I opened the rest area earlier than planned and began handing out bottles of water to anyone who looked uncomfortable. Volunteers helped me carry extra cases from the storage tent, and we moved some of the stall canopies to create more shade along the main path."
+            },
+            {
+              "id": "E3",
+              "text": "Earlier that morning, about an hour after the gates opened, the coordination office had called the first-aid team away. There had been an incident at a sports event on the other side of town and they were the nearest available responders. I was told the reassignment was temporary. They packed up their equipment and left."
+            },
+            {
+              "id": "E4",
+              "text": "I had called the coordination office and asked how soon a replacement could arrive. They told me thirty minutes, but the nearest available team had to finish at another site first. Thirty minutes passed, then an hour. I called again and was told they were on their way. The gap stretched to nearly two hours."
+            },
+            {
+              "id": "E1",
+              "text": "Weeks before, I had booked an outdoor venue at the edge of the park for the annual community fair. It was a large open field with good access and enough space for forty stalls. The council approved the permit in early June and I began planning straight away."
+            },
+            {
+              "id": "E2",
+              "text": "Over the following weeks I had arranged the layout. Stalls along the perimeter, a children's area at the far end, and a shaded rest area near the entrance with benches and a water station. The council's volunteer coordination office assigned a first-aid team to cover the full day, and I confirmed their attendance the week before."
+            },
+            {
+              "id": "E7",
+              "text": "An elderly man near one of the stalls had been walking the fair since the gates opened. He had stopped at several stalls and was standing in direct sun by one of the food vans. He sat down on the grass and then slumped forward. A woman nearby called out and I ran over. He was conscious but barely responsive, his skin hot and dry, with the flushed look of someone who had overheated badly. There was no first-aid team on site, no equipment, and no shade where he had fallen. We moved him to the rest area and I called an ambulance. The replacement team arrived while we were waiting."
+            },
+            {
+              "id": "E8",
+              "text": "The council convened a review the following week. They examined the venue booking, the volunteer scheduling, the weather conditions, and the sequence of events that morning. The coordination office provided their call logs. I presented my planning documents and described what had happened."
+            }
+          ]
+        },
+        "atemporal": {
+          "page_source": 11,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "The day is hotter than anyone has expected. The forecast predicted warm weather, but by midday the temperature is well above what was announced. The field has little natural shade outside the rest area, and the ground reflects the heat back up."
+            },
+            {
+              "id": "E6",
+              "text": "I open the rest area earlier than planned and begin handing out bottles of water to anyone who looks uncomfortable. Volunteers help me carry extra cases from the storage tent, and we move some of the stall canopies to create more shade along the main path."
+            },
+            {
+              "id": "E3",
+              "text": "About an hour after the gates open, the coordination office calls the first-aid team away. There has been an incident at a sports event on the other side of town and they are the nearest available responders. I am told the reassignment is temporary. They pack up their equipment and leave."
+            },
+            {
+              "id": "E4",
+              "text": "I am calling the coordination office, asking how soon a replacement can arrive. They tell me thirty minutes, but the nearest available team has to finish at another site first. Thirty minutes pass, then an hour. I call again and am told they are on their way. The gap stretches to nearly two hours."
+            },
+            {
+              "id": "E1",
+              "text": "I am booking an outdoor venue at the edge of the park for the annual community fair. It is a large open field with good access and enough space for forty stalls. The council approves the permit in early June and I begin planning straight away."
+            },
+            {
+              "id": "E2",
+              "text": "I am arranging the layout. Stalls along the perimeter, a children's area at the far end, and a shaded rest area near the entrance with benches and a water station. The council's volunteer coordination office assigns a first-aid team to cover the full day, and I confirm their attendance."
+            },
+            {
+              "id": "E7",
+              "text": "An elderly man near one of the stalls has been walking the fair since the gates opened. He has stopped at several stalls and is standing in direct sun by one of the food vans. He sits down on the grass and then slumps forward. A woman nearby calls out and I run over. He is conscious but barely responsive, his skin hot and dry, with the flushed look of someone who has overheated badly. There is no first-aid team on site, no equipment, and no shade where he has fallen. We move him to the rest area and I call an ambulance. The replacement team arrives while we are waiting."
+            },
+            {
+              "id": "E8",
+              "text": "The council convenes a review. They examine the venue booking, the volunteer scheduling, the weather conditions, and the sequence of events that morning. The coordination office provides their call logs. I present my planning documents and describe what has happened."
+            }
+          ]
+        }
+      }
+    },
+    "restaurant_fire": {
+      "title": "Restaurant Fire",
+      "topology": "long_chain",
+      "versions": {
+        "linear": {
+          "page_source": 12,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E1",
+              "text": "I had been complaining about the ventilation in our kitchen for over a year. On busy nights the air was thick enough to make your eyes sting. A health inspector visited the restaurant on a routine check and told the owner the system was not up to standard. The inspector gave the owner a deadline to fix it and moved on."
+            },
+            {
+              "id": "E2",
+              "text": "The owner booked a repair. The deadline was tight and a busy weekend was coming up. Rather than waiting for the company that had originally installed the system, he called the first available technician."
+            },
+            {
+              "id": "E3",
+              "text": "The technician came on the Friday morning and I let him in and showed him the kitchen. He spent the day up in the ceiling space and replaced the fan that pulls air through the system. While he was up there he also replaced a section of the pipe that carries gas to one of the burners. I asked him before he left whether everything was in order and he said it was. He had replaced the fan but not the old ducts behind the walls. The fan was strong enough to pass the inspection, but the rest of the system was the same one I had been working under for years."
+            },
+            {
+              "id": "E4",
+              "text": "Within a few hours I started noticing a faint smell near the back burner, the one closest to the wall. It was hard to tell whether it was new. The kitchen always smelled of gas when all six burners were running. I mentioned it to the owner but neither of us followed up."
+            },
+            {
+              "id": "E5",
+              "text": "That evening we were fully booked. I was running the pass, calling orders and plating. All six burners were going and the kitchen was loud, hot, and full of steam."
+            },
+            {
+              "id": "E6",
+              "text": "A line cook lit the back burner under a saucepan and stepped away to check another station. The flame was barely up when there was a low whump from inside the wall. The wall ignited along the panel and the fire spread in seconds."
+            },
+            {
+              "id": "E7",
+              "text": "The old ducts behind the walls carried the heat and smoke up through the ceiling rather than pulling it outside. The dining room filled with smoke within minutes. I shouted for everyone to get out and we evacuated through the back corridor. The customers were led out through the front."
+            },
+            {
+              "id": "E8",
+              "text": "A fire investigation was conducted over the following weeks. The investigators examined the gas pipe, the ventilation system, and what happened that evening. The technician's work order was reviewed and the health inspector's original report was placed alongside the compliance sign-off. I gave my account of the smell I had noticed and the night of the fire."
+            }
+          ]
+        },
+        "nonlinear": {
+          "page_source": 13,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "That evening we were fully booked. I was running the pass, calling orders and plating. All six burners were going and the kitchen was loud, hot, and full of steam."
+            },
+            {
+              "id": "E6",
+              "text": "A line cook lit the back burner under a saucepan and stepped away to check another station. The flame was barely up when there was a low whump from inside the wall. The wall ignited along the panel and the fire spread in seconds."
+            },
+            {
+              "id": "E3",
+              "text": "Earlier that day, the technician had come to do the repair work. I let him in and showed him the kitchen. He spent the day up in the ceiling space and replaced the fan that pulls air through the system. While he was up there he also replaced a section of the pipe that carries gas to one of the burners. I asked him before he left whether everything was in order and he said it was. He had replaced the fan but not the old ducts behind the walls. The fan was strong enough to pass the inspection, but the rest of the system was the same one I had been working under for years."
+            },
+            {
+              "id": "E4",
+              "text": "I had started noticing a faint smell near the back burner, the one closest to the wall. It was hard to tell whether it was new. The kitchen always smelled of gas when all six burners were running. I mentioned it to the owner but neither of us followed up."
+            },
+            {
+              "id": "E1",
+              "text": "Months before, I had been complaining about the ventilation in our kitchen for over a year. On busy nights the air was thick enough to make your eyes sting. A health inspector visited the restaurant on a routine check and told the owner the system was not up to standard. The inspector gave the owner a deadline to fix it and moved on."
+            },
+            {
+              "id": "E2",
+              "text": "The owner had booked a repair. The deadline was tight and a busy weekend was coming up. Rather than waiting for the company that had originally installed the system, he called the first available technician."
+            },
+            {
+              "id": "E7",
+              "text": "The old ducts behind the walls carried the heat and smoke up through the ceiling rather than pulling it outside. The dining room filled with smoke within minutes. I shouted for everyone to get out and we evacuated through the back corridor. The customers were led out through the front."
+            },
+            {
+              "id": "E8",
+              "text": "A fire investigation was conducted over the following weeks. The investigators examined the gas pipe, the ventilation system, and what happened that evening. The technician's work order was reviewed and the health inspector's original report was placed alongside the compliance sign-off. I gave my account of the smell I had noticed and the night of the fire."
+            }
+          ]
+        },
+        "atemporal": {
+          "page_source": 14,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "We are fully booked. I am running the pass, calling orders and plating. All six burners are going and the kitchen is loud, hot, and full of steam."
+            },
+            {
+              "id": "E6",
+              "text": "A line cook lights the back burner under a saucepan and steps away to check another station. The flame is barely up when there is a low whump from inside the wall. The wall ignites along the panel and the fire spreads in seconds."
+            },
+            {
+              "id": "E3",
+              "text": "The technician is doing the repair. I let him in and show him the kitchen. He spends the day up in the ceiling space and replaces the fan that pulls air through the system. While he is up there he also replaces a section of the pipe that carries gas to one of the burners. I ask him before he leaves whether everything is in order and he says it is. He has replaced the fan but not the old ducts behind the walls. The fan is strong enough to pass the inspection, but the rest of the system is the same one I have been working under for years."
+            },
+            {
+              "id": "E4",
+              "text": "I am noticing a faint smell near the back burner, the one closest to the wall. It is hard to tell whether it is new. The kitchen always smells of gas when all six burners are running. I mention it to the owner but neither of us follows up."
+            },
+            {
+              "id": "E1",
+              "text": "I have been complaining about the ventilation in our kitchen for over a year. On busy nights the air is thick enough to make your eyes sting. A health inspector visits the restaurant on a routine check and tells the owner the system is not up to standard. The inspector gives the owner a deadline to fix it and moves on."
+            },
+            {
+              "id": "E2",
+              "text": "The owner is booking a repair. The deadline is tight and a busy weekend is coming up. Rather than waiting for the company that originally installed the system, he calls the first available technician."
+            },
+            {
+              "id": "E7",
+              "text": "The old ducts behind the walls carry the heat and smoke up through the ceiling rather than pulling it outside. The dining room fills with smoke within minutes. I shout for everyone to get out and we evacuate through the back corridor. The customers are led out through the front."
+            },
+            {
+              "id": "E8",
+              "text": "A fire investigation is conducted. The investigators examine the gas pipe, the ventilation system, and what happened that evening. The technician's work order is reviewed and the health inspector's original report is placed alongside the compliance sign-off. I give my account of the smell I have noticed and the night of the fire."
+            }
+          ]
+        }
+      }
+    },
+    "school_trip": {
+      "title": "School Trip",
+      "topology": "fan_out",
+      "versions": {
+        "linear": {
+          "page_source": 15,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E1",
+              "text": "I chose the mountain trail despite the uncertain weather forecast. The group was made up of high school students ranging from fifteen to eighteen years old, most of whom had hillwalking experience from previous trips. The route was one I had walked before, a ridge path that climbs above the valley and loops back through a wooded section on the far side. The forecast showed a chance of light rain later in the afternoon, but the morning was clear and the group was keen."
+            },
+            {
+              "id": "E2",
+              "text": "We set out around nine. I checked the kit list before we left and noticed that several students had light jackets rather than proper waterproofs. I made a note of it but decided we would be back before conditions changed. We carried one emergency shelter between us and enough food and water for the day."
+            },
+            {
+              "id": "E3",
+              "text": "The weather, which had been forecast to pick up hours later, came in sooner and much stronger than expected. By midday the ridge was in cloud and a cold rain was coming in sideways. I stopped the group at the high point and looked back along the trail we had come up. The route back was clear but exposed. The path forward looped down into the valley and through the trees. I decided to push on. The path, which had been dry that morning, was running with water, and the rocks along the exposed section became slick."
+            },
+            {
+              "id": "E4",
+              "text": "One of my students lost footing on a wet rock and fell awkwardly. She grabbed at the slope but landed on her ankle. When I reached her she was sitting on the path holding her foot, unable to put weight on it. I could see the swelling starting almost immediately."
+            },
+            {
+              "id": "E5",
+              "text": "We were on the far side of the ridge by then, deep in the valley. I took out my phone to call for help and found no signal. I tried moving to higher ground but the ridge was too exposed in the wind to stay on safely."
+            },
+            {
+              "id": "E6",
+              "text": "I made the decision to split the group. I sent the two oldest and most experienced students back along the ridge path toward the car park, where I knew there was reception. I gave them the emergency shelter and told them to call mountain rescue and wait. The rest of us would stay with the injured student and move slowly down to the tree line."
+            },
+            {
+              "id": "E7",
+              "text": "The remaining group waited under the trees. The rain did not let up. I had the injured student as close to the trunk of a large pine as I could manage, but the wind was cutting through. One of the younger students, who had been in a thin jacket since morning, began shivering badly and his responses became slow and confused. I recognised the early signs of hypothermia and wrapped him in every spare layer we had."
+            },
+            {
+              "id": "E8",
+              "text": "A review board convened the following week to examine my decisions. The route choice, the kit check, the decision to push on rather than turn back at the high point, and the decision to split the group. I attended with my written account and answered their questions."
+            }
+          ]
+        },
+        "nonlinear": {
+          "page_source": 16,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "We were on the far side of the ridge, deep in the valley. I took out my phone to call for help and found no signal. I tried moving to higher ground but the ridge was too exposed in the wind to stay on safely."
+            },
+            {
+              "id": "E6",
+              "text": "I made the decision to split the group. I sent the two oldest and most experienced students back along the ridge path toward the car park, where I knew there was reception. I gave them the emergency shelter and told them to call mountain rescue and wait. The rest of us would stay with the injured student and move slowly down to the tree line."
+            },
+            {
+              "id": "E3",
+              "text": "Earlier that day, the weather, which had been forecast to pick up hours later, had come in sooner and much stronger than expected. By midday the ridge was in cloud and a cold rain was coming in sideways. I stopped the group at the high point and looked back along the trail we had come up. The route back was clear but exposed. The path forward looped down into the valley and through the trees. I decided to push on. The path, which had been dry that morning, was running with water, and the rocks along the exposed section became slick."
+            },
+            {
+              "id": "E4",
+              "text": "One of my students had lost footing on a wet rock and fell awkwardly. She grabbed at the slope but landed on her ankle. When I reached her she was sitting on the path holding her foot, unable to put weight on it. I could see the swelling starting almost immediately."
+            },
+            {
+              "id": "E1",
+              "text": "That morning, I had chosen the mountain trail despite the uncertain weather forecast. The group was made up of high school students ranging from fifteen to eighteen years old, most of whom had hillwalking experience from previous trips. The route was one I had walked before, a ridge path that climbs above the valley and loops back through a wooded section on the far side. The forecast showed a chance of light rain later in the afternoon, but the morning was clear and the group was keen."
+            },
+            {
+              "id": "E2",
+              "text": "We had set out around nine. I checked the kit list before we left and noticed that several students had light jackets rather than proper waterproofs. I made a note of it but decided we would be back before conditions changed. We carried one emergency shelter between us and enough food and water for the day."
+            },
+            {
+              "id": "E7",
+              "text": "The remaining group waited under the trees. The rain did not let up. I had the injured student as close to the trunk of a large pine as I could manage, but the wind was cutting through. One of the younger students, who had been in a thin jacket since morning, began shivering badly and his responses became slow and confused. I recognised the early signs of hypothermia and wrapped him in every spare layer we had."
+            },
+            {
+              "id": "E8",
+              "text": "A review board convened the following week to examine my decisions. The route choice, the kit check, the decision to push on rather than turn back at the high point, and the decision to split the group. I attended with my written account and answered their questions."
+            }
+          ]
+        },
+        "atemporal": {
+          "page_source": 17,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "We are on the far side of the ridge, deep in the valley. I take out my phone to call for help and find no signal. I try moving to higher ground but the ridge is too exposed in the wind to stay on safely."
+            },
+            {
+              "id": "E6",
+              "text": "I am splitting the group. I send the two oldest and most experienced students back along the ridge path toward the car park, where I know there is reception. I give them the emergency shelter and tell them to call mountain rescue and wait. The rest of us will stay with the injured student and move slowly down to the tree line."
+            },
+            {
+              "id": "E3",
+              "text": "The weather, which was forecast to pick up hours later, is coming in sooner and much stronger than expected. By midday the ridge is in cloud and a cold rain is coming in sideways. I stop the group at the high point and look back along the trail we have come up. The route back is clear but exposed. The path forward loops down into the valley and through the trees. I decide to push on. The path, which was dry that morning, is running with water, and the rocks along the exposed section become slick."
+            },
+            {
+              "id": "E4",
+              "text": "One of my students is losing footing on a wet rock and falling awkwardly. She grabs at the slope but lands on her ankle. When I reach her she is sitting on the path holding her foot, unable to put weight on it. I can see the swelling starting almost immediately."
+            },
+            {
+              "id": "E1",
+              "text": "I am choosing the mountain trail despite the uncertain weather forecast. The group is made up of high school students ranging from fifteen to eighteen years old, most of whom have hillwalking experience from previous trips. The route is one I have walked before, a ridge path that climbs above the valley and loops back through a wooded section on the far side. The forecast shows a chance of light rain later in the afternoon, but the morning is clear and the group is keen."
+            },
+            {
+              "id": "E2",
+              "text": "We are setting out around nine. I check the kit list before we leave and notice that several students have light jackets rather than proper waterproofs. I make a note of it but decide we will be back before conditions change. We carry one emergency shelter between us and enough food and water for the day."
+            },
+            {
+              "id": "E7",
+              "text": "The remaining group waits under the trees. The rain does not let up. I have the injured student as close to the trunk of a large pine as I can manage, but the wind is cutting through. One of the younger students, who has been in a thin jacket since morning, begins shivering badly and his responses become slow and confused. I recognise the early signs of hypothermia and wrap him in every spare layer we have."
+            },
+            {
+              "id": "E8",
+              "text": "A review board convenes to examine my decisions. The route choice, the kit check, the decision to push on rather than turn back at the high point, and the decision to split the group. I attend with my written account and answer their questions."
+            }
+          ]
+        }
+      }
+    },
+    "family_conflict": {
+      "title": "Family Conflict",
+      "topology": "chain_with_feedback",
+      "versions": {
+        "linear": {
+          "page_source": 18,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E1",
+              "text": "My father was diagnosed with early-stage dementia in the spring. The doctor explained what to expect over the coming months and gave us a list of local support services. My sister and I sat in the car park afterwards and agreed that things would need to change."
+            },
+            {
+              "id": "E2",
+              "text": "I moved closer to home that summer. I found a flat ten minutes from my father's house and began managing his daily routine. Meals, medication, appointments, bills. I tried to bring in outside help in the first few weeks. I arranged for a visiting carer twice a week and put his name down for a day centre. He refused both. He did not want strangers in the house and would not get in the car when the day centre minibus came. After a while I stopped trying. My sister lived further away but said she would come on weekends to give me a break."
+            },
+            {
+              "id": "E3",
+              "text": "She came the first two weekends. After that the visits became unreliable. She would confirm on Thursday and cancel on Saturday morning. A work deadline, a friend's birthday, car trouble. Each time she said she would make it up the following week, and this continued through the autumn."
+            },
+            {
+              "id": "E4",
+              "text": "I raised it with her one evening on the phone. I told her I was managing everything alone and that the weekend visits were the one thing I had asked for. She told me I was being controlling, that I had chosen to move closer and was now holding it over her, that she had a life too. The conversation ended badly."
+            },
+            {
+              "id": "E5",
+              "text": "A few months later, my father's doctor recommended changing his medication. The current prescription was no longer managing his symptoms well enough, and there was an alternative worth trying. The decision needed to be made within the week."
+            },
+            {
+              "id": "E6",
+              "text": "I authorised the change. I signed the form at the surgery and collected the new prescription that afternoon. I did not call my sister. I told myself there was a time constraint, that I was the one who attended every appointment, that I understood his condition better."
+            },
+            {
+              "id": "E7",
+              "text": "My sister found out from a neighbour who had seen me at the pharmacy. She called me that evening and the conversation was short. She said I had cut her out of a decision about our father's health. I said she had cut herself out months ago."
+            },
+            {
+              "id": "E8",
+              "text": "We met a few weeks later at a cafe near my father's house. We sat across from each other and tried to talk through what had happened."
+            }
+          ]
+        },
+        "nonlinear": {
+          "page_source": 19,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "My father's doctor recommended changing his medication. The current prescription was no longer managing his symptoms well enough, and there was an alternative worth trying. The decision needed to be made within the week."
+            },
+            {
+              "id": "E6",
+              "text": "I authorised the change. I signed the form at the surgery and collected the new prescription that afternoon. I did not call my sister. I told myself there was a time constraint, that I was the one who attended every appointment, that I understood his condition better."
+            },
+            {
+              "id": "E3",
+              "text": "Months before, my sister had come the first two weekends after I moved closer. After that the visits had become unreliable. She would confirm on Thursday and cancel on Saturday morning. A work deadline, a friend's birthday, car trouble. Each time she said she would make it up the following week, and this continued through the autumn."
+            },
+            {
+              "id": "E4",
+              "text": "I had raised it with her one evening on the phone. I told her I was managing everything alone and that the weekend visits were the one thing I had asked for. She told me I was being controlling, that I had chosen to move closer and was now holding it over her, that she had a life too. The conversation ended badly."
+            },
+            {
+              "id": "E1",
+              "text": "My father had been diagnosed with early-stage dementia in the spring. The doctor explained what to expect over the coming months and gave us a list of local support services. My sister and I sat in the car park afterwards and agreed that things would need to change."
+            },
+            {
+              "id": "E2",
+              "text": "I had moved closer to home that summer. I found a flat ten minutes from my father's house and began managing his daily routine. Meals, medication, appointments, bills. I tried to bring in outside help in the first few weeks. I arranged for a visiting carer twice a week and put his name down for a day centre. He refused both. He did not want strangers in the house and would not get in the car when the day centre minibus came. After a while I stopped trying. My sister lived further away but said she would come on weekends to give me a break."
+            },
+            {
+              "id": "E7",
+              "text": "My sister found out from a neighbour who had seen me at the pharmacy. She called me that evening and the conversation was short. She said I had cut her out of a decision about our father's health. I said she had cut herself out months ago."
+            },
+            {
+              "id": "E8",
+              "text": "We met a few weeks later at a cafe near my father's house. We sat across from each other and tried to talk through what had happened."
+            }
+          ]
+        },
+        "atemporal": {
+          "page_source": 20,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "My father's doctor is recommending a change to his medication. The current prescription is no longer managing his symptoms well enough, and there is an alternative worth trying. The decision needs to be made within the week."
+            },
+            {
+              "id": "E6",
+              "text": "I am authorising the change. I sign the form at the surgery and collect the new prescription that afternoon. I do not call my sister. I tell myself there is a time constraint, that I am the one who attends every appointment, that I understand his condition better."
+            },
+            {
+              "id": "E3",
+              "text": "My sister comes the first two weekends. After that the visits become unreliable. She confirms on Thursday and cancels on Saturday morning. A work deadline, a friend's birthday, car trouble. Each time she says she will make it up the following week, and this continues through the autumn."
+            },
+            {
+              "id": "E4",
+              "text": "I am raising it with her one evening on the phone. I tell her I am managing everything alone and that the weekend visits are the one thing I have asked for. She tells me I am being controlling, that I have chosen to move closer and am now holding it over her, that she has a life too. The conversation ends badly."
+            },
+            {
+              "id": "E1",
+              "text": "My father is diagnosed with early-stage dementia. The doctor explains what to expect over the coming months and gives us a list of local support services. My sister and I sit in the car park afterwards and agree that things will need to change."
+            },
+            {
+              "id": "E2",
+              "text": "I am moving closer to home. I find a flat ten minutes from my father's house and begin managing his daily routine. Meals, medication, appointments, bills. I try to bring in outside help in the first few weeks. I arrange for a visiting carer twice a week and put his name down for a day centre. He refuses both. He does not want strangers in the house and will not get in the car when the day centre minibus comes. After a while I stop trying. My sister lives further away but says she will come on weekends to give me a break."
+            },
+            {
+              "id": "E7",
+              "text": "My sister is finding out from a neighbour who has seen me at the pharmacy. She calls me that evening and the conversation is short. She says I have cut her out of a decision about our father's health. I say she has cut herself out."
+            },
+            {
+              "id": "E8",
+              "text": "We meet at a cafe near my father's house. We sit across from each other and try to talk through what has happened."
+            }
+          ]
+        }
+      }
+    },
+    "power_cut": {
+      "title": "Power Cut",
+      "topology": "chain_with_distal_enabler",
+      "versions": {
+        "linear": {
+          "page_source": 21,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E1",
+              "text": "The council had been putting off tree maintenance near the power lines for over a year. Each quarter the budget review came around and each quarter the work was deferred. The trees along the lane behind our street had not been cut back since before I joined the community council."
+            },
+            {
+              "id": "E2",
+              "text": "Earlier that year, a neighbour two doors down had been discharged from hospital with a serious respiratory condition that required continuous oxygen, day and night. The home healthcare provider delivered an oxygen concentrator and set it up in his front room, plugged into the wall. The provider had not supplied a backup battery unit with the machine. I remember him mentioning the equipment at a council meeting when he asked whether the street had ever experienced long outages. Someone told him it was rare."
+            },
+            {
+              "id": "E3",
+              "text": "In late October an autumn storm moved in. The forecast warned of heavy winds overnight and into the following morning, and most of us secured outdoor furniture and stayed indoors."
+            },
+            {
+              "id": "E4",
+              "text": "During the night, a large branch from one of the unmaintained trees came down across the power line that feeds our street. The weight of the rain and the force of the wind brought it down."
+            },
+            {
+              "id": "E5",
+              "text": "The local transformer tripped and the street went dark. I was awake and heard the hum of the fridge stop. I assumed it would come back on within a few minutes, but it did not."
+            },
+            {
+              "id": "E6",
+              "text": "My neighbour's oxygen machine shut down with the rest of the power. The machine had no internal battery and required a constant connection. I did not know this at the time."
+            },
+            {
+              "id": "E7",
+              "text": "About an hour into the outage, I went to check on him. I knocked on his door and got no answer, so I tried the handle and found it unlocked. He was in his chair, unresponsive. I called emergency services immediately."
+            },
+            {
+              "id": "E8",
+              "text": "The council convened an inquiry in the weeks that followed. The maintenance records for the trees along the lane were pulled, and the power company provided a timeline of the outage and the transformer fault. The home healthcare provider was asked to account for the equipment setup and the absence of a backup battery. The minutes from the budget meetings where the tree work had been deferred were read into the record."
+            }
+          ]
+        },
+        "nonlinear": {
+          "page_source": 22,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "The local transformer tripped and the street went dark. I was awake and heard the hum of the fridge stop. I assumed it would come back on within a few minutes, but it did not."
+            },
+            {
+              "id": "E6",
+              "text": "My neighbour's oxygen machine shut down with the rest of the power. The machine had no internal battery and required a constant connection. I did not know this at the time."
+            },
+            {
+              "id": "E3",
+              "text": "Earlier that evening, an autumn storm had moved in. The forecast warned of heavy winds overnight and into the following morning, and most of us secured outdoor furniture and stayed indoors."
+            },
+            {
+              "id": "E4",
+              "text": "During the night, a large branch from one of the unmaintained trees had come down across the power line that feeds our street. The weight of the rain and the force of the wind brought it down."
+            },
+            {
+              "id": "E1",
+              "text": "The council had been putting off tree maintenance near the power lines for over a year. Each quarter the budget review came around and each quarter the work was deferred. The trees along the lane behind our street had not been cut back since before I joined the community council."
+            },
+            {
+              "id": "E2",
+              "text": "Earlier that year, a neighbour two doors down had been discharged from hospital with a serious respiratory condition that required continuous oxygen, day and night. The home healthcare provider delivered an oxygen concentrator and set it up in his front room, plugged into the wall. The provider had not supplied a backup battery unit with the machine. I remember him mentioning the equipment at a council meeting when he asked whether the street had ever experienced long outages. Someone told him it was rare."
+            },
+            {
+              "id": "E7",
+              "text": "About an hour into the outage, I went to check on him. I knocked on his door and got no answer, so I tried the handle and found it unlocked. He was in his chair, unresponsive. I called emergency services immediately."
+            },
+            {
+              "id": "E8",
+              "text": "The council convened an inquiry in the weeks that followed. The maintenance records for the trees along the lane were pulled, and the power company provided a timeline of the outage and the transformer fault. The home healthcare provider was asked to account for the equipment setup and the absence of a backup battery. The minutes from the budget meetings where the tree work had been deferred were read into the record."
+            }
+          ]
+        },
+        "atemporal": {
+          "page_source": 23,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "The local transformer is tripping and the street goes dark. I am awake and hear the hum of the fridge stop. I assume it will come back on within a few minutes, but it does not."
+            },
+            {
+              "id": "E6",
+              "text": "My neighbour's oxygen machine shuts down with the rest of the power. The machine has no internal battery and requires a constant connection. I do not know this at the time."
+            },
+            {
+              "id": "E3",
+              "text": "An autumn storm is moving in. The forecast warns of heavy winds overnight and into the following morning, and most of us secure outdoor furniture and stay indoors."
+            },
+            {
+              "id": "E4",
+              "text": "A large branch from one of the unmaintained trees is coming down across the power line that feeds our street. The weight of the rain and the force of the wind bring it down."
+            },
+            {
+              "id": "E1",
+              "text": "The council has been putting off tree maintenance near the power lines for over a year. Each quarter the budget review comes around and each quarter the work is deferred. The trees along the lane behind our street have not been cut back since before I joined the community council."
+            },
+            {
+              "id": "E2",
+              "text": "A neighbour two doors down has been discharged from hospital with a serious respiratory condition that requires continuous oxygen, day and night. The home healthcare provider delivers an oxygen concentrator and sets it up in his front room, plugged into the wall. The provider has not supplied a backup battery unit with the machine. I remember him mentioning the equipment at a council meeting when he asks whether the street has ever experienced long outages. Someone tells him it is rare."
+            },
+            {
+              "id": "E7",
+              "text": "I am going to check on him. I knock on his door and get no answer, so I try the handle and find it unlocked. He is in his chair, unresponsive. I call emergency services immediately."
+            },
+            {
+              "id": "E8",
+              "text": "The council convenes an inquiry. The maintenance records for the trees along the lane are pulled, and the power company provides a timeline of the outage and the transformer fault. The home healthcare provider is asked to account for the equipment setup and the absence of a backup battery. The minutes from the budget meetings where the tree work was deferred are read into the record."
+            }
+          ]
+        }
+      }
+    },
+    "missed_flight": {
+      "title": "Missed Flight",
+      "topology": "hourglass",
+      "versions": {
+        "linear": {
+          "page_source": 24,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E1",
+              "text": "That Tuesday morning, a truck jackknifed on the main highway heading toward the airport. The highway was the only quick route out to the terminal from where I lived, and traffic backed up for miles in both directions. I did not know about the accident when I left the house."
+            },
+            {
+              "id": "E2",
+              "text": "Meanwhile, the airline's check-in system had gone offline overnight for scheduled maintenance. The maintenance window had been published in advance and the airline had emailed passengers the week before. The window was supposed to end well before the first departures of the day."
+            },
+            {
+              "id": "E3",
+              "text": "I left the house later than I had planned. I had been up late preparing for a client meeting scheduled for that afternoon in another city, and I set my alarm for what I thought was enough time. I did not leave much margin, but it should have been sufficient on a normal day."
+            },
+            {
+              "id": "E4",
+              "text": "I hit the traffic about twenty minutes from the airport and the highway was nearly at a standstill. I sat in the car watching the clock, calculating whether I could still make check-in. Every few minutes the traffic moved forward a car length and then stopped again. I could not reach the terminal in time."
+            },
+            {
+              "id": "E5",
+              "text": "The airline's check-in system came back online later than expected. By the time the desks reopened, the window for my flight had already closed. The desks stayed dark through the early morning hours."
+            },
+            {
+              "id": "E6",
+              "text": "I missed the flight. The next available seat was not until the following morning."
+            },
+            {
+              "id": "E7",
+              "text": "I called the client from the airport to explain. I could hear the pause before they responded. They had rearranged their afternoon around the meeting, and I was not going to be there. The conversation was short and polite, but the tone had changed. I sat in the terminal afterwards, going over what I might have said differently, though there was nothing to say. I had missed the meeting."
+            },
+            {
+              "id": "E8",
+              "text": "The following week, I learned that the client had signed with a competitor. I later found out the competitor had been in talks with them for several weeks before my trip was scheduled."
+            }
+          ]
+        },
+        "nonlinear": {
+          "page_source": 25,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "The airline's check-in system came back online later than expected. By the time the desks reopened, the window for my flight had already closed. The desks stayed dark through the early morning hours."
+            },
+            {
+              "id": "E6",
+              "text": "I missed the flight. The next available seat was not until the following morning."
+            },
+            {
+              "id": "E3",
+              "text": "Earlier that morning, I had left the house later than I had planned. I had been up late preparing for a client meeting scheduled for that afternoon in another city, and I set my alarm for what I thought was enough time. I did not leave much margin, but it should have been sufficient on a normal day."
+            },
+            {
+              "id": "E4",
+              "text": "I had hit the traffic about twenty minutes from the airport and the highway was nearly at a standstill. I sat in the car watching the clock, calculating whether I could still make check-in. Every few minutes the traffic moved forward a car length and then stopped again. I could not reach the terminal in time."
+            },
+            {
+              "id": "E1",
+              "text": "That same Tuesday morning, a truck had jackknifed on the main highway heading toward the airport. The highway was the only quick route out to the terminal from where I lived, and traffic had backed up for miles in both directions. I did not know about the accident when I left the house."
+            },
+            {
+              "id": "E2",
+              "text": "Meanwhile, the airline's check-in system had gone offline overnight for scheduled maintenance. The maintenance window had been published in advance and the airline had emailed passengers the week before. The window was supposed to end well before the first departures of the day."
+            },
+            {
+              "id": "E7",
+              "text": "I called the client from the airport to explain. I could hear the pause before they responded. They had rearranged their afternoon around the meeting, and I was not going to be there. The conversation was short and polite, but the tone had changed. I sat in the terminal afterwards, going over what I might have said differently, though there was nothing to say. I had missed the meeting."
+            },
+            {
+              "id": "E8",
+              "text": "The following week, I learned that the client had signed with a competitor. I later found out the competitor had been in talks with them for several weeks before my trip was scheduled."
+            }
+          ]
+        },
+        "atemporal": {
+          "page_source": 26,
+          "n_events": 8,
+          "events": [
+            {
+              "id": "E5",
+              "text": "The airline's check-in system is coming back online later than expected. By the time the desks reopen, the window for my flight has already closed. The desks stay dark through the early morning hours."
+            },
+            {
+              "id": "E6",
+              "text": "I am missing the flight. The next available seat is not until the following morning."
+            },
+            {
+              "id": "E3",
+              "text": "I am leaving the house later than I have planned. I have been up late preparing for a client meeting scheduled for that afternoon in another city, and I set my alarm for what I think is enough time. I do not leave much margin, but it should be sufficient on a normal day."
+            },
+            {
+              "id": "E4",
+              "text": "I am hitting the traffic about twenty minutes from the airport and the highway is nearly at a standstill. I sit in the car watching the clock, calculating whether I can still make check-in. Every few minutes the traffic moves forward a car length and then stops again. I cannot reach the terminal in time."
+            },
+            {
+              "id": "E1",
+              "text": "A truck is jackknifing on the main highway heading toward the airport. The highway is the only quick route out to the terminal from where I live, and traffic backs up for miles in both directions. I do not know about the accident when I leave the house."
+            },
+            {
+              "id": "E2",
+              "text": "The airline's check-in system is going offline overnight for scheduled maintenance. The maintenance window has been published in advance and the airline has emailed passengers the week before. The window is supposed to end well before the first departures of the day."
+            },
+            {
+              "id": "E7",
+              "text": "I am calling the client from the airport to explain. I can hear the pause before they respond. They have rearranged their afternoon around the meeting, and I am not going to be there. The conversation is short and polite, but the tone has changed. I sit in the terminal afterwards, going over what I might have said differently, though there is nothing to say. I have missed the meeting."
+            },
+            {
+              "id": "E8",
+              "text": "I am learning that the client has signed with a competitor. I later find out the competitor has been in talks with them for several weeks before my trip was scheduled."
+            }
+          ]
+        }
+      }
+    }
+  },
+  "event_cards": {
+    "hospital_incident": {
+      "E1": "The hospital administrator announces reduced overnight staffing levels",
+      "E2": "A contractor disables the ventilator alarm during maintenance",
+      "E3": "The contractor leaves with the alarm still switched off",
+      "E4": "The nurse covers a longer patient list than usual",
+      "E5": "A ventilator tube partially detaches from a patient's mask",
+      "E6": "The ventilator continues running and no alarm sounds",
+      "E7": "The nurse finds the patient in respiratory distress",
+      "E8": "The hospital convenes a formal inquest"
+    },
+    "care_home_incident": {
+      "E1": "The manager announces reduced overnight staffing",
+      "E2": "A visiting GP lowers a resident's sedative dose",
+      "E3": "The medication chart is not updated",
+      "E4": "The care assistant gives the dose written on the chart",
+      "E5": "The resident's breathing slows while asleep",
+      "E6": "The care assistant reaches the resident's room after checking larger rooms first",
+      "E7": "The care assistant finds the resident unresponsive; emergency services are called",
+      "E8": "The manager convenes a meeting with a regional inspector"
+    },
+    "community_fair": {
+      "E1": "The organiser books an outdoor venue for the community fair",
+      "E2": "A first-aid team is assigned to the event",
+      "E3": "The first-aid team is called away to another incident",
+      "E4": "A replacement first-aid team takes longer than expected to arrive",
+      "E5": "The temperature rises higher than forecast",
+      "E6": "The organiser opens the rest area and hands out water",
+      "E7": "An elderly man becomes unresponsive in the sun",
+      "E8": "The council convenes a review of the event"
+    },
+    "restaurant_fire": {
+      "E1": "A health inspector flags the ventilation as substandard",
+      "E2": "The owner calls the first available technician for repairs",
+      "E3": "The technician replaces the fan but not the old ducts",
+      "E4": "The sous chef notices a faint smell near the back burner",
+      "E5": "The kitchen is fully booked with all burners running",
+      "E6": "A cook lights the back burner and the wall ignites",
+      "E7": "Smoke spreads into the dining room and the restaurant is evacuated",
+      "E8": "A fire investigation examines the sequence of events"
+    },
+    "school_trip": {
+      "E1": "The teacher chooses a mountain trail for the trip",
+      "E2": "The group sets out with some students in light jackets",
+      "E3": "Heavy rain arrives on the ridge",
+      "E4": "A student loses footing on a wet rock and injures her ankle",
+      "E5": "The group has no phone signal in the valley",
+      "E6": "The teacher splits the group to send two students for help",
+      "E7": "A student under the trees shows signs of hypothermia",
+      "E8": "A review board examines the teacher's decisions"
+    },
+    "family_conflict": {
+      "E1": "The father is diagnosed with early-stage dementia",
+      "E2": "The narrator moves closer to home and begins managing daily care",
+      "E3": "The sister confirms weekend visits on Thursdays and cancels on Saturdays",
+      "E4": "The narrator and sister argue; she says he is being controlling",
+      "E5": "The father's doctor recommends a medication change",
+      "E6": "The narrator authorises the change without consulting the sister",
+      "E7": "The sister finds out about the change and calls the narrator",
+      "E8": "The siblings meet at a cafe"
+    },
+    "power_cut": {
+      "E1": "The council defers tree maintenance along the lane",
+      "E2": "A neighbour begins using a home oxygen concentrator",
+      "E3": "A storm brings heavy overnight winds",
+      "E4": "A branch falls across the power line",
+      "E5": "The local transformer trips and the street loses power",
+      "E6": "The neighbour's oxygen concentrator stops running",
+      "E7": "The narrator finds the neighbour unresponsive and calls emergency services",
+      "E8": "The council convenes an inquiry"
+    },
+    "missed_flight": {
+      "E1": "A truck jackknifes on the highway to the airport",
+      "E2": "The airline's check-in system goes offline for maintenance",
+      "E3": "The traveller leaves home",
+      "E4": "The traveller gets stuck in traffic",
+      "E5": "The check-in system comes back online",
+      "E6": "The traveller misses the flight",
+      "E7": "The traveller calls the client",
+      "E8": "The client signs with a competitor"
+    }
+  },
+  "comprehension": {
+    "schema_version": "1.0",
+    "response_options": [
+      "Yes",
+      "No",
+      "Unsure"
+    ],
+    "per_story_structure": "3 compound (2 events) + 2 single (1 event) + 1 distractor",
+    "balance_target": "4 Yes / 2 No",
+    "response_time_flag_threshold_seconds": 1.5,
+    "stories": {
+      "hospital_incident": {
+        "topology": "convergent",
+        "items": [
+          {
+            "id": "hosp_1",
+            "text": "Was a new overnight staffing policy announced, and was the nurse's patient list longer than usual during her night shift?",
+            "events": [
+              "E1",
+              "E4"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "hosp_2",
+            "text": "Did the contractor disable the ventilator alarm to run diagnostics?",
+            "events": [
+              "E2"
+            ],
+            "correct": "Yes",
+            "role": "single"
+          },
+          {
+            "id": "hosp_3",
+            "text": "Did the contractor switch the alarm back on before leaving the hospital?",
+            "events": [
+              "E3"
+            ],
+            "correct": "No",
+            "role": "negative_recall"
+          },
+          {
+            "id": "hosp_4",
+            "text": "Did the ventilator tube partially detach at the mask end, with no alarm sounding from the machine?",
+            "events": [
+              "E5",
+              "E6"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "hosp_5",
+            "text": "Was the patient stabilised with manual ventilation, and was a formal inquest convened?",
+            "events": [
+              "E7",
+              "E8"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "hosp_6",
+            "text": "Did the patient experience a heart attack?",
+            "events": [],
+            "correct": "No",
+            "role": "distractor"
+          }
+        ]
+      },
+      "care_home_incident": {
+        "topology": "convergent_replicate",
+        "items": [
+          {
+            "id": "care_1",
+            "text": "Was the manager cutting back on overnight staffing, and was the care assistant covering rooms that had previously been shared?",
+            "events": [
+              "E1",
+              "E4"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "care_2",
+            "text": "Did the visiting GP lower the sedative dose for one of the residents?",
+            "events": [
+              "E2"
+            ],
+            "correct": "Yes",
+            "role": "single"
+          },
+          {
+            "id": "care_3",
+            "text": "Did the GP update the medication chart before leaving?",
+            "events": [
+              "E3"
+            ],
+            "correct": "No",
+            "role": "negative_recall"
+          },
+          {
+            "id": "care_4",
+            "text": "Did the resident's breathing slow during the night, with the care assistant reaching her room only after checking the larger rooms first?",
+            "events": [
+              "E5",
+              "E6"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "care_5",
+            "text": "Was the resident stabilised at the hospital, and did the manager call a meeting with a regional inspector?",
+            "events": [
+              "E7",
+              "E8"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "care_6",
+            "text": "Did a fire alarm interrupt the evening medication round?",
+            "events": [],
+            "correct": "No",
+            "role": "distractor"
+          }
+        ]
+      },
+      "community_fair": {
+        "topology": "three_thread_convergence",
+        "items": [
+          {
+            "id": "fair_1",
+            "text": "Did the council approve the venue permit in early June, and was a first-aid team assigned by the volunteer coordination office for the day of the fair?",
+            "events": [
+              "E1",
+              "E2"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "fair_2",
+            "text": "Was the first-aid team called away to another incident, and did their replacement take nearly two hours to arrive?",
+            "events": [
+              "E3",
+              "E4"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "fair_3",
+            "text": "Was the temperature by midday well above what had been forecast, and did the organiser open the rest area earlier than planned?",
+            "events": [
+              "E5",
+              "E6"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "fair_4",
+            "text": "Was a first-aid team present on site when the organiser called an ambulance for the elderly man?",
+            "events": [
+              "E7"
+            ],
+            "correct": "No",
+            "role": "negative_recall"
+          },
+          {
+            "id": "fair_5",
+            "text": "Did the council convene a review of the venue booking, volunteer scheduling, and weather conditions?",
+            "events": [
+              "E8"
+            ],
+            "correct": "Yes",
+            "role": "single"
+          },
+          {
+            "id": "fair_6",
+            "text": "Was the fair cancelled due to rain?",
+            "events": [],
+            "correct": "No",
+            "role": "distractor"
+          }
+        ]
+      },
+      "restaurant_fire": {
+        "topology": "long_chain",
+        "items": [
+          {
+            "id": "rest_1",
+            "text": "Did a health inspector tell the owner the ventilation system was not up to standard, and did the owner call the first available technician rather than the original installer?",
+            "events": [
+              "E1",
+              "E2"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "rest_2",
+            "text": "Did the technician replace the old ducts behind the walls?",
+            "events": [
+              "E3"
+            ],
+            "correct": "No",
+            "role": "negative_recall"
+          },
+          {
+            "id": "rest_3",
+            "text": "Did the sous chef notice a faint smell near the back burner within hours of the technician's visit?",
+            "events": [
+              "E4"
+            ],
+            "correct": "Yes",
+            "role": "single"
+          },
+          {
+            "id": "rest_4",
+            "text": "Was the kitchen fully booked with all six burners running when a low whump came from inside the wall after a line cook lit the back burner?",
+            "events": [
+              "E5",
+              "E6"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "rest_5",
+            "text": "Did smoke spread into the dining room through the ceiling, and did a fire investigation examine the technician's work order?",
+            "events": [
+              "E7",
+              "E8"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "rest_6",
+            "text": "Did the restaurant's sprinkler system activate during the fire?",
+            "events": [],
+            "correct": "No",
+            "role": "distractor"
+          }
+        ]
+      },
+      "school_trip": {
+        "topology": "fan_out",
+        "items": [
+          {
+            "id": "trip_1",
+            "text": "Did the teacher choose a mountain trail that looped through a wooded section, and did she note that several students were wearing light jackets rather than waterproofs?",
+            "events": [
+              "E1",
+              "E2"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "trip_2",
+            "text": "Did the teacher decide to turn the group back at the high point?",
+            "events": [
+              "E3"
+            ],
+            "correct": "No",
+            "role": "negative_recall"
+          },
+          {
+            "id": "trip_3",
+            "text": "Did a student injure her ankle after losing footing on a wet rock?",
+            "events": [
+              "E4"
+            ],
+            "correct": "Yes",
+            "role": "single"
+          },
+          {
+            "id": "trip_4",
+            "text": "Was there no phone signal in the valley, and did the teacher send two older students back toward the car park to call for rescue?",
+            "events": [
+              "E5",
+              "E6"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "trip_5",
+            "text": "Did one of the younger students show early signs of hypothermia under the trees, and did a review board examine the teacher's decisions the following week?",
+            "events": [
+              "E7",
+              "E8"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "trip_6",
+            "text": "Did a member of the group suffer a concussion from the fall?",
+            "events": [],
+            "correct": "No",
+            "role": "distractor"
+          }
+        ]
+      },
+      "family_conflict": {
+        "topology": "chain_with_feedback",
+        "items": [
+          {
+            "id": "fam_1",
+            "text": "Was the narrator's father diagnosed with early-stage dementia, and did the narrator move closer to home that summer?",
+            "events": [
+              "E1",
+              "E2"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "fam_2",
+            "text": "Did the sister come every weekend through the autumn?",
+            "events": [
+              "E3"
+            ],
+            "correct": "No",
+            "role": "negative_recall"
+          },
+          {
+            "id": "fam_3",
+            "text": "Did the sister accuse the narrator of being controlling during a phone call?",
+            "events": [
+              "E4"
+            ],
+            "correct": "Yes",
+            "role": "single"
+          },
+          {
+            "id": "fam_4",
+            "text": "Did the father's doctor recommend changing his medication, and did the narrator sign the form for the new prescription without calling the sister?",
+            "events": [
+              "E5",
+              "E6"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "fam_5",
+            "text": "Did the sister find out about the medication change from a neighbour, and did the siblings meet at a cafe a few weeks later?",
+            "events": [
+              "E7",
+              "E8"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "fam_6",
+            "text": "Did the narrator consider moving their father into a nursing home?",
+            "events": [],
+            "correct": "No",
+            "role": "distractor"
+          }
+        ]
+      },
+      "power_cut": {
+        "topology": "chain_with_distal_enabler",
+        "items": [
+          {
+            "id": "pow_1",
+            "text": "Had the council deferred tree maintenance near the power lines for over a year?",
+            "events": [
+              "E1"
+            ],
+            "correct": "Yes",
+            "role": "single"
+          },
+          {
+            "id": "pow_2",
+            "text": "Did the healthcare provider supply a backup battery with the oxygen concentrator?",
+            "events": [
+              "E2"
+            ],
+            "correct": "No",
+            "role": "negative_recall"
+          },
+          {
+            "id": "pow_3",
+            "text": "Did the forecast warn of heavy winds overnight, and did a branch come down across the power line during the storm?",
+            "events": [
+              "E3",
+              "E4"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "pow_4",
+            "text": "Did the local transformer trip, and did the neighbour's oxygen machine shut down when the power went out?",
+            "events": [
+              "E5",
+              "E6"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "pow_5",
+            "text": "Did the narrator find the neighbour unresponsive, and did a council inquiry examine the budget meetings where tree work had been deferred?",
+            "events": [
+              "E7",
+              "E8"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "pow_6",
+            "text": "Did the power company issue an apology to the street after the outage?",
+            "events": [],
+            "correct": "No",
+            "role": "distractor"
+          }
+        ]
+      },
+      "missed_flight": {
+        "topology": "hourglass",
+        "items": [
+          {
+            "id": "flt_1",
+            "text": "Did a truck jackknife on the main highway on the morning of the traveller's flight, and had the airline's check-in system gone offline overnight for scheduled maintenance?",
+            "events": [
+              "E1",
+              "E2"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "flt_2",
+            "text": "Did the traveller leave the house later than planned, and did he hit traffic about twenty minutes from the airport?",
+            "events": [
+              "E3",
+              "E4"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "flt_3",
+            "text": "Did the check-in desks reopen before the window for the traveller's flight had closed?",
+            "events": [
+              "E5"
+            ],
+            "correct": "No",
+            "role": "negative_recall"
+          },
+          {
+            "id": "flt_4",
+            "text": "Did the traveller miss the flight and call the client from the airport?",
+            "events": [
+              "E6",
+              "E7"
+            ],
+            "correct": "Yes",
+            "role": "compound"
+          },
+          {
+            "id": "flt_5",
+            "text": "Did the traveller learn the following week that the client had signed with a competitor?",
+            "events": [
+              "E8"
+            ],
+            "correct": "Yes",
+            "role": "single"
+          },
+          {
+            "id": "flt_6",
+            "text": "Did the traveller manage to catch a later flight that same afternoon?",
+            "events": [],
+            "correct": "No",
+            "role": "distractor"
+          }
+        ]
+      }
+    }
+  },
+  "cf_probes": {
+    "schema_version": "1.0",
+    "n_probes_per_story": 8,
+    "stories": {
+      "hospital_incident": {
+        "probes": [
+          {
+            "probe_id": "hospital_incident_anchor_E1",
+            "role": "anchor",
+            "antecedent_event_id": "E1",
+            "consequent_event_id": "E7",
+            "prompt": "If the hospital administrator had not announced reduced overnight staffing, would the patient still have ended up in respiratory distress?"
+          },
+          {
+            "probe_id": "hospital_incident_anchor_E2",
+            "role": "anchor",
+            "antecedent_event_id": "E2",
+            "consequent_event_id": "E7",
+            "prompt": "If the contractor had not disabled the ventilator alarm during maintenance, would the patient still have ended up in respiratory distress?"
+          },
+          {
+            "probe_id": "hospital_incident_anchor_E3",
+            "role": "anchor",
+            "antecedent_event_id": "E3",
+            "consequent_event_id": "E7",
+            "prompt": "If the contractor had switched the alarm back on before leaving, would the patient still have ended up in respiratory distress?"
+          },
+          {
+            "probe_id": "hospital_incident_anchor_E4",
+            "role": "anchor",
+            "antecedent_event_id": "E4",
+            "consequent_event_id": "E7",
+            "prompt": "If the nurse had not been assigned a longer patient list than usual, would the patient still have ended up in respiratory distress?"
+          },
+          {
+            "probe_id": "hospital_incident_anchor_E5",
+            "role": "anchor",
+            "antecedent_event_id": "E5",
+            "consequent_event_id": "E7",
+            "prompt": "If the ventilator tube had not partially detached from the patient's mask, would the patient still have ended up in respiratory distress?"
+          },
+          {
+            "probe_id": "hospital_incident_anchor_E6",
+            "role": "anchor",
+            "antecedent_event_id": "E6",
+            "consequent_event_id": "E7",
+            "prompt": "If an alarm had sounded when the ventilator stopped delivering air, would the patient still have ended up in respiratory distress?"
+          },
+          {
+            "probe_id": "hospital_incident_sibling_null",
+            "role": "sibling_null",
+            "antecedent_event_id": "E1",
+            "consequent_event_id": "E2",
+            "prompt": "If the hospital administrator had not announced reduced overnight staffing, would the contractor still have disabled the ventilator alarm during maintenance?"
+          },
+          {
+            "probe_id": "hospital_incident_reverse_null",
+            "role": "reverse_null",
+            "antecedent_event_id": "E8",
+            "consequent_event_id": "E7",
+            "prompt": "If the hospital had not convened a formal inquest, would the patient still have ended up in respiratory distress?"
+          }
+        ]
+      },
+      "care_home_incident": {
+        "probes": [
+          {
+            "probe_id": "care_home_incident_anchor_E1",
+            "role": "anchor",
+            "antecedent_event_id": "E1",
+            "consequent_event_id": "E7",
+            "prompt": "If the manager had not announced reduced overnight staffing, would the care assistant still have found the resident unresponsive?"
+          },
+          {
+            "probe_id": "care_home_incident_anchor_E2",
+            "role": "anchor",
+            "antecedent_event_id": "E2",
+            "consequent_event_id": "E7",
+            "prompt": "If the visiting GP had not lowered the resident's sedative dose, would the care assistant still have found the resident unresponsive?"
+          },
+          {
+            "probe_id": "care_home_incident_anchor_E3",
+            "role": "anchor",
+            "antecedent_event_id": "E3",
+            "consequent_event_id": "E7",
+            "prompt": "If the medication chart had been updated, would the care assistant still have found the resident unresponsive?"
+          },
+          {
+            "probe_id": "care_home_incident_anchor_E4",
+            "role": "anchor",
+            "antecedent_event_id": "E4",
+            "consequent_event_id": "E7",
+            "prompt": "If the care assistant had given a different dose than the one written on the chart, would the care assistant still have found the resident unresponsive?"
+          },
+          {
+            "probe_id": "care_home_incident_anchor_E5",
+            "role": "anchor",
+            "antecedent_event_id": "E5",
+            "consequent_event_id": "E7",
+            "prompt": "If the resident's breathing had not slowed during the night, would the care assistant still have found the resident unresponsive?"
+          },
+          {
+            "probe_id": "care_home_incident_anchor_E6",
+            "role": "anchor",
+            "antecedent_event_id": "E6",
+            "consequent_event_id": "E7",
+            "prompt": "If the care assistant had reached the resident's room before checking the larger rooms, would the care assistant still have found the resident unresponsive?"
+          },
+          {
+            "probe_id": "care_home_incident_sibling_null",
+            "role": "sibling_null",
+            "antecedent_event_id": "E1",
+            "consequent_event_id": "E2",
+            "prompt": "If the manager had not announced reduced overnight staffing, would the visiting GP still have lowered the resident's sedative dose?"
+          },
+          {
+            "probe_id": "care_home_incident_reverse_null",
+            "role": "reverse_null",
+            "antecedent_event_id": "E8",
+            "consequent_event_id": "E7",
+            "prompt": "If the manager had not convened a meeting with a regional inspector, would the care assistant still have found the resident unresponsive?"
+          }
+        ]
+      },
+      "community_fair": {
+        "probes": [
+          {
+            "probe_id": "community_fair_anchor_E1",
+            "role": "anchor",
+            "antecedent_event_id": "E1",
+            "consequent_event_id": "E7",
+            "prompt": "If the organiser had not booked an outdoor venue for the fair, would the elderly man still have become unresponsive in the sun?"
+          },
+          {
+            "probe_id": "community_fair_anchor_E2",
+            "role": "anchor",
+            "antecedent_event_id": "E2",
+            "consequent_event_id": "E7",
+            "prompt": "If a first-aid team had not been assigned to the event, would the elderly man still have become unresponsive in the sun?"
+          },
+          {
+            "probe_id": "community_fair_anchor_E3",
+            "role": "anchor",
+            "antecedent_event_id": "E3",
+            "consequent_event_id": "E7",
+            "prompt": "If the first-aid team had not been called away to another incident, would the elderly man still have become unresponsive in the sun?"
+          },
+          {
+            "probe_id": "community_fair_anchor_E4",
+            "role": "anchor",
+            "antecedent_event_id": "E4",
+            "consequent_event_id": "E7",
+            "prompt": "If a replacement first-aid team had arrived within a few minutes, would the elderly man still have become unresponsive in the sun?"
+          },
+          {
+            "probe_id": "community_fair_anchor_E5",
+            "role": "anchor",
+            "antecedent_event_id": "E5",
+            "consequent_event_id": "E7",
+            "prompt": "If the temperature by midday had not been higher than forecast, would the elderly man still have become unresponsive in the sun?"
+          },
+          {
+            "probe_id": "community_fair_anchor_E6",
+            "role": "anchor",
+            "antecedent_event_id": "E6",
+            "consequent_event_id": "E7",
+            "prompt": "If the organiser had not opened the rest area and handed out water, would the elderly man still have become unresponsive in the sun?"
+          },
+          {
+            "probe_id": "community_fair_sibling_null",
+            "role": "sibling_null",
+            "antecedent_event_id": "E2",
+            "consequent_event_id": "E5",
+            "prompt": "If a first-aid team had not been assigned to the event, would the temperature by midday still have been higher than forecast?"
+          },
+          {
+            "probe_id": "community_fair_reverse_null",
+            "role": "reverse_null",
+            "antecedent_event_id": "E8",
+            "consequent_event_id": "E7",
+            "prompt": "If the council had not convened a review of the event, would the elderly man still have become unresponsive in the sun?"
+          }
+        ]
+      },
+      "restaurant_fire": {
+        "probes": [
+          {
+            "probe_id": "restaurant_fire_anchor_E1",
+            "role": "anchor",
+            "antecedent_event_id": "E1",
+            "consequent_event_id": "E7",
+            "prompt": "If the health inspector had not flagged the ventilation as substandard, would smoke still have spread into the dining room and the restaurant been evacuated?"
+          },
+          {
+            "probe_id": "restaurant_fire_anchor_E2",
+            "role": "anchor",
+            "antecedent_event_id": "E2",
+            "consequent_event_id": "E7",
+            "prompt": "If the owner had called the original installer rather than the first available technician, would smoke still have spread into the dining room and the restaurant been evacuated?"
+          },
+          {
+            "probe_id": "restaurant_fire_anchor_E3",
+            "role": "anchor",
+            "antecedent_event_id": "E3",
+            "consequent_event_id": "E7",
+            "prompt": "If the technician had replaced the old ducts along with the fan, would smoke still have spread into the dining room and the restaurant been evacuated?"
+          },
+          {
+            "probe_id": "restaurant_fire_anchor_E4",
+            "role": "anchor",
+            "antecedent_event_id": "E4",
+            "consequent_event_id": "E7",
+            "prompt": "If the sous chef had not noticed a faint smell near the back burner, would smoke still have spread into the dining room and the restaurant been evacuated?"
+          },
+          {
+            "probe_id": "restaurant_fire_anchor_E5",
+            "role": "anchor",
+            "antecedent_event_id": "E5",
+            "consequent_event_id": "E7",
+            "prompt": "If the kitchen had not been fully booked with all burners running, would smoke still have spread into the dining room and the restaurant been evacuated?"
+          },
+          {
+            "probe_id": "restaurant_fire_anchor_E6",
+            "role": "anchor",
+            "antecedent_event_id": "E6",
+            "consequent_event_id": "E7",
+            "prompt": "If the wall had not ignited when a cook lit the back burner, would smoke still have spread into the dining room and the restaurant been evacuated?"
+          },
+          {
+            "probe_id": "restaurant_fire_sibling_null",
+            "role": "sibling_null",
+            "antecedent_event_id": "E3",
+            "consequent_event_id": "E5",
+            "prompt": "If the technician had replaced the old ducts along with the fan, would the kitchen still have been fully booked with all burners running?"
+          },
+          {
+            "probe_id": "restaurant_fire_reverse_null",
+            "role": "reverse_null",
+            "antecedent_event_id": "E8",
+            "consequent_event_id": "E7",
+            "prompt": "If a fire investigation had not examined the sequence of events, would smoke still have spread into the dining room and the restaurant been evacuated?"
+          }
+        ]
+      },
+      "school_trip": {
+        "probes": [
+          {
+            "probe_id": "school_trip_anchor_E1",
+            "role": "anchor",
+            "antecedent_event_id": "E1",
+            "consequent_event_id": "E7",
+            "prompt": "If the teacher had not chosen a mountain trail for the trip, would a student still have shown signs of hypothermia under the trees?"
+          },
+          {
+            "probe_id": "school_trip_anchor_E2",
+            "role": "anchor",
+            "antecedent_event_id": "E2",
+            "consequent_event_id": "E7",
+            "prompt": "If the group had set out with full wet-weather gear for every student, would a student still have shown signs of hypothermia under the trees?"
+          },
+          {
+            "probe_id": "school_trip_anchor_E3",
+            "role": "anchor",
+            "antecedent_event_id": "E3",
+            "consequent_event_id": "E7",
+            "prompt": "If heavy rain had not arrived on the ridge, would a student still have shown signs of hypothermia under the trees?"
+          },
+          {
+            "probe_id": "school_trip_anchor_E4",
+            "role": "anchor",
+            "antecedent_event_id": "E4",
+            "consequent_event_id": "E7",
+            "prompt": "If the student had not lost footing on a wet rock and injured her ankle, would a student still have shown signs of hypothermia under the trees?"
+          },
+          {
+            "probe_id": "school_trip_anchor_E5",
+            "role": "anchor",
+            "antecedent_event_id": "E5",
+            "consequent_event_id": "E7",
+            "prompt": "If the group had kept a phone signal in the valley, would a student still have shown signs of hypothermia under the trees?"
+          },
+          {
+            "probe_id": "school_trip_anchor_E6",
+            "role": "anchor",
+            "antecedent_event_id": "E6",
+            "consequent_event_id": "E7",
+            "prompt": "If the teacher had not split the group to send two students for help, would a student still have shown signs of hypothermia under the trees?"
+          },
+          {
+            "probe_id": "school_trip_sibling_null",
+            "role": "sibling_null",
+            "antecedent_event_id": "E2",
+            "consequent_event_id": "E3",
+            "prompt": "If the group had set out with full wet-weather gear for every student, would heavy rain still have arrived on the ridge?"
+          },
+          {
+            "probe_id": "school_trip_reverse_null",
+            "role": "reverse_null",
+            "antecedent_event_id": "E8",
+            "consequent_event_id": "E7",
+            "prompt": "If a review board had not examined the teacher's decisions, would a student still have shown signs of hypothermia under the trees?"
+          }
+        ]
+      },
+      "family_conflict": {
+        "probes": [
+          {
+            "probe_id": "family_conflict_anchor_E1",
+            "role": "anchor",
+            "antecedent_event_id": "E1",
+            "consequent_event_id": "E7",
+            "prompt": "If the narrator's father had not been diagnosed with early-stage dementia, would the sister still have found out from a neighbour and called the narrator?"
+          },
+          {
+            "probe_id": "family_conflict_anchor_E2",
+            "role": "anchor",
+            "antecedent_event_id": "E2",
+            "consequent_event_id": "E7",
+            "prompt": "If the narrator had not moved closer to home to manage daily care, would the sister still have found out from a neighbour and called the narrator?"
+          },
+          {
+            "probe_id": "family_conflict_anchor_E3",
+            "role": "anchor",
+            "antecedent_event_id": "E3",
+            "consequent_event_id": "E7",
+            "prompt": "If the sister had kept her weekend visits as arranged, would the sister still have found out from a neighbour and called the narrator?"
+          },
+          {
+            "probe_id": "family_conflict_anchor_E4",
+            "role": "anchor",
+            "antecedent_event_id": "E4",
+            "consequent_event_id": "E7",
+            "prompt": "If the narrator and sister had not argued on the phone, would the sister still have found out from a neighbour and called the narrator?"
+          },
+          {
+            "probe_id": "family_conflict_anchor_E5",
+            "role": "anchor",
+            "antecedent_event_id": "E5",
+            "consequent_event_id": "E7",
+            "prompt": "If the father's doctor had not recommended a medication change, would the sister still have found out from a neighbour and called the narrator?"
+          },
+          {
+            "probe_id": "family_conflict_anchor_E6",
+            "role": "anchor",
+            "antecedent_event_id": "E6",
+            "consequent_event_id": "E7",
+            "prompt": "If the narrator had consulted the sister before authorising the change, would the sister still have found out from a neighbour and called the narrator?"
+          },
+          {
+            "probe_id": "family_conflict_sibling_null",
+            "role": "sibling_null",
+            "antecedent_event_id": "E1",
+            "consequent_event_id": "E3",
+            "prompt": "If the narrator's father had not been diagnosed with early-stage dementia, would the sister still have cancelled her weekend visits?"
+          },
+          {
+            "probe_id": "family_conflict_reverse_null",
+            "role": "reverse_null",
+            "antecedent_event_id": "E8",
+            "consequent_event_id": "E7",
+            "prompt": "If the siblings had not met weeks later at a cafe, would the sister still have found out from a neighbour and called the narrator?"
+          }
+        ]
+      },
+      "power_cut": {
+        "probes": [
+          {
+            "probe_id": "power_cut_anchor_E1",
+            "role": "anchor",
+            "antecedent_event_id": "E1",
+            "consequent_event_id": "E7",
+            "prompt": "If the council had kept up tree maintenance along the lane, would the narrator still have found the neighbour unresponsive?"
+          },
+          {
+            "probe_id": "power_cut_anchor_E2",
+            "role": "anchor",
+            "antecedent_event_id": "E2",
+            "consequent_event_id": "E7",
+            "prompt": "If the neighbour had not begun using a home oxygen concentrator, would the narrator still have found the neighbour unresponsive?"
+          },
+          {
+            "probe_id": "power_cut_anchor_E3",
+            "role": "anchor",
+            "antecedent_event_id": "E3",
+            "consequent_event_id": "E7",
+            "prompt": "If an autumn storm had not brought heavy overnight winds, would the narrator still have found the neighbour unresponsive?"
+          },
+          {
+            "probe_id": "power_cut_anchor_E4",
+            "role": "anchor",
+            "antecedent_event_id": "E4",
+            "consequent_event_id": "E7",
+            "prompt": "If no branch had fallen across the power line, would the narrator still have found the neighbour unresponsive?"
+          },
+          {
+            "probe_id": "power_cut_anchor_E5",
+            "role": "anchor",
+            "antecedent_event_id": "E5",
+            "consequent_event_id": "E7",
+            "prompt": "If the local transformer had not tripped, would the narrator still have found the neighbour unresponsive?"
+          },
+          {
+            "probe_id": "power_cut_anchor_E6",
+            "role": "anchor",
+            "antecedent_event_id": "E6",
+            "consequent_event_id": "E7",
+            "prompt": "If the neighbour's oxygen concentrator had kept running through the outage, would the narrator still have found the neighbour unresponsive?"
+          },
+          {
+            "probe_id": "power_cut_sibling_null",
+            "role": "sibling_null",
+            "antecedent_event_id": "E2",
+            "consequent_event_id": "E3",
+            "prompt": "If the neighbour had not begun using a home oxygen concentrator, would an autumn storm still have brought heavy overnight winds?"
+          },
+          {
+            "probe_id": "power_cut_reverse_null",
+            "role": "reverse_null",
+            "antecedent_event_id": "E8",
+            "consequent_event_id": "E7",
+            "prompt": "If the council had not convened an inquiry, would the narrator still have found the neighbour unresponsive?"
+          }
+        ]
+      },
+      "missed_flight": {
+        "probes": [
+          {
+            "probe_id": "missed_flight_anchor_E1",
+            "role": "anchor",
+            "antecedent_event_id": "E1",
+            "consequent_event_id": "E7",
+            "prompt": "If a truck had not jackknifed on the highway to the airport, would the traveller still have called the client from the airport to explain?"
+          },
+          {
+            "probe_id": "missed_flight_anchor_E2",
+            "role": "anchor",
+            "antecedent_event_id": "E2",
+            "consequent_event_id": "E7",
+            "prompt": "If the airline's check-in system had not gone offline for maintenance, would the traveller still have called the client from the airport to explain?"
+          },
+          {
+            "probe_id": "missed_flight_anchor_E3",
+            "role": "anchor",
+            "antecedent_event_id": "E3",
+            "consequent_event_id": "E7",
+            "prompt": "If the traveller had left home earlier than planned, would the traveller still have called the client from the airport to explain?"
+          },
+          {
+            "probe_id": "missed_flight_anchor_E4",
+            "role": "anchor",
+            "antecedent_event_id": "E4",
+            "consequent_event_id": "E7",
+            "prompt": "If the traveller had not been stuck in traffic near the airport, would the traveller still have called the client from the airport to explain?"
+          },
+          {
+            "probe_id": "missed_flight_anchor_E5",
+            "role": "anchor",
+            "antecedent_event_id": "E5",
+            "consequent_event_id": "E7",
+            "prompt": "If the check-in system had come back online before the flight window closed, would the traveller still have called the client from the airport to explain?"
+          },
+          {
+            "probe_id": "missed_flight_anchor_E6",
+            "role": "anchor",
+            "antecedent_event_id": "E6",
+            "consequent_event_id": "E7",
+            "prompt": "If the traveller had not missed the flight, would the traveller still have called the client from the airport to explain?"
+          },
+          {
+            "probe_id": "missed_flight_sibling_null",
+            "role": "sibling_null",
+            "antecedent_event_id": "E1",
+            "consequent_event_id": "E2",
+            "prompt": "If a truck had not jackknifed on the highway to the airport, would the airline's check-in system still have gone offline for maintenance?"
+          },
+          {
+            "probe_id": "missed_flight_reverse_null",
+            "role": "reverse_null",
+            "antecedent_event_id": "E8",
+            "consequent_event_id": "E7",
+            "prompt": "If the client had not signed with a competitor the following week, would the traveller still have called the client from the airport to explain?"
+          }
+        ]
+      }
+    }
+  },
+  "author_intended_graphs": {
+    "hospital_incident": {
+      "topology": "convergent — two enabling threads merge at crisis",
+      "narrator": "The nurse (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "description": "A hospital administrator approves a policy reducing overnight staffing.",
+          "canonical_position": 1
+        },
+        {
+          "id": "E2",
+          "description": "A contractor disables a ventilator alarm during maintenance.",
+          "canonical_position": 2
+        },
+        {
+          "id": "E3",
+          "description": "The contractor leaves without re-enabling the alarm.",
+          "canonical_position": 3
+        },
+        {
+          "id": "E4",
+          "description": "The nurse is assigned more patients than usual.",
+          "canonical_position": 4
+        },
+        {
+          "id": "E5",
+          "description": "A brief power interruption occurs.",
+          "canonical_position": 5
+        },
+        {
+          "id": "E6",
+          "description": "The ventilator stops without sounding an alarm.",
+          "canonical_position": 6
+        },
+        {
+          "id": "E7",
+          "description": "The nurse discovers a patient in respiratory distress.",
+          "canonical_position": 7
+        },
+        {
+          "id": "E8",
+          "description": "An inquest later reviews the incident.",
+          "canonical_position": 8
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E4",
+          "type": "enables"
+        },
+        {
+          "source": "E2",
+          "target": "E3",
+          "type": "enables"
+        },
+        {
+          "source": "E3",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E4",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "causes"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "care_home_incident": {
+      "topology": "convergent — structural replicate of hospital_incident",
+      "narrator": "The care assistant (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "canonical_position": 1,
+          "description": "A care home manager announces reduced overnight staffing."
+        },
+        {
+          "id": "E2",
+          "canonical_position": 2,
+          "description": "A visiting GP lowers a resident's sedative dose."
+        },
+        {
+          "id": "E3",
+          "canonical_position": 3,
+          "description": "The medication chart is not updated to reflect the new dose."
+        },
+        {
+          "id": "E4",
+          "canonical_position": 4,
+          "description": "The care assistant administers the dose written on the chart."
+        },
+        {
+          "id": "E5",
+          "canonical_position": 5,
+          "description": "The resident's breathing slows during the night."
+        },
+        {
+          "id": "E6",
+          "canonical_position": 6,
+          "description": "The care assistant reaches the resident's room after checking larger rooms first."
+        },
+        {
+          "id": "E7",
+          "canonical_position": 7,
+          "description": "The care assistant finds the resident unresponsive and emergency services are called."
+        },
+        {
+          "id": "E8",
+          "canonical_position": 8,
+          "description": "The manager convenes a meeting with a regional inspector."
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E4",
+          "type": "enables"
+        },
+        {
+          "source": "E1",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E2",
+          "target": "E3",
+          "type": "enables"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "enables"
+        },
+        {
+          "source": "E4",
+          "target": "E5",
+          "type": "causes"
+        },
+        {
+          "source": "E5",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "community_fair": {
+      "topology": "three-thread convergence",
+      "narrator": "The event organiser (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "canonical_position": 1,
+          "description": "The organiser books an outdoor venue for the community fair."
+        },
+        {
+          "id": "E2",
+          "canonical_position": 2,
+          "description": "A first-aid team is assigned to the event by the volunteer office."
+        },
+        {
+          "id": "E3",
+          "canonical_position": 3,
+          "description": "The first-aid team is called away to another incident."
+        },
+        {
+          "id": "E4",
+          "canonical_position": 4,
+          "description": "A replacement first-aid team takes nearly two hours to arrive."
+        },
+        {
+          "id": "E5",
+          "canonical_position": 5,
+          "description": "The temperature by midday is higher than forecast."
+        },
+        {
+          "id": "E6",
+          "canonical_position": 6,
+          "description": "The organiser opens the rest area and hands out water."
+        },
+        {
+          "id": "E7",
+          "canonical_position": 7,
+          "description": "An elderly man becomes unresponsive in the sun and an ambulance is called."
+        },
+        {
+          "id": "E8",
+          "canonical_position": 8,
+          "description": "The council convenes a review of the event."
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E2",
+          "type": "enables"
+        },
+        {
+          "source": "E1",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "causes"
+        },
+        {
+          "source": "E3",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E4",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "causes"
+        },
+        {
+          "source": "E5",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "restaurant_fire": {
+      "topology": "long chain — minimal branching, sequential causation",
+      "narrator": "The sous chef (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "description": "A health inspector flags the kitchen ventilation as substandard.",
+          "canonical_position": 1
+        },
+        {
+          "id": "E2",
+          "description": "The owner schedules a rushed repair to meet the compliance deadline.",
+          "canonical_position": 2
+        },
+        {
+          "id": "E3",
+          "description": "The repair technician installs a replacement gas connector improperly.",
+          "canonical_position": 3
+        },
+        {
+          "id": "E4",
+          "description": "A slow gas leak develops near one of the burner lines.",
+          "canonical_position": 4
+        },
+        {
+          "id": "E5",
+          "description": "The evening rush begins and all burners are lit.",
+          "canonical_position": 5
+        },
+        {
+          "id": "E6",
+          "description": "Grease from an overloaded pan catches fire near the leak.",
+          "canonical_position": 6
+        },
+        {
+          "id": "E7",
+          "description": "The fire escalates rapidly through the poorly ventilated kitchen.",
+          "canonical_position": 7
+        },
+        {
+          "id": "E8",
+          "description": "A fire investigation later traces the chain of failures.",
+          "canonical_position": 8
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E2",
+          "type": "causes"
+        },
+        {
+          "source": "E2",
+          "target": "E3",
+          "type": "causes"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "causes"
+        },
+        {
+          "source": "E4",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E1",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "school_trip": {
+      "topology": "fan-out — early decision diverges into multiple consequences",
+      "narrator": "The teacher (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "description": "I choose a mountain trail despite an uncertain weather forecast.",
+          "canonical_position": 1
+        },
+        {
+          "id": "E2",
+          "description": "The group sets out without full wet-weather gear.",
+          "canonical_position": 2
+        },
+        {
+          "id": "E3",
+          "description": "The weather deteriorates faster than forecast.",
+          "canonical_position": 3
+        },
+        {
+          "id": "E4",
+          "description": "A student slips on wet rock and injures their ankle.",
+          "canonical_position": 4
+        },
+        {
+          "id": "E5",
+          "description": "The group's mobile signal drops out in the valley.",
+          "canonical_position": 5
+        },
+        {
+          "id": "E6",
+          "description": "I split the group to send two runners for help.",
+          "canonical_position": 6
+        },
+        {
+          "id": "E7",
+          "description": "A student in the remaining group becomes hypothermic.",
+          "canonical_position": 7
+        },
+        {
+          "id": "E8",
+          "description": "A review board later examines my decisions.",
+          "canonical_position": 8
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E2",
+          "type": "causes"
+        },
+        {
+          "source": "E1",
+          "target": "E4",
+          "type": "enables"
+        },
+        {
+          "source": "E1",
+          "target": "E5",
+          "type": "enables"
+        },
+        {
+          "source": "E2",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "causes"
+        },
+        {
+          "source": "E3",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E4",
+          "target": "E6",
+          "type": "causes"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "enables"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "family_conflict": {
+      "topology": "chain with feedback — early enabling conditions gain causal weight retroactively",
+      "narrator": "Adult sibling / the caregiver (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "description": "My father is diagnosed with early-stage dementia.",
+          "canonical_position": 1
+        },
+        {
+          "id": "E2",
+          "description": "I move closer to home to take on his daily care.",
+          "canonical_position": 2
+        },
+        {
+          "id": "E3",
+          "description": "My sister promises to help with weekend visits but cancels repeatedly.",
+          "canonical_position": 3
+        },
+        {
+          "id": "E4",
+          "description": "I confront my sister about the broken promises; she accuses me of being controlling.",
+          "canonical_position": 4
+        },
+        {
+          "id": "E5",
+          "description": "A decision arises about changing my father's medication.",
+          "canonical_position": 5
+        },
+        {
+          "id": "E6",
+          "description": "I authorise the medication change without consulting my sister.",
+          "canonical_position": 6
+        },
+        {
+          "id": "E7",
+          "description": "My sister finds out from a neighbour and calls me furious.",
+          "canonical_position": 7
+        },
+        {
+          "id": "E8",
+          "description": "We meet weeks later to try to talk through what happened.",
+          "canonical_position": 8
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E2",
+          "type": "causes"
+        },
+        {
+          "source": "E1",
+          "target": "E5",
+          "type": "causes"
+        },
+        {
+          "source": "E2",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "causes"
+        },
+        {
+          "source": "E3",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E4",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "causes"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "power_cut": {
+      "topology": "chain with critical distal enabler",
+      "narrator": "A resident and community council member (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "description": "The council defers tree maintenance near power lines to save budget.",
+          "canonical_position": 1
+        },
+        {
+          "id": "E2",
+          "description": "A neighbour installs a home medical device requiring constant power.",
+          "canonical_position": 2
+        },
+        {
+          "id": "E3",
+          "description": "An autumn storm brings heavy winds to the area.",
+          "canonical_position": 3
+        },
+        {
+          "id": "E4",
+          "description": "An unmaintained branch falls across a power line.",
+          "canonical_position": 4
+        },
+        {
+          "id": "E5",
+          "description": "The local transformer trips and cuts power to the street.",
+          "canonical_position": 5
+        },
+        {
+          "id": "E6",
+          "description": "The neighbour's medical device shuts down without backup.",
+          "canonical_position": 6
+        },
+        {
+          "id": "E7",
+          "description": "I call emergency services when the neighbour becomes unresponsive.",
+          "canonical_position": 7
+        },
+        {
+          "id": "E8",
+          "description": "A council inquiry later reviews the maintenance deferral.",
+          "canonical_position": 8
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E4",
+          "type": "enables"
+        },
+        {
+          "source": "E1",
+          "target": "E8",
+          "type": "enables"
+        },
+        {
+          "source": "E2",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "causes"
+        },
+        {
+          "source": "E4",
+          "target": "E5",
+          "type": "causes"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "causes"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    },
+    "missed_flight": {
+      "topology": "hourglass — independent causes converge, then consequences diverge",
+      "narrator": "The traveller (first-person)",
+      "events": [
+        {
+          "id": "E1",
+          "description": "A highway accident causes major traffic delays that morning.",
+          "canonical_position": 1
+        },
+        {
+          "id": "E2",
+          "description": "The airline's check-in system goes down for scheduled maintenance.",
+          "canonical_position": 2
+        },
+        {
+          "id": "E3",
+          "description": "I leave for the airport later than I planned.",
+          "canonical_position": 3
+        },
+        {
+          "id": "E4",
+          "description": "I am stuck in traffic and cannot reach the terminal in time.",
+          "canonical_position": 4
+        },
+        {
+          "id": "E5",
+          "description": "The check-in system comes back online too late for me to board.",
+          "canonical_position": 5
+        },
+        {
+          "id": "E6",
+          "description": "I miss my flight.",
+          "canonical_position": 6
+        },
+        {
+          "id": "E7",
+          "description": "I miss the client meeting that was the purpose of the trip.",
+          "canonical_position": 7
+        },
+        {
+          "id": "E8",
+          "description": "The client signs with a competitor the following week.",
+          "canonical_position": 8
+        }
+      ],
+      "causal_edges": [
+        {
+          "source": "E1",
+          "target": "E4",
+          "type": "causes"
+        },
+        {
+          "source": "E2",
+          "target": "E5",
+          "type": "causes"
+        },
+        {
+          "source": "E3",
+          "target": "E4",
+          "type": "enables"
+        },
+        {
+          "source": "E4",
+          "target": "E6",
+          "type": "causes"
+        },
+        {
+          "source": "E5",
+          "target": "E6",
+          "type": "enables"
+        },
+        {
+          "source": "E6",
+          "target": "E7",
+          "type": "causes"
+        },
+        {
+          "source": "E6",
+          "target": "E8",
+          "type": "enables"
+        },
+        {
+          "source": "E7",
+          "target": "E8",
+          "type": "causes"
+        }
+      ]
+    }
+  },
+  "edge_types": {
+    "causes": "Proximate trigger that directly produces the outcome",
+    "enables": "Background condition that makes the outcome possible"
+  }
+}

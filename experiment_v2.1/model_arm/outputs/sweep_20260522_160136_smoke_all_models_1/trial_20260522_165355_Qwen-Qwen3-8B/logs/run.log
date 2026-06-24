@@ -1,0 +1,2 @@
+2026-05-22 09:53:55,986 | trial | INFO | Trial spec: model=Qwen/Qwen3-8B stories=['hospital_incident'] conditions=['linear'] seeds=[0] temperature=0.7 max_new_tokens=80
+2026-05-22 09:53:55,993 | trial | INFO | [1/1] hospital_incident | linear | seed=0

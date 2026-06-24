@@ -1,0 +1,17 @@
+2026-05-21 11:14:26,632 | trial | INFO | Trial spec: model=Qwen/Qwen2.5-7B-Instruct stories=['hospital_incident'] conditions=['linear', 'nonlinear', 'atemporal'] seeds=[0, 1, 2, 3, 4] temperature=0.3 max_new_tokens=80
+2026-05-21 11:14:26,651 | trial | INFO | [1/15] hospital_incident | linear | seed=0
+2026-05-21 11:16:17,017 | trial | INFO | [2/15] hospital_incident | linear | seed=1
+2026-05-21 11:17:32,451 | trial | INFO | [3/15] hospital_incident | linear | seed=2
+2026-05-21 11:18:46,858 | trial | INFO | [4/15] hospital_incident | linear | seed=3
+2026-05-21 11:20:02,161 | trial | INFO | [5/15] hospital_incident | linear | seed=4
+2026-05-21 11:21:16,211 | trial | INFO | [6/15] hospital_incident | nonlinear | seed=0
+2026-05-21 11:22:30,814 | trial | INFO | [7/15] hospital_incident | nonlinear | seed=1
+2026-05-21 11:23:45,178 | trial | INFO | [8/15] hospital_incident | nonlinear | seed=2
+2026-05-21 11:24:59,182 | trial | INFO | [9/15] hospital_incident | nonlinear | seed=3
+2026-05-21 11:26:12,969 | trial | INFO | [10/15] hospital_incident | nonlinear | seed=4
+2026-05-21 11:27:27,900 | trial | INFO | [11/15] hospital_incident | atemporal | seed=0
+2026-05-21 11:28:39,582 | trial | INFO | [12/15] hospital_incident | atemporal | seed=1
+2026-05-21 11:29:51,129 | trial | INFO | [13/15] hospital_incident | atemporal | seed=2
+2026-05-21 11:31:02,359 | trial | INFO | [14/15] hospital_incident | atemporal | seed=3
+2026-05-21 11:32:13,432 | trial | INFO | [15/15] hospital_incident | atemporal | seed=4
+2026-05-21 11:33:24,380 | trial | INFO | Trial complete. 15 story-runs in 1137.7s

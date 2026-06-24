@@ -1,0 +1,10 @@
+{
+  "metric": "1 - Spearman rho on 56 off-diagonal cells",
+  "meta_rdm": {
+    "labels": [],
+    "matrix": []
+  },
+  "inter_story_rdms": {},
+  "inter_condition_rdms": {},
+  "reliability": {}
+}

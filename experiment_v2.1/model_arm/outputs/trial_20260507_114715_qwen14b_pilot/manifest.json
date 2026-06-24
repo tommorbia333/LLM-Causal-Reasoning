@@ -1,0 +1,27 @@
+{
+  "trial_dir": "outputs/trial_20260507_114715_qwen14b_pilot",
+  "timestamp": "2026-05-07T13:35:58.874058Z",
+  "model_id": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+  "story_ids": [
+    "hospital_incident",
+    "school_trip"
+  ],
+  "conditions": [
+    "linear",
+    "nonlinear",
+    "atemporal"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "n_story_runs": 18,
+  "elapsed_seconds": 6523.3,
+  "tasks_run": {
+    "comprehension": true,
+    "ordering": true,
+    "pair_scaling": true,
+    "counterfactual": true
+  }
+}

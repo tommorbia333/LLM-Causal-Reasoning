@@ -1,0 +1,2042 @@
+[
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      1,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.667,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      1,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      2
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      1,
+      2
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      1,
+      2
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "linear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "linear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      5,
+      5,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "linear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "linear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "linear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "nonlinear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "nonlinear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      1,
+      5
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "nonlinear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.667,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "nonlinear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.667,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "nonlinear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      1,
+      5
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "atemporal",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "atemporal",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "atemporal",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "atemporal",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "care_home_incident",
+    "condition": "atemporal",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "linear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "linear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "linear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "linear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      2,
+      2,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "linear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "nonlinear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      1,
+      1,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "nonlinear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "nonlinear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.667,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "nonlinear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      2,
+      2,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "nonlinear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      2,
+      2,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "atemporal",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "atemporal",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "atemporal",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      1,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.667,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "atemporal",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "atemporal",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "linear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 1,
+    "reverse_null": 5,
+    "discrimination_index": -0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "linear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      5
+    ],
+    "sibling_null": 1,
+    "reverse_null": 5,
+    "discrimination_index": -0.667,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "linear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 1,
+    "reverse_null": 5,
+    "discrimination_index": -0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "linear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 1,
+    "reverse_null": 5,
+    "discrimination_index": -0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "linear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      5
+    ],
+    "sibling_null": 1,
+    "reverse_null": 5,
+    "discrimination_index": -0.667,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "nonlinear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 5,
+    "discrimination_index": -0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "nonlinear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 5,
+    "discrimination_index": -0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "nonlinear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 5,
+    "discrimination_index": -0.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "nonlinear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 5,
+    "discrimination_index": -0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "nonlinear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      5,
+      5,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 5,
+    "discrimination_index": -0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "atemporal",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 1,
+    "reverse_null": 5,
+    "discrimination_index": -0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "atemporal",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 5,
+    "discrimination_index": -0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "atemporal",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 5,
+    "discrimination_index": -0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "atemporal",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 1,
+    "reverse_null": 5,
+    "discrimination_index": -0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "atemporal",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      5,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 5,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      3,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": -0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      3,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": -0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      3,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": -0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 4,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      4,
+      2,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "linear",
+    "seed": 0,
+    "anchor_vector": [
+      1,
+      4,
+      1,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 1,
+    "reverse_null": 4,
+    "discrimination_index": -0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "linear",
+    "seed": 1,
+    "anchor_vector": [
+      1,
+      4,
+      1,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 1,
+    "reverse_null": 4,
+    "discrimination_index": -0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "linear",
+    "seed": 2,
+    "anchor_vector": [
+      1,
+      4,
+      1,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 1,
+    "reverse_null": 4,
+    "discrimination_index": -0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "linear",
+    "seed": 3,
+    "anchor_vector": [
+      1,
+      4,
+      1,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "linear",
+    "seed": 4,
+    "anchor_vector": [
+      1,
+      4,
+      1,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "nonlinear",
+    "seed": 0,
+    "anchor_vector": [
+      1,
+      4,
+      1,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "nonlinear",
+    "seed": 1,
+    "anchor_vector": [
+      2,
+      4,
+      1,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "nonlinear",
+    "seed": 2,
+    "anchor_vector": [
+      1,
+      4,
+      1,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "nonlinear",
+    "seed": 3,
+    "anchor_vector": [
+      2,
+      4,
+      1,
+      4,
+      2,
+      2
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "nonlinear",
+    "seed": 4,
+    "anchor_vector": [
+      2,
+      4,
+      1,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "atemporal",
+    "seed": 0,
+    "anchor_vector": [
+      2,
+      4,
+      1,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "atemporal",
+    "seed": 1,
+    "anchor_vector": [
+      2,
+      4,
+      1,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "atemporal",
+    "seed": 2,
+    "anchor_vector": [
+      2,
+      4,
+      1,
+      4,
+      4,
+      4
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "atemporal",
+    "seed": 3,
+    "anchor_vector": [
+      2,
+      4,
+      2,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "family_conflict",
+    "condition": "atemporal",
+    "seed": 4,
+    "anchor_vector": [
+      2,
+      4,
+      1,
+      4,
+      2,
+      4
+    ],
+    "sibling_null": 2,
+    "reverse_null": 4,
+    "discrimination_index": 0.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "linear",
+    "seed": 0,
+    "anchor_vector": [
+      5,
+      1,
+      1,
+      1,
+      1,
+      5
+    ],
+    "sibling_null": 3,
+    "reverse_null": 5,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "linear",
+    "seed": 1,
+    "anchor_vector": [
+      5,
+      1,
+      1,
+      1,
+      1,
+      5
+    ],
+    "sibling_null": 3,
+    "reverse_null": 5,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "linear",
+    "seed": 2,
+    "anchor_vector": [
+      5,
+      1,
+      1,
+      1,
+      1,
+      5
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "linear",
+    "seed": 3,
+    "anchor_vector": [
+      5,
+      1,
+      1,
+      1,
+      1,
+      5
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "linear",
+    "seed": 4,
+    "anchor_vector": [
+      5,
+      1,
+      1,
+      1,
+      1,
+      5
+    ],
+    "sibling_null": 3,
+    "reverse_null": 5,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "nonlinear",
+    "seed": 0,
+    "anchor_vector": [
+      5,
+      1,
+      4,
+      1,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "nonlinear",
+    "seed": 1,
+    "anchor_vector": [
+      5,
+      1,
+      5,
+      1,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "nonlinear",
+    "seed": 2,
+    "anchor_vector": [
+      5,
+      1,
+      4,
+      1,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "nonlinear",
+    "seed": 3,
+    "anchor_vector": [
+      5,
+      1,
+      4,
+      1,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "nonlinear",
+    "seed": 4,
+    "anchor_vector": [
+      5,
+      1,
+      4,
+      1,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "atemporal",
+    "seed": 0,
+    "anchor_vector": [
+      5,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "atemporal",
+    "seed": 1,
+    "anchor_vector": [
+      5,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "atemporal",
+    "seed": 2,
+    "anchor_vector": [
+      5,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "atemporal",
+    "seed": 3,
+    "anchor_vector": [
+      5,
+      1,
+      2,
+      1,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "atemporal",
+    "seed": 4,
+    "anchor_vector": [
+      5,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "linear",
+    "seed": 0,
+    "anchor_vector": [
+      1,
+      1,
+      4,
+      1,
+      4,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "linear",
+    "seed": 1,
+    "anchor_vector": [
+      1,
+      1,
+      4,
+      1,
+      4,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "linear",
+    "seed": 2,
+    "anchor_vector": [
+      1,
+      1,
+      4,
+      1,
+      4,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "linear",
+    "seed": 3,
+    "anchor_vector": [
+      2,
+      1,
+      4,
+      1,
+      4,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "linear",
+    "seed": 4,
+    "anchor_vector": [
+      1,
+      1,
+      4,
+      1,
+      4,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "nonlinear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      1,
+      4,
+      1,
+      1,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 3,
+    "discrimination_index": 1.5,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "nonlinear",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      2,
+      4,
+      1,
+      1,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.833,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "nonlinear",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      1,
+      4,
+      1,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "nonlinear",
+    "seed": 3,
+    "anchor_vector": [
+      4,
+      2,
+      4,
+      1,
+      2,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.667,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "nonlinear",
+    "seed": 4,
+    "anchor_vector": [
+      4,
+      2,
+      4,
+      1,
+      1,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 3,
+    "discrimination_index": 1.333,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "atemporal",
+    "seed": 0,
+    "anchor_vector": [
+      2,
+      1,
+      4,
+      1,
+      1,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "atemporal",
+    "seed": 1,
+    "anchor_vector": [
+      4,
+      1,
+      5,
+      1,
+      1,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "atemporal",
+    "seed": 2,
+    "anchor_vector": [
+      4,
+      1,
+      4,
+      1,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.167,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "atemporal",
+    "seed": 3,
+    "anchor_vector": [
+      2,
+      2,
+      4,
+      2,
+      1,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 0.667,
+    "n_parse_failures": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "atemporal",
+    "seed": 4,
+    "anchor_vector": [
+      2,
+      1,
+      5,
+      1,
+      1,
+      2
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.167,
+    "n_parse_failures": 0
+  }
+]

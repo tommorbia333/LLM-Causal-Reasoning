@@ -1,0 +1,19 @@
+[
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "anchor_vector": [
+      4,
+      4,
+      1,
+      4,
+      1,
+      1
+    ],
+    "sibling_null": 3,
+    "reverse_null": 4,
+    "discrimination_index": 1.0,
+    "n_parse_failures": 0
+  }
+]

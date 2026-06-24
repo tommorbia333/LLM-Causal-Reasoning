@@ -1,0 +1,23 @@
+# Pinned-loose for the M5 + MPS workflow. Tighten if reproducibility matters.
+
+# Core (always required)
+torch>=2.4
+transformers>=4.45
+accelerate>=0.34
+tokenizers>=0.20
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+plotly>=5.20
+seaborn>=0.13
+scipy>=1.13
+tqdm>=4.66
+pyyaml>=6.0
+
+# Optional backends — install only the ones you use:
+#   pip install mlx-lm                # for "qwen14b", "qwen32b" on Apple Silicon
+#   pip install openai                # for "gpt4o", "gpt4o-mini"
+#   pip install anthropic             # for "claude-sonnet"
+#
+# These are NOT installed by default. The model_arm imports them lazily inside
+# the relevant Conversation classes, so models you don't use don't require deps.

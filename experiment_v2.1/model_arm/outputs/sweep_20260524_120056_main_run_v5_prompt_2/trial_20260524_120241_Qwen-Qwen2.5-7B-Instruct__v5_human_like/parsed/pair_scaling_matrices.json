@@ -1,0 +1,9722 @@
+[
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        1,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        1,
+        3,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        0,
+        2,
+        null,
+        3,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        3,
+        1,
+        3,
+        null,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.38897833810340987,
+    "spearman_r_vs_gold": 0.39496648034521176,
+    "directional_accuracy": 0.5714285714285714,
+    "edge_f1": 0.3111111111111111,
+    "edge_precision": 0.18421052631578946,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 31,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        1,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        1,
+        3,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        0,
+        2,
+        null,
+        3,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        3,
+        null,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3922893549498625,
+    "spearman_r_vs_gold": 0.4045753010772086,
+    "directional_accuracy": 0.7142857142857143,
+    "edge_f1": 0.30434782608695654,
+    "edge_precision": 0.1794871794871795,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 32,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        1,
+        2,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        1,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        1,
+        null,
+        1,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        null,
+        3,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        3,
+        1,
+        3,
+        null,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        6,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        2,
+        0,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.44442252585176095,
+    "spearman_r_vs_gold": 0.4037321862469222,
+    "directional_accuracy": 0.7142857142857143,
+    "edge_f1": 0.3684210526315789,
+    "edge_precision": 0.22580645161290322,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 24,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        1,
+        3,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        0,
+        2,
+        null,
+        3,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        3,
+        null,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        2,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.395686388185475,
+    "spearman_r_vs_gold": 0.41478419352020646,
+    "directional_accuracy": 0.7142857142857143,
+    "edge_f1": 0.2978723404255319,
+    "edge_precision": 0.175,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 33,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        1,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        1,
+        3,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        null,
+        3,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        3,
+        2,
+        3,
+        null,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3917759207672458,
+    "spearman_r_vs_gold": 0.39638855439117554,
+    "directional_accuracy": 0.5714285714285714,
+    "edge_f1": 0.3181818181818182,
+    "edge_precision": 0.1891891891891892,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 30,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        null,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        2,
+        null,
+        2,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.2919451453448914,
+    "spearman_r_vs_gold": 0.3710649463489317,
+    "directional_accuracy": 0.42857142857142855,
+    "edge_f1": 0.2978723404255319,
+    "edge_precision": 0.175,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 33,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        3,
+        null,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        1,
+        2,
+        null,
+        2,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.29143485901230615,
+    "spearman_r_vs_gold": 0.3843873648794748,
+    "directional_accuracy": 0.42857142857142855,
+    "edge_f1": 0.2857142857142857,
+    "edge_precision": 0.16666666666666666,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 35,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        1,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        null,
+        1,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        1,
+        null,
+        2,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3,
+        null,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        0,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4110422723815719,
+    "spearman_r_vs_gold": 0.4023714320881619,
+    "directional_accuracy": 0.5714285714285714,
+    "edge_f1": 0.35,
+    "edge_precision": 0.21212121212121213,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 26,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        3,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        2,
+        3,
+        3,
+        3,
+        2
+      ],
+      [
+        2,
+        1,
+        2,
+        null,
+        2,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3,
+        2,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.37952076228086723,
+    "spearman_r_vs_gold": 0.4603068048740741,
+    "directional_accuracy": 0.8571428571428571,
+    "edge_f1": 0.2857142857142857,
+    "edge_precision": 0.16666666666666666,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 35,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        2,
+        2,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        3,
+        null,
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        1,
+        2,
+        null,
+        2,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.33597559830571155,
+    "spearman_r_vs_gold": 0.3989179112908577,
+    "directional_accuracy": 0.42857142857142855,
+    "edge_f1": 0.2857142857142857,
+    "edge_precision": 0.16666666666666666,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 35,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        1,
+        2,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        0,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        null,
+        0,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        null,
+        2,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        1,
+        3,
+        0,
+        3,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        3,
+        2,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.32155703483945214,
+    "spearman_r_vs_gold": 0.3833527922734839,
+    "directional_accuracy": 0.5714285714285714,
+    "edge_f1": 0.33333333333333337,
+    "edge_precision": 0.2,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 28,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        1,
+        2,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        0,
+        2,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        0,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        null,
+        2,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3,
+        2,
+        null,
+        6
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.43841841119897007,
+    "spearman_r_vs_gold": 0.4535771884998137,
+    "directional_accuracy": 0.8571428571428571,
+    "edge_f1": 0.33333333333333337,
+    "edge_precision": 0.2,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 28,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        1,
+        2,
+        3,
+        1,
+        1,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        0,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        null,
+        0,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        null,
+        2,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        3,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        3,
+        2,
+        null,
+        6
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.41799753749861246,
+    "spearman_r_vs_gold": 0.41502143450365786,
+    "directional_accuracy": 0.7142857142857143,
+    "edge_f1": 0.35,
+    "edge_precision": 0.21212121212121213,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 26,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        null,
+        3,
+        0,
+        2,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        0,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        null,
+        2,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        0,
+        2,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        2,
+        2,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.44212455378039833,
+    "spearman_r_vs_gold": 0.505590086807579,
+    "directional_accuracy": 0.8571428571428571,
+    "edge_f1": 0.32558139534883723,
+    "edge_precision": 0.19444444444444445,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 29,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        1,
+        2,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        0,
+        2,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        0,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        1,
+        2,
+        null,
+        2,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        3,
+        0,
+        3,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        3,
+        2,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.38914553911562333,
+    "spearman_r_vs_gold": 0.43214615114995264,
+    "directional_accuracy": 0.5714285714285714,
+    "edge_f1": 0.33333333333333337,
+    "edge_precision": 0.2,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 28,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "linear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        1,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        null,
+        2,
+        3,
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        1,
+        null,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        2,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        2,
+        2,
+        0,
+        1,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        6,
+        0,
+        3,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4363785670473503,
+    "spearman_r_vs_gold": 0.45719427484494274,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.3636363636363636,
+    "edge_precision": 0.2222222222222222,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 28,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "linear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        null,
+        2,
+        3,
+        0,
+        2,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        2,
+        null,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        2,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        2,
+        2,
+        0,
+        0,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        6,
+        0,
+        2,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.443972120321616,
+    "spearman_r_vs_gold": 0.4813405813389484,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.34782608695652173,
+    "edge_precision": 0.21052631578947367,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 30,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "linear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        1,
+        1,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        null,
+        1,
+        3,
+        0,
+        1,
+        1,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        1,
+        null,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        2,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        1,
+        2,
+        0,
+        0,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        6,
+        0,
+        3,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4578433701779476,
+    "spearman_r_vs_gold": 0.4570846713106033,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.4210526315789474,
+    "edge_precision": 0.26666666666666666,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 22,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "linear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        3,
+        null,
+        2,
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        2,
+        null,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        2,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        2,
+        2,
+        0,
+        1,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        3,
+        0,
+        2,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.49352275324536543,
+    "spearman_r_vs_gold": 0.4741236318820951,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.34782608695652173,
+    "edge_precision": 0.21052631578947367,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 30,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "linear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        null,
+        2,
+        3,
+        0,
+        2,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        2,
+        null,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        2,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        2,
+        2,
+        0,
+        0,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        3,
+        0,
+        2,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.49776449204638623,
+    "spearman_r_vs_gold": 0.49603150119702927,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.34782608695652173,
+    "edge_precision": 0.21052631578947367,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 30,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "nonlinear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        1,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        3,
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        1,
+        null,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        2,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        0,
+        3,
+        null,
+        6
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.5610581576323073,
+    "spearman_r_vs_gold": 0.49574156935154245,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.3636363636363636,
+    "edge_precision": 0.2222222222222222,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 28,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "nonlinear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        2,
+        2,
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        null,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        2,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        0,
+        3,
+        null,
+        6
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.5663405970831181,
+    "spearman_r_vs_gold": 0.5180425023632921,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.3404255319148936,
+    "edge_precision": 0.20512820512820512,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 31,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "nonlinear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        1,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        null,
+        1,
+        3,
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        1,
+        null,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        1,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        6,
+        0,
+        3,
+        0,
+        3,
+        null,
+        6
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.5232915717922153,
+    "spearman_r_vs_gold": 0.48117874768869223,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.41025641025641024,
+    "edge_precision": 0.25806451612903225,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 23,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "nonlinear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        2,
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        2,
+        null,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        2,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        3,
+        0,
+        2,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.511419746614531,
+    "spearman_r_vs_gold": 0.5226564153564494,
+    "directional_accuracy": 1.0,
+    "edge_f1": 0.33333333333333337,
+    "edge_precision": 0.2,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 32,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "nonlinear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        2,
+        3,
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        null,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        2,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4834900453193561,
+    "spearman_r_vs_gold": 0.4870467686669516,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.3404255319148936,
+    "edge_precision": 0.20512820512820512,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 31,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "atemporal",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        1,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        null,
+        1,
+        3,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        1,
+        null,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        3,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        1,
+        2,
+        2,
+        1,
+        0,
+        null,
+        3,
+        2
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        0,
+        2,
+        null,
+        3
+      ],
+      [
+        2,
+        3,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.45702604911711436,
+    "spearman_r_vs_gold": 0.4331174347048808,
+    "directional_accuracy": 0.625,
+    "edge_f1": 0.3720930232558139,
+    "edge_precision": 0.22857142857142856,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 27,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "atemporal",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        null,
+        2,
+        3,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        2,
+        null,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        3,
+        3,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        1,
+        2,
+        2,
+        2,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        3,
+        0,
+        2,
+        0,
+        2,
+        null,
+        3
+      ],
+      [
+        2,
+        3,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.45617950805255447,
+    "spearman_r_vs_gold": 0.4553768940826276,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.33333333333333337,
+    "edge_precision": 0.2,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 32,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "atemporal",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        1,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        null,
+        1,
+        3,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        1,
+        null,
+        0,
+        1,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        3,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        1,
+        2,
+        1,
+        1,
+        0,
+        null,
+        3,
+        2
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        0,
+        1,
+        null,
+        6
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.5415536273923308,
+    "spearman_r_vs_gold": 0.4646852684857976,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.41025641025641024,
+    "edge_precision": 0.25806451612903225,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 23,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "atemporal",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        null,
+        2,
+        2,
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        null,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        3,
+        2,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        3,
+        0,
+        2,
+        0,
+        2,
+        null,
+        3
+      ],
+      [
+        2,
+        3,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.48357617886283294,
+    "spearman_r_vs_gold": 0.5034400324672584,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.32,
+    "edge_precision": 0.19047619047619047,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 34,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "community_fair",
+    "condition": "atemporal",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        null,
+        2,
+        3,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        3,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        2,
+        null,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        3,
+        3,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        1,
+        2,
+        2,
+        2,
+        0,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        0,
+        2,
+        null,
+        3
+      ],
+      [
+        2,
+        3,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4481101859540295,
+    "spearman_r_vs_gold": 0.4451777956858935,
+    "directional_accuracy": 0.625,
+    "edge_f1": 0.33333333333333337,
+    "edge_precision": 0.2,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 32,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "linear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        null,
+        3,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        null,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        0,
+        null,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        null,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        1,
+        null,
+        6,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        null,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4183097769575548,
+    "spearman_r_vs_gold": 0.3811099936423289,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.4,
+    "edge_precision": 0.25,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 24,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "linear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        null,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        null,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        null,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        1,
+        null,
+        6,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        null,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3541184604294475,
+    "spearman_r_vs_gold": 0.2809799327850223,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.34782608695652173,
+    "edge_precision": 0.21052631578947367,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 30,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "linear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        null,
+        3,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        0,
+        null,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        null,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        null,
+        6,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        3,
+        null,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4110857147760088,
+    "spearman_r_vs_gold": 0.375028534116365,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.42424242424242425,
+    "edge_precision": 0.28,
+    "edge_recall": 0.875,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 18,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "linear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        null,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        null,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        null,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        2,
+        null,
+        6,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.2822165673282769,
+    "spearman_r_vs_gold": 0.27562977348669987,
+    "directional_accuracy": 0.625,
+    "edge_f1": 0.33333333333333337,
+    "edge_precision": 0.2,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 32,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "linear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      [
+        2,
+        null,
+        3,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        null,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        null,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        1,
+        null,
+        6,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3318361843512076,
+    "spearman_r_vs_gold": 0.35146772193123255,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.34782608695652173,
+    "edge_precision": 0.21052631578947367,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 30,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "nonlinear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        3,
+        2,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        1,
+        null,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        1,
+        null,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        2,
+        1,
+        0,
+        null,
+        6,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4201751888064048,
+    "spearman_r_vs_gold": 0.3894612566465958,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.3720930232558139,
+    "edge_precision": 0.22857142857142856,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 27,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "nonlinear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        null,
+        2,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        null,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        null,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        0,
+        null,
+        6,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3307520327374624,
+    "spearman_r_vs_gold": 0.24268498469609778,
+    "directional_accuracy": 0.375,
+    "edge_f1": 0.326530612244898,
+    "edge_precision": 0.1951219512195122,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 33,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "nonlinear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        3,
+        2,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        0,
+        null,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        null,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        2,
+        1,
+        0,
+        null,
+        6,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.40221977862391567,
+    "spearman_r_vs_gold": 0.3651993602162994,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.358974358974359,
+    "edge_precision": 0.22580645161290322,
+    "edge_recall": 0.875,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 24,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "nonlinear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        null,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        null,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        null,
+        2,
+        2,
+        2
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        0,
+        null,
+        6,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.33725936922219213,
+    "spearman_r_vs_gold": 0.25556658100682306,
+    "directional_accuracy": 0.375,
+    "edge_f1": 0.326530612244898,
+    "edge_precision": 0.1951219512195122,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 33,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "nonlinear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        null,
+        3,
+        2,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        null,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        null,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        2,
+        2,
+        0,
+        null,
+        6,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.38516036838960654,
+    "spearman_r_vs_gold": 0.3393178234418868,
+    "directional_accuracy": 0.625,
+    "edge_f1": 0.326530612244898,
+    "edge_precision": 0.1951219512195122,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 33,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "atemporal",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        2,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        2,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        null,
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        null,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        1,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        null,
+        6
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.33208797108594634,
+    "spearman_r_vs_gold": 0.3158609966978724,
+    "directional_accuracy": 0.5,
+    "edge_f1": 0.32,
+    "edge_precision": 0.19047619047619047,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 34,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "atemporal",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        null,
+        2,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        2,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        null,
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        null,
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        1,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        null,
+        6
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.27799361315581755,
+    "spearman_r_vs_gold": 0.22279730288986357,
+    "directional_accuracy": 0.375,
+    "edge_f1": 0.32,
+    "edge_precision": 0.19047619047619047,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 34,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "atemporal",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        2,
+        1,
+        0,
+        1,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        2,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        1,
+        2,
+        1,
+        null,
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        null,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        2,
+        1,
+        1,
+        null,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.44299701560438537,
+    "spearman_r_vs_gold": 0.3696404479357389,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.38095238095238093,
+    "edge_precision": 0.23529411764705882,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 26,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "atemporal",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        null,
+        2,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        2,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        null,
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        null,
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        null,
+        6
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.2732704680726106,
+    "spearman_r_vs_gold": 0.2148589443732999,
+    "directional_accuracy": 0.25,
+    "edge_f1": 0.3137254901960785,
+    "edge_precision": 0.18604651162790697,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 35,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "restaurant_fire",
+    "condition": "atemporal",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        null,
+        2,
+        2,
+        0,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        2,
+        1,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        null,
+        0,
+        2,
+        2,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        null,
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        2,
+        1,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        null,
+        6
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.315786669650878,
+    "spearman_r_vs_gold": 0.282254999803222,
+    "directional_accuracy": 0.5,
+    "edge_f1": 0.32,
+    "edge_precision": 0.19047619047619047,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 34,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        null,
+        6,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        2,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4437473388238767,
+    "spearman_r_vs_gold": 0.4140105621027297,
+    "directional_accuracy": 0.7,
+    "edge_f1": 0.4255319148936171,
+    "edge_precision": 0.2702702702702703,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 10,
+    "edge_fp": 27,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        null,
+        6,
+        3,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        2,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.47941661112579476,
+    "spearman_r_vs_gold": 0.4324784996606018,
+    "directional_accuracy": 0.7,
+    "edge_f1": 0.4255319148936171,
+    "edge_precision": 0.2702702702702703,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 10,
+    "edge_fp": 27,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        1,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        null,
+        1,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        null,
+        6,
+        3,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        2,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.5071443000634751,
+    "spearman_r_vs_gold": 0.4527878807817436,
+    "directional_accuracy": 0.8,
+    "edge_f1": 0.4878048780487805,
+    "edge_precision": 0.3225806451612903,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 10,
+    "edge_fp": 21,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        null,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        2,
+        3,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        2,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.35832003876900176,
+    "spearman_r_vs_gold": 0.3723963758114762,
+    "directional_accuracy": 0.6,
+    "edge_f1": 0.4081632653061224,
+    "edge_precision": 0.2564102564102564,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 10,
+    "edge_fp": 29,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        null,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        2,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3740878272869101,
+    "spearman_r_vs_gold": 0.38928523516043456,
+    "directional_accuracy": 0.7,
+    "edge_f1": 0.4255319148936171,
+    "edge_precision": 0.2702702702702703,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 10,
+    "edge_fp": 27,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        1,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        null,
+        3,
+        3,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        1,
+        3,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        0,
+        2,
+        null,
+        3,
+        2,
+        3
+      ],
+      [
+        2,
+        1,
+        1,
+        2,
+        2,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4806073894362376,
+    "spearman_r_vs_gold": 0.47998404849336934,
+    "directional_accuracy": 0.8,
+    "edge_f1": 0.4651162790697675,
+    "edge_precision": 0.30303030303030304,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 10,
+    "edge_fp": 23,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        0,
+        null,
+        3,
+        2,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        1,
+        3,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        0,
+        2,
+        null,
+        3,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        1,
+        2,
+        2,
+        null,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4644063137478167,
+    "spearman_r_vs_gold": 0.4681651607086083,
+    "directional_accuracy": 0.8,
+    "edge_f1": 0.4347826086956522,
+    "edge_precision": 0.2777777777777778,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 10,
+    "edge_fp": 26,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        1,
+        3,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        0,
+        null,
+        3,
+        3,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        0,
+        2,
+        null,
+        3,
+        2,
+        3
+      ],
+      [
+        1,
+        1,
+        1,
+        2,
+        1,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.46617661788650827,
+    "spearman_r_vs_gold": 0.4602852155459369,
+    "directional_accuracy": 0.7,
+    "edge_f1": 0.45000000000000007,
+    "edge_precision": 0.3,
+    "edge_recall": 0.9,
+    "edge_threshold": 2,
+    "edge_tp": 9,
+    "edge_fp": 21,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        3,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        null,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        1,
+        3,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        0,
+        2,
+        null,
+        3,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        1,
+        2,
+        2,
+        null,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.44010270261397977,
+    "spearman_r_vs_gold": 0.46946405141778164,
+    "directional_accuracy": 0.8,
+    "edge_f1": 0.4347826086956522,
+    "edge_precision": 0.2777777777777778,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 10,
+    "edge_fp": 26,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        0,
+        null,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        0,
+        2,
+        2,
+        null,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.43068840823578824,
+    "spearman_r_vs_gold": 0.45874915692250023,
+    "directional_accuracy": 0.8,
+    "edge_f1": 0.4347826086956522,
+    "edge_precision": 0.2777777777777778,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 10,
+    "edge_fp": 26,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        1,
+        3,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        0,
+        null,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        2,
+        3
+      ],
+      [
+        2,
+        1,
+        0,
+        2,
+        2,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        2,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.42579704075928265,
+    "spearman_r_vs_gold": 0.4558424728655453,
+    "directional_accuracy": 0.8,
+    "edge_f1": 0.41860465116279066,
+    "edge_precision": 0.2727272727272727,
+    "edge_recall": 0.9,
+    "edge_threshold": 2,
+    "edge_tp": 9,
+    "edge_fp": 24,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        null,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        0,
+        2,
+        2,
+        null,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.40241447522639295,
+    "spearman_r_vs_gold": 0.42574379773331245,
+    "directional_accuracy": 0.7,
+    "edge_f1": 0.4255319148936171,
+    "edge_precision": 0.2702702702702703,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 10,
+    "edge_fp": 27,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        1,
+        3,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        2,
+        1,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        null,
+        3,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        2,
+        3
+      ],
+      [
+        1,
+        1,
+        0,
+        2,
+        1,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4499538446097806,
+    "spearman_r_vs_gold": 0.4610978548604117,
+    "directional_accuracy": 0.8,
+    "edge_f1": 0.4736842105263158,
+    "edge_precision": 0.32142857142857145,
+    "edge_recall": 0.9,
+    "edge_threshold": 2,
+    "edge_tp": 9,
+    "edge_fp": 19,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        1,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        0,
+        null,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        0,
+        2,
+        2,
+        null,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4012718916512135,
+    "spearman_r_vs_gold": 0.42451158795814525,
+    "directional_accuracy": 0.7,
+    "edge_f1": 0.4255319148936171,
+    "edge_precision": 0.2702702702702703,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 10,
+    "edge_fp": 27,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        null,
+        0,
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        null,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        null,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        0,
+        2,
+        2,
+        null,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        2,
+        0,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4365375434451031,
+    "spearman_r_vs_gold": 0.4739876443567238,
+    "directional_accuracy": 0.8,
+    "edge_f1": 0.4255319148936171,
+    "edge_precision": 0.2702702702702703,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 10,
+    "edge_fp": 27,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "linear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        1,
+        3,
+        2
+      ],
+      [
+        0,
+        1,
+        null,
+        6,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        2,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        null,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        3,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.33891654963904105,
+    "spearman_r_vs_gold": 0.33154810898688664,
+    "directional_accuracy": 0.625,
+    "edge_f1": 0.33333333333333337,
+    "edge_precision": 0.20588235294117646,
+    "edge_recall": 0.875,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 27,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "linear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        6,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        6,
+        2,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        null,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        2,
+        3,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.34951754023485637,
+    "spearman_r_vs_gold": 0.3512589882201266,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.3636363636363636,
+    "edge_precision": 0.2222222222222222,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 28,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "linear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        1,
+        3,
+        2
+      ],
+      [
+        0,
+        1,
+        null,
+        6,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        6,
+        0,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        6,
+        null,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        3,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3059241774129172,
+    "spearman_r_vs_gold": 0.31012796374571727,
+    "directional_accuracy": 0.5,
+    "edge_f1": 0.3414634146341463,
+    "edge_precision": 0.21212121212121213,
+    "edge_recall": 0.875,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 26,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "linear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        6,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        2,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        null,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        2,
+        3,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3696478379590414,
+    "spearman_r_vs_gold": 0.36364646617291146,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.3636363636363636,
+    "edge_precision": 0.2222222222222222,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 28,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "linear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        6,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        null,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        2,
+        3,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.37280820460294506,
+    "spearman_r_vs_gold": 0.36634141310072316,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.3720930232558139,
+    "edge_precision": 0.22857142857142856,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 27,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "nonlinear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        6,
+        3,
+        6,
+        6,
+        3
+      ],
+      [
+        2,
+        6,
+        2,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        2,
+        3,
+        0,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3086758542175981,
+    "spearman_r_vs_gold": 0.3427368505840341,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.34782608695652173,
+    "edge_precision": 0.21052631578947367,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 30,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "nonlinear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        6,
+        3,
+        6,
+        6,
+        3
+      ],
+      [
+        2,
+        6,
+        2,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        2,
+        3,
+        0,
+        2,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3141127399109876,
+    "spearman_r_vs_gold": 0.3601643480586556,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.3404255319148936,
+    "edge_precision": 0.20512820512820512,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 31,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "nonlinear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        null,
+        6,
+        3,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        6,
+        0,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        2,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3258097628410933,
+    "spearman_r_vs_gold": 0.34698479613096017,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.3902439024390244,
+    "edge_precision": 0.24242424242424243,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 25,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "nonlinear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        2,
+        3,
+        2
+      ],
+      [
+        2,
+        2,
+        null,
+        6,
+        3,
+        3,
+        6,
+        3
+      ],
+      [
+        2,
+        3,
+        2,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        2,
+        3,
+        0,
+        2,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3508492190326778,
+    "spearman_r_vs_gold": 0.3660986629547395,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.3404255319148936,
+    "edge_precision": 0.20512820512820512,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 31,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "nonlinear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        null,
+        6,
+        3,
+        3,
+        6,
+        3
+      ],
+      [
+        2,
+        3,
+        2,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        2,
+        3,
+        0,
+        3,
+        null,
+        3,
+        6,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.35566390142430976,
+    "spearman_r_vs_gold": 0.381002037802298,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.3404255319148936,
+    "edge_precision": 0.20512820512820512,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 31,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "atemporal",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        null,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        1,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3403126495584174,
+    "spearman_r_vs_gold": 0.3581560150745827,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.3636363636363636,
+    "edge_precision": 0.2222222222222222,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 28,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "atemporal",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        1,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        2,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.35795173237735234,
+    "spearman_r_vs_gold": 0.38752296581805856,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.3636363636363636,
+    "edge_precision": 0.2222222222222222,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 28,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "atemporal",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        null,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        1,
+        null,
+        6,
+        6,
+        6,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        3,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        1,
+        0,
+        2,
+        0,
+        2,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.2846294587510266,
+    "spearman_r_vs_gold": 0.2804239682359294,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.3414634146341463,
+    "edge_precision": 0.21212121212121213,
+    "edge_recall": 0.875,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 26,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "atemporal",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        2,
+        3,
+        2
+      ],
+      [
+        0,
+        2,
+        null,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        3,
+        1,
+        null,
+        6,
+        6,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        2,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.3834295199879099,
+    "spearman_r_vs_gold": 0.3793897069064253,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.3636363636363636,
+    "edge_precision": 0.2222222222222222,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 28,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "power_cut",
+    "condition": "atemporal",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        3,
+        0,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        null,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        1,
+        null,
+        6,
+        6,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        2,
+        null,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        2,
+        2,
+        0,
+        2,
+        0,
+        2,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.37929651694886146,
+    "spearman_r_vs_gold": 0.3852378512184512,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.3636363636363636,
+    "edge_precision": 0.2222222222222222,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 28,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "linear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        1,
+        3,
+        1,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        3,
+        1
+      ],
+      [
+        1,
+        0,
+        null,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        0,
+        0,
+        null,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.47268932471564773,
+    "spearman_r_vs_gold": 0.4553146760579109,
+    "directional_accuracy": 0.625,
+    "edge_f1": 0.5161290322580645,
+    "edge_precision": 0.34782608695652173,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 15,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "linear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        2,
+        3,
+        1,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        3,
+        1
+      ],
+      [
+        1,
+        0,
+        null,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        null,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.46958075605863575,
+    "spearman_r_vs_gold": 0.4735721858374415,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.45714285714285713,
+    "edge_precision": 0.2962962962962963,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 19,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "linear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        1,
+        3,
+        1,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        3,
+        1
+      ],
+      [
+        1,
+        0,
+        null,
+        3,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        0,
+        0,
+        null,
+        1,
+        6,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.5511214914850585,
+    "spearman_r_vs_gold": 0.5014401276245373,
+    "directional_accuracy": 0.625,
+    "edge_f1": 0.5161290322580645,
+    "edge_precision": 0.34782608695652173,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 15,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "linear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        2,
+        3,
+        1,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        3,
+        2
+      ],
+      [
+        1,
+        0,
+        null,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        null,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.43230967767847295,
+    "spearman_r_vs_gold": 0.43510596984095307,
+    "directional_accuracy": 0.875,
+    "edge_f1": 0.4444444444444445,
+    "edge_precision": 0.2857142857142857,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 20,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "linear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        2,
+        3,
+        1,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        3,
+        1
+      ],
+      [
+        1,
+        0,
+        null,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        0,
+        0,
+        null,
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4589686183937278,
+    "spearman_r_vs_gold": 0.4612480992919526,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.45714285714285713,
+    "edge_precision": 0.2962962962962963,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 19,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "nonlinear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        2,
+        3,
+        0,
+        3,
+        3,
+        1
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        null,
+        1,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        0,
+        1,
+        null,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        null,
+        3,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.44015162894526483,
+    "spearman_r_vs_gold": 0.4356488811238022,
+    "directional_accuracy": 0.375,
+    "edge_f1": 0.4516129032258065,
+    "edge_precision": 0.30434782608695654,
+    "edge_recall": 0.875,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 16,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "nonlinear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        2,
+        3,
+        0,
+        3,
+        3,
+        1
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        null,
+        2,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        2,
+        0,
+        2,
+        null,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        null,
+        3,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.48058855100705977,
+    "spearman_r_vs_gold": 0.47331469276284405,
+    "directional_accuracy": 0.5,
+    "edge_f1": 0.48484848484848486,
+    "edge_precision": 0.32,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 17,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "nonlinear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        1,
+        3,
+        0,
+        3,
+        3,
+        1
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        null,
+        1,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        3,
+        0,
+        1,
+        null,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        null,
+        3,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4544700372859273,
+    "spearman_r_vs_gold": 0.44342645743372966,
+    "directional_accuracy": 0.375,
+    "edge_f1": 0.48275862068965514,
+    "edge_precision": 0.3333333333333333,
+    "edge_recall": 0.875,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 14,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "nonlinear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        2,
+        3,
+        0,
+        3,
+        2,
+        1
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        2,
+        1
+      ],
+      [
+        2,
+        0,
+        null,
+        2,
+        0,
+        3,
+        2,
+        3
+      ],
+      [
+        2,
+        0,
+        2,
+        null,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        null,
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.464184664153111,
+    "spearman_r_vs_gold": 0.47158116420995305,
+    "directional_accuracy": 0.75,
+    "edge_f1": 0.4444444444444445,
+    "edge_precision": 0.2857142857142857,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 20,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "nonlinear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        2,
+        3,
+        0,
+        3,
+        3,
+        1
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        null,
+        2,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        2,
+        0,
+        2,
+        null,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        null,
+        3,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.47109115767447163,
+    "spearman_r_vs_gold": 0.46403866030291363,
+    "directional_accuracy": 0.5,
+    "edge_f1": 0.48484848484848486,
+    "edge_precision": 0.32,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 17,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "atemporal",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        1,
+        3,
+        1,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        null,
+        1,
+        0,
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        0,
+        3,
+        null,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        null,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.43371813199429327,
+    "spearman_r_vs_gold": 0.433949506729696,
+    "directional_accuracy": 0.375,
+    "edge_f1": 0.4516129032258065,
+    "edge_precision": 0.30434782608695654,
+    "edge_recall": 0.875,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 16,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "atemporal",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        2,
+        3,
+        1,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        null,
+        2,
+        0,
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        0,
+        3,
+        null,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        null,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4420978263286979,
+    "spearman_r_vs_gold": 0.443668098911679,
+    "directional_accuracy": 0.375,
+    "edge_f1": 0.45714285714285713,
+    "edge_precision": 0.2962962962962963,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 19,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "atemporal",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        1,
+        3,
+        1,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        null,
+        1,
+        0,
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        0,
+        3,
+        null,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        null,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.44794676973397407,
+    "spearman_r_vs_gold": 0.44227940786173475,
+    "directional_accuracy": 0.375,
+    "edge_f1": 0.48275862068965514,
+    "edge_precision": 0.3333333333333333,
+    "edge_recall": 0.875,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 14,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "atemporal",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        2,
+        3,
+        1,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        null,
+        2,
+        0,
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        0,
+        2,
+        null,
+        1,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        null,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        null,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4403248548048676,
+    "spearman_r_vs_gold": 0.4410192142961758,
+    "directional_accuracy": 0.5,
+    "edge_f1": 0.45714285714285713,
+    "edge_precision": 0.2962962962962963,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 19,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "missed_flight",
+    "condition": "atemporal",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        0,
+        2,
+        3,
+        1,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        null,
+        0,
+        0,
+        3,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        null,
+        2,
+        0,
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        0,
+        3,
+        null,
+        0,
+        3,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        null,
+        3,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        0,
+        null,
+        3,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        null,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        3,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4420978263286979,
+    "spearman_r_vs_gold": 0.443668098911679,
+    "directional_accuracy": 0.375,
+    "edge_f1": 0.45714285714285713,
+    "edge_precision": 0.2962962962962963,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 8,
+    "edge_fp": 19,
+    "edge_fn": 0
+  }
+]

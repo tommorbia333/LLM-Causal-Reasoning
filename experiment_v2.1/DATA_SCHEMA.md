@@ -6,11 +6,18 @@
 
 This document specifies the structure of the data exported by the experiment and is intended as operational reference material for analysis scripts.
 
+**Domain pool (human side).** The participant-facing study draws from
+six domains: `hospital_incident`, `community_fair`, `restaurant_fire`,
+`school_trip`, `power_cut`, `missed_flight`. Each participant reads four.
+The two remaining source domains (`care_home_incident`,
+`family_conflict`) are kept in the source stimulus files for the
+computational pipeline but never appear in human data.
+
 ---
 
 ## 1. Export format
 
-Cognition exports participant data as CSV (one row per trial) and JSON (structured). The JSON export is preferred for analysis because it preserves the nested `events` arrays and any array-valued fields (e.g., `directed_matrix`, `anchor_vector`, `events`).
+Cognition exports participant data as CSV (one row per trial) and JSON (structured). The JSON export is preferred for analysis because it preserves the nested `events` arrays and any array-valued fields (e.g., `directed_matrix`, `events`).
 
 Each row carries all jsPsych-standard fields (`trial_index`, `trial_type`, `time_elapsed`, `rt`, `response`, etc.) plus the study-specific fields documented below.
 
@@ -22,7 +29,7 @@ Added via `jsPsych.data.addProperties` in `src/main.js`:
 |---|---|---|
 | `participant_id` | string | Prolific PID or fallback `anon_xxx` |
 | `condition` | `'linear' \| 'nonlinear' \| 'atemporal'` | Between-subjects assignment |
-| `assignment_id` | integer 0–31 | Index into the 32-row preregistered Latin-square table |
+| `assignment_id` | integer 0–59 | Index into the 60-row preregistered 4-of-6 BIBD × Williams allocator table |
 | `experiment_version` | string | `CONFIG.experiment_version` |
 
 Trial rows also carry (from jsPsych core):
@@ -156,37 +163,14 @@ One row per story. **This is the primary RSA input.**
 | `matrix_event_ids` | array | Row/column labels: `['E1','E2','E3','E4','E5','E6','E7','E8']` |
 | `presentation_order` | array of `[source, target]` pairs | Full 56-pair sequence used |
 
-### 3.8 Counterfactual — items (`task: 'counterfactual_item'`)
+### 3.8 Counterfactual probes (NOT EMITTED on the human side)
 
-8 rows per story.
-
-| Field | Type | Description |
-|---|---|---|
-| `story_id` | string | — |
-| `probe_id` | string | e.g., `hospital_incident_anchor_E1`, `hospital_incident_sibling_null`, `hospital_incident_reverse_null` |
-| `probe_role` | `'anchor' \| 'sibling_null' \| 'reverse_null'` | — |
-| `antecedent_event_id` | `E1..E8` | — |
-| `consequent_event_id` | `E1..E8` | Usually `E7` for anchors and reverse null; story-specific for sibling null |
-| `probe_index` | 0–7 | Serial position within the block |
-| `prompt_text` | string | Full probe wording |
-| `rating` | 1–5 | 1 = Much less likely, 3 = No change, 5 = Much more likely |
-| `rating_label` | string | Text label chosen |
-| `rt_ms` | ms | — |
-| `events` (detail) | array | `probe_shown`, `response_clicked` |
-
-### 3.9 Counterfactual — summary (`task: 'counterfactual_summary'`)
-
-One row per story.
-
-| Field | Type | Description |
-|---|---|---|
-| `story_id` | string | — |
-| `anchor_vector` | length-6 array | Ratings for E1..E6 → E7, in canonical order (per §7.5 of task design) |
-| `sibling_null_rating` | 1–5 | — |
-| `reverse_null_rating` | 1–5 | — |
-| `discrimination_index` | float | `mean(abs(anchor-3)) - mean(abs(null-3))` — behavioural measure of causal model cleanliness (§7.5) |
-| `block_rt_ms` | ms | — |
-| `presentation_order` | array of probe_ids | Randomised order actually used |
+The counterfactual probe task is **not** part of the participant-facing
+timeline as of `experiment_version` 0.1.0-dev (rev. 2026-05-21). The
+task module (`src/tasks/counterfactual.js`) and its stimuli
+(`stimuli/cf_probes.js`) are retained in the build for use by the
+computational pipeline only; no `counterfactual_item` or
+`counterfactual_summary` rows will appear in human data exports.
 
 ## 4. Participant-level record assembly
 
@@ -197,7 +181,6 @@ For analysis, the canonical per-participant × per-story record is built by:
    - `comprehension_summary.accuracy` → quality gate
    - `ordering.final_order`, `ordering.kendall_tau_to_canonical` → temporal axis
    - `pair_scaling_summary.directed_matrix` → 8×8 RSA matrix
-   - `counterfactual_summary.anchor_vector` → length-6 dependency vector
 
 3. For item-level analyses (by-role comprehension breakdown, pair-level regressions, probe-level responses), keep the item rows too.
 
@@ -209,7 +192,6 @@ When `CONFIG.logging_level === 'detail'` (default), each row carries a nested `e
 - **Comprehension item:** `item_shown`, `response_clicked`
 - **Ordering:** `ordering_shown`, `drag_start` / `drag_end_moved` / `drag_end_unchanged` (with `event_id`, `from`, `to`), `confidence_first_touch`, `confidence_change`, `continue_clicked`
 - **Pair scaling item:** `item_shown` (with source/target), `response_clicked` (with rating)
-- **Counterfactual item:** `probe_shown` (with probe_id), `response_clicked` (with rating, label)
 
 These are optional for analysis but enable post-hoc data-quality audits (did participants attend throughout? do rushed responses cluster?).
 

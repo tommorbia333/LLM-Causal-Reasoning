@@ -21,7 +21,6 @@ var DataHelpers = (function () {
       condition: condition,
       assignment_id: assignment.assignment_id,
       split: assignment.split,
-      half: assignment.half,
       order_idx: assignment.order_idx,
       stories_assigned: assignment.stories,
       experiment_version: CONFIG.experiment_version,

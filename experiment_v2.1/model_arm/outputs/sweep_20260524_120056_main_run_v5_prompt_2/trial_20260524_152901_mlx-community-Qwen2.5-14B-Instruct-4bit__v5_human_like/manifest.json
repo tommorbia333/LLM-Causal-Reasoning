@@ -1,0 +1,36 @@
+{
+  "trial_dir": "outputs/sweep_20260524_120056_main_run_v5_prompt_2/trial_20260524_152901_mlx-community-Qwen2.5-14B-Instruct-4bit__v5_human_like",
+  "timestamp": "2026-05-25T00:18:14.756905Z",
+  "model_id": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+  "story_ids": [
+    "hospital_incident",
+    "community_fair",
+    "restaurant_fire",
+    "school_trip",
+    "power_cut",
+    "missed_flight"
+  ],
+  "conditions": [
+    "linear",
+    "nonlinear",
+    "atemporal"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "temperature": 0.7,
+  "max_new_tokens": 80,
+  "pair_scaling_variant": "v5_human_like",
+  "n_story_runs": 90,
+  "elapsed_seconds": 31753.1,
+  "tasks_run": {
+    "comprehension": true,
+    "ordering": true,
+    "pair_scaling": true,
+    "counterfactual": true
+  }
+}

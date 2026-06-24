@@ -1,0 +1,4 @@
+2026-05-22 09:03:45,122 | trial | INFO | Trial spec: model=Qwen/Qwen2.5-7B-Instruct stories=['hospital_incident'] conditions=['linear'] seeds=[0] temperature=0.7 max_new_tokens=80
+2026-05-22 09:03:45,143 | trial | INFO | [1/1] hospital_incident | linear | seed=0
+2026-05-22 09:03:46,566 | transformers.generation.utils | WARNING | The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+2026-05-22 09:16:53,602 | trial | INFO | Trial complete. 1 story-runs in 788.5s

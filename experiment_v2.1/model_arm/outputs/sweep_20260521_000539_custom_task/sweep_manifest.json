@@ -1,0 +1,43 @@
+{
+  "sweep_id": "custom_task",
+  "sweep_dir": "outputs/sweep_20260521_000539_custom_task",
+  "timestamp": "2026-05-21T00:21:42.613788Z",
+  "models": [
+    "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "prompt_variants": [
+    "v5_human_like"
+  ],
+  "tasks": {
+    "comprehension": false,
+    "ordering": false,
+    "pair_scaling": true,
+    "counterfactual": false
+  },
+  "story_ids": [
+    "hospital_incident"
+  ],
+  "conditions": [
+    "linear",
+    "nonlinear",
+    "atemporal"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "temperature": 0.7,
+  "max_new_tokens": 80,
+  "n_cells": 1,
+  "n_completed": 1,
+  "n_skipped": 0,
+  "n_failed": 0,
+  "failed_cells": [],
+  "trial_dirs": [
+    "outputs/sweep_20260521_000539_custom_task/trial_20260521_000706_Qwen-Qwen2.5-7B-Instruct__v5_human_like"
+  ],
+  "elapsed_seconds": 963.1
+}

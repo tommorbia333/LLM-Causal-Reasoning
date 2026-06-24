@@ -1,0 +1,31 @@
+{
+  "sweep_id": "smoke_test",
+  "sweep_dir": "outputs/sweep_20260507_190429_smoke_test",
+  "timestamp": "2026-05-07T19:07:55.836781Z",
+  "models": [
+    "Qwen/Qwen2.5-7B-Instruct"
+  ],
+  "prompt_variants": [
+    "v1_original"
+  ],
+  "story_ids": [
+    "hospital_incident"
+  ],
+  "conditions": [
+    "linear"
+  ],
+  "seeds": [
+    0
+  ],
+  "temperature": 0.7,
+  "max_new_tokens": 80,
+  "n_cells": 1,
+  "n_completed": 1,
+  "n_skipped": 0,
+  "n_failed": 0,
+  "failed_cells": [],
+  "trial_dirs": [
+    "outputs/sweep_20260507_190429_smoke_test/trial_20260507_190559_Qwen-Qwen2.5-7B-Instruct__v1_original"
+  ],
+  "elapsed_seconds": 206.0
+}

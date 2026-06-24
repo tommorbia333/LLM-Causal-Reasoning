@@ -1,0 +1,31 @@
+{
+  "trial_dir": "outputs/sweep_20260507_190915_prompt_pilot/trial_20260507_201127_Qwen-Qwen2.5-7B-Instruct__v4_full_strict",
+  "timestamp": "2026-05-07T21:01:57.999818Z",
+  "model_id": "Qwen/Qwen2.5-7B-Instruct",
+  "story_ids": [
+    "hospital_incident"
+  ],
+  "conditions": [
+    "linear",
+    "nonlinear",
+    "atemporal"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "temperature": 0.7,
+  "max_new_tokens": 80,
+  "pair_scaling_variant": "v4_full_strict",
+  "n_story_runs": 15,
+  "elapsed_seconds": 3030.1,
+  "tasks_run": {
+    "comprehension": true,
+    "ordering": true,
+    "pair_scaling": true,
+    "counterfactual": true
+  }
+}

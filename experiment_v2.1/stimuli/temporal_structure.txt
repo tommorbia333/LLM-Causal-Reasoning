@@ -1,0 +1,25 @@
+# Temporal structure for the temporal-ordering probe.
+#
+# One line per story. Events are listed in chronological order (E1 earliest).
+# '|' separates time-steps. Events sharing a time-step (space-separated within a
+# segment) are concurrent: they occur in the same clock-time window in the story.
+#
+# Labels are derived purely by comparing time-steps:
+#   earlier step  -> before
+#   later step    -> after
+#   same step     -> concurrent
+#
+# This is the authored temporal ground truth, independent of the causal graph and
+# of any human data. Edit the groupings to match the intended temporal reading;
+# the draft below groups only events with an explicit simultaneity cue in the prose
+# ("around the same time", "meanwhile", "at the time"), so concurrency is rare and
+# topology-dependent, as clock-time simultaneity should be.
+
+hospital_incident:   E1 E2 | E3 | E4 | E5 | E6 E7 | E8
+care_home_incident:  E1 E2 | E3 | E4 | E5 E6 | E7 | E8
+community_fair:      E1 | E2 | E3 | E4 | E5 | E6 | E7 | E8
+restaurant_fire:     E1 | E2 | E3 | E4 | E5 | E6 | E7 | E8
+school_trip:         E1 | E2 | E3 | E4 | E5 | E6 | E7 | E8
+family_conflict:     E1 | E2 | E3 | E4 | E5 | E6 | E7 | E8
+power_cut:           E1 | E2 | E3 | E4 | E5 E6 | E7 | E8
+missed_flight:       E1 E2 E3 | E4 E5 | E6 | E7 | E8

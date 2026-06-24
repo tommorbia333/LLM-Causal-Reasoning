@@ -53,7 +53,23 @@ var CONFIG = {
   n_stories_per_participant: 4,
   n_conditions: 3,
   conditions: ['linear', 'nonlinear', 'atemporal'],
-  n_assignments_cycle: 32,  // length of the Latin-square assignment cycle
+  n_assignments_cycle: 60,  // length of the assignment cycle (4-of-6 BIBD x Williams)
+  // Participant pool (six of the eight source domains). The remaining two
+  // (`care_home_incident` and `family_conflict`) stay in the source stimulus
+  // files for the computational pipeline but are filtered out of the human
+  // timeline by virtue of not appearing in any assignment row.
+  participant_pool_domains: [
+    'hospital_incident',
+    'community_fair',
+    'restaurant_fire',
+    'school_trip',
+    'power_cut',
+    'missed_flight',
+  ],
+  computational_only_domains: [
+    'care_home_incident',
+    'family_conflict',
+  ],
 
   // ---- Logging ----
   // 'detail' = trial-summary + nested event trace (recommended, supports raw-behavior auditing)

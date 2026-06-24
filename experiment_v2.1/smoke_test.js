@@ -240,20 +240,50 @@ for (let i = 0; i < 3; i++) {
   }
 }
 
-console.log('\n--- Hospital / Care Home non-co-occurrence (runtime check) ---');
-let violations = 0;
+console.log('\n--- Participant-pool composition (runtime check) ---');
+const expectedCycle = sandbox.CONFIG.n_assignments_cycle;
+if (sandbox.ASSIGNMENTS.cycle_length !== expectedCycle) {
+  console.log(`  ✗ cycle_length=${sandbox.ASSIGNMENTS.cycle_length} != CONFIG.n_assignments_cycle=${expectedCycle}`);
+  process.exit(1);
+}
+console.log(`  cycle_length: ${sandbox.ASSIGNMENTS.cycle_length} (expected ${expectedCycle})`);
+
+const expectedPool = (sandbox.CONFIG.participant_pool_domains || []).slice().sort();
+const excludedPool = (sandbox.CONFIG.computational_only_domains || []).slice();
+let storyViolations = 0;
+const seenInPool = new Set();
 for (let i = 0; i < sandbox.ASSIGNMENTS.cycle_length; i++) {
   const a = sandbox.Selection.assignStories(i);
-  const stories = a.stories;
-  if (stories.includes('hospital_incident') && stories.includes('care_home_incident')) {
-    console.log(`  ✗ assignment #${i} contains both:`, stories);
-    violations++;
+  for (const s of a.stories) {
+    seenInPool.add(s);
+    if (excludedPool.includes(s)) {
+      console.log(`  ✗ assignment #${i} contains excluded story:`, s);
+      storyViolations++;
+    }
   }
 }
-console.log(`  assignments containing both hospital and care_home: ${violations} / ${sandbox.ASSIGNMENTS.cycle_length} (expected 0)`);
-if (violations > 0) process.exit(1);
+const seenSorted = Array.from(seenInPool).sort();
+console.log(`  domains seen across all assignments: ${seenSorted.join(', ')}`);
+console.log(`  expected participant pool:           ${expectedPool.join(', ')}`);
+const poolMatches = JSON.stringify(seenSorted) === JSON.stringify(expectedPool);
+console.log(`  participant pool matches CONFIG.participant_pool_domains: ${poolMatches}`);
+console.log(`  excluded domains in any assignment: ${storyViolations} (expected 0)`);
+if (storyViolations > 0 || !poolMatches) process.exit(1);
 
-console.log('\n--- Counterfactual probes check ---');
+console.log('\n--- Excluded domains still loadable for the computational pipeline ---');
+for (const d of excludedPool) {
+  const inStories = !!sandbox.STORIES[d];
+  const inCompr   = !!(sandbox.COMPREHENSION_ITEMS.stories || {})[d];
+  const inCards   = !!sandbox.EVENT_CARDS[d];
+  const inCFP     = !!(sandbox.CF_PROBES.stories || {})[d];
+  console.log(`  ${d.padEnd(22)} stories:${inStories} comprehension:${inCompr} cards:${inCards} cf_probes:${inCFP}`);
+  if (!(inStories && inCompr && inCards && inCFP)) {
+    console.log(`  ✗ ${d} not fully present in source stimulus files`);
+    process.exit(1);
+  }
+}
+
+console.log('\n--- Counterfactual probes check (kept for the computational pipeline) ---');
 const cfStories = Object.keys(sandbox.CF_PROBES.stories);
 console.log(`  n_stories: ${cfStories.length}`);
 let cfIssues = 0;
@@ -299,7 +329,7 @@ sandbox.DataHelpers.initParticipant(
   { PROLIFIC_PID: 'SMOKE_TEST_PID' },
   0,
   'linear',
-  { assignment_id: 0, split: 0, half: 0, order_idx: 0, stories: ['hospital_incident'] }
+  { assignment_id: 0, split: 0, order_idx: 0, stories: ['hospital_incident'] }
 );
 const introTrials = sandbox.IntroSequence.buildAll();
 console.log(`  intro trials: ${introTrials.length}`);

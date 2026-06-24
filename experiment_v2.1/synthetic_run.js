@@ -404,16 +404,12 @@ function verifyParticipantRows(rows) {
     if (nullCount !== 8) issues.push(`pair_scaling_summary: ${nullCount} null cells (expected 8 diagonal)`);
   }
 
+  // Counterfactual probes are NOT part of the participant-facing timeline as
+  // of experiment_version 0.1.0-dev (rev. 2026-05-21). Verify their absence.
   const cfItemRows = byTask['counterfactual_item'] || [];
-  if (cfItemRows.length !== 4 * 8) issues.push(`expected 32 counterfactual_item rows, got ${cfItemRows.length}`);
+  if (cfItemRows.length !== 0) issues.push(`expected 0 counterfactual_item rows on the human side, got ${cfItemRows.length}`);
   const cfSumRows = byTask['counterfactual_summary'] || [];
-  if (cfSumRows.length !== 4) issues.push(`expected 4 counterfactual_summary rows, got ${cfSumRows.length}`);
-  for (const r of cfSumRows) {
-    if (!Array.isArray(r.anchor_vector) || r.anchor_vector.length !== 6)
-      issues.push(`counterfactual_summary: anchor_vector wrong shape`);
-    if (typeof r.sibling_null_rating !== 'number') issues.push(`counterfactual_summary: missing sibling_null_rating`);
-    if (typeof r.reverse_null_rating !== 'number') issues.push(`counterfactual_summary: missing reverse_null_rating`);
-  }
+  if (cfSumRows.length !== 0) issues.push(`expected 0 counterfactual_summary rows on the human side, got ${cfSumRows.length}`);
 
   // Outro presence
   for (const t of ['final_comments','debrief','redirect']) {

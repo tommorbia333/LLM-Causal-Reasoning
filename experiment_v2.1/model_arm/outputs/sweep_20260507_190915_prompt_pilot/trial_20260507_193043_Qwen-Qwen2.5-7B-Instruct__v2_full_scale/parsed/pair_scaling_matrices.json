@@ -1,0 +1,1622 @@
+[
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        6,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        null,
+        4,
+        1,
+        4,
+        5,
+        4,
+        4
+      ],
+      [
+        0,
+        4,
+        null,
+        1,
+        4,
+        6,
+        6,
+        4
+      ],
+      [
+        2,
+        0,
+        1,
+        null,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        6,
+        6,
+        6
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1,
+        null,
+        6,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        null,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.5408937294893726,
+    "spearman_r_vs_gold": 0.49501293245261707,
+    "directional_accuracy": 0.8571428571428571,
+    "edge_f1": 0.37837837837837834,
+    "edge_precision": 0.23333333333333334,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 23,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        5,
+        2,
+        2,
+        5,
+        4
+      ],
+      [
+        0,
+        null,
+        4,
+        1,
+        4,
+        5,
+        4,
+        4
+      ],
+      [
+        0,
+        4,
+        null,
+        1,
+        4,
+        5,
+        5,
+        4
+      ],
+      [
+        2,
+        0,
+        1,
+        null,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        6,
+        6,
+        5
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1,
+        null,
+        5,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        null,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        5,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4658702810947529,
+    "spearman_r_vs_gold": 0.4468616715497331,
+    "directional_accuracy": 0.5714285714285714,
+    "edge_f1": 0.37837837837837834,
+    "edge_precision": 0.23333333333333334,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 23,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        1,
+        2,
+        5,
+        1,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        null,
+        4,
+        1,
+        4,
+        4,
+        4,
+        4
+      ],
+      [
+        0,
+        4,
+        null,
+        1,
+        4,
+        5,
+        5,
+        4
+      ],
+      [
+        2,
+        0,
+        1,
+        null,
+        4,
+        4,
+        4,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        6,
+        6,
+        5
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1,
+        null,
+        5,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        null,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        4,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4888691865967156,
+    "spearman_r_vs_gold": 0.4955389206704069,
+    "directional_accuracy": 0.8571428571428571,
+    "edge_f1": 0.4,
+    "edge_precision": 0.25,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 21,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        6,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        null,
+        4,
+        1,
+        4,
+        4,
+        4,
+        4
+      ],
+      [
+        0,
+        4,
+        null,
+        1,
+        4,
+        5,
+        5,
+        4
+      ],
+      [
+        2,
+        0,
+        1,
+        null,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        6,
+        6,
+        5
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1,
+        null,
+        5,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        null,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.5393224031711257,
+    "spearman_r_vs_gold": 0.5078061407894617,
+    "directional_accuracy": 0.8571428571428571,
+    "edge_f1": 0.37837837837837834,
+    "edge_precision": 0.23333333333333334,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 23,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        2,
+        6,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        null,
+        4,
+        1,
+        4,
+        5,
+        4,
+        4
+      ],
+      [
+        0,
+        4,
+        null,
+        1,
+        4,
+        5,
+        5,
+        4
+      ],
+      [
+        2,
+        0,
+        1,
+        null,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        null,
+        6,
+        6,
+        5
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1,
+        null,
+        5,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        null,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.5032009258892745,
+    "spearman_r_vs_gold": 0.47903011638604426,
+    "directional_accuracy": 0.7142857142857143,
+    "edge_f1": 0.37837837837837834,
+    "edge_precision": 0.23333333333333334,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 23,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        4,
+        6,
+        2,
+        4,
+        4,
+        4
+      ],
+      [
+        1,
+        null,
+        4,
+        2,
+        4,
+        6,
+        4,
+        4
+      ],
+      [
+        1,
+        4,
+        null,
+        2,
+        6,
+        6,
+        6,
+        4
+      ],
+      [
+        1,
+        1,
+        2,
+        null,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        null,
+        6,
+        6,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        1,
+        null,
+        5,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        null,
+        5
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4969952698633519,
+    "spearman_r_vs_gold": 0.46618027343867596,
+    "directional_accuracy": 0.8571428571428571,
+    "edge_f1": 0.358974358974359,
+    "edge_precision": 0.21875,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 25,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        4,
+        5,
+        2,
+        4,
+        5,
+        5
+      ],
+      [
+        1,
+        null,
+        5,
+        2,
+        4,
+        5,
+        4,
+        4
+      ],
+      [
+        1,
+        4,
+        null,
+        2,
+        5,
+        6,
+        5,
+        5
+      ],
+      [
+        2,
+        2,
+        2,
+        null,
+        2,
+        2,
+        5,
+        4
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        null,
+        6,
+        6,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        null,
+        5,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        null,
+        5
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.5162158186525072,
+    "spearman_r_vs_gold": 0.5036965810431775,
+    "directional_accuracy": 1.0,
+    "edge_f1": 0.32558139534883723,
+    "edge_precision": 0.19444444444444445,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 29,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        4,
+        4,
+        5,
+        2,
+        4,
+        4,
+        4
+      ],
+      [
+        1,
+        null,
+        4,
+        2,
+        4,
+        5,
+        4,
+        4
+      ],
+      [
+        1,
+        4,
+        null,
+        2,
+        5,
+        6,
+        5,
+        4
+      ],
+      [
+        1,
+        1,
+        2,
+        null,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        null,
+        6,
+        6,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        4,
+        null,
+        5,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        null,
+        5
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4950478582325446,
+    "spearman_r_vs_gold": 0.4791498189496558,
+    "directional_accuracy": 0.8571428571428571,
+    "edge_f1": 0.3684210526315789,
+    "edge_precision": 0.22580645161290322,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 24,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        4,
+        5,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        1,
+        null,
+        4,
+        2,
+        4,
+        6,
+        4,
+        4
+      ],
+      [
+        1,
+        4,
+        null,
+        2,
+        5,
+        6,
+        6,
+        4
+      ],
+      [
+        2,
+        2,
+        2,
+        null,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        null,
+        6,
+        6,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        null,
+        5,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        null,
+        5
+      ],
+      [
+        1,
+        1,
+        1,
+        2,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.49743795637630683,
+    "spearman_r_vs_gold": 0.47146111064977997,
+    "directional_accuracy": 0.8571428571428571,
+    "edge_f1": 0.3181818181818182,
+    "edge_precision": 0.1891891891891892,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 30,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        4,
+        5,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        1,
+        null,
+        5,
+        2,
+        4,
+        6,
+        4,
+        4
+      ],
+      [
+        1,
+        4,
+        null,
+        2,
+        5,
+        6,
+        6,
+        5
+      ],
+      [
+        2,
+        2,
+        2,
+        null,
+        2,
+        2,
+        5,
+        4
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        null,
+        6,
+        6,
+        5
+      ],
+      [
+        0,
+        0,
+        2,
+        2,
+        2,
+        null,
+        5,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        null,
+        5
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.5190924978604293,
+    "spearman_r_vs_gold": 0.49663223599524997,
+    "directional_accuracy": 1.0,
+    "edge_f1": 0.32558139534883723,
+    "edge_precision": 0.19444444444444445,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 29,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 0,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        3,
+        5,
+        1,
+        1,
+        4,
+        3
+      ],
+      [
+        0,
+        null,
+        4,
+        1,
+        1,
+        4,
+        4,
+        4
+      ],
+      [
+        1,
+        4,
+        null,
+        1,
+        4,
+        6,
+        6,
+        4
+      ],
+      [
+        1,
+        2,
+        2,
+        null,
+        2,
+        2,
+        5,
+        3
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        null,
+        6,
+        6,
+        5
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        null,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        null,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        5,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.48859127978075906,
+    "spearman_r_vs_gold": 0.46467169575952794,
+    "directional_accuracy": 0.7142857142857143,
+    "edge_f1": 0.42424242424242425,
+    "edge_precision": 0.2692307692307692,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 19,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 1,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        4,
+        5,
+        1,
+        1,
+        4,
+        2
+      ],
+      [
+        0,
+        null,
+        4,
+        1,
+        1,
+        4,
+        4,
+        4
+      ],
+      [
+        1,
+        4,
+        null,
+        1,
+        4,
+        5,
+        5,
+        4
+      ],
+      [
+        1,
+        2,
+        2,
+        null,
+        2,
+        2,
+        5,
+        4
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        null,
+        6,
+        6,
+        5
+      ],
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        null,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        5,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.4751624864928694,
+    "spearman_r_vs_gold": 0.4625509936750673,
+    "directional_accuracy": 0.7142857142857143,
+    "edge_f1": 0.4117647058823529,
+    "edge_precision": 0.25925925925925924,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 20,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 2,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        1,
+        4,
+        5,
+        1,
+        1,
+        4,
+        3
+      ],
+      [
+        0,
+        null,
+        4,
+        1,
+        1,
+        4,
+        4,
+        4
+      ],
+      [
+        1,
+        4,
+        null,
+        1,
+        4,
+        5,
+        5,
+        4
+      ],
+      [
+        1,
+        1,
+        2,
+        null,
+        2,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        null,
+        6,
+        6,
+        4
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1,
+        null,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        null,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        5,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.44012765788155134,
+    "spearman_r_vs_gold": 0.4211487735904776,
+    "directional_accuracy": 0.7142857142857143,
+    "edge_f1": 0.4,
+    "edge_precision": 0.2608695652173913,
+    "edge_recall": 0.8571428571428571,
+    "edge_threshold": 2,
+    "edge_tp": 6,
+    "edge_fp": 17,
+    "edge_fn": 1
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 3,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        4,
+        5,
+        1,
+        1,
+        4,
+        2
+      ],
+      [
+        0,
+        null,
+        4,
+        1,
+        2,
+        4,
+        4,
+        4
+      ],
+      [
+        1,
+        4,
+        null,
+        1,
+        4,
+        6,
+        5,
+        4
+      ],
+      [
+        1,
+        2,
+        2,
+        null,
+        2,
+        2,
+        5,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        null,
+        6,
+        6,
+        4
+      ],
+      [
+        0,
+        1,
+        2,
+        1,
+        1,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        null,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        2,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.528379145586496,
+    "spearman_r_vs_gold": 0.4852924502722265,
+    "directional_accuracy": 0.8571428571428571,
+    "edge_f1": 0.3888888888888889,
+    "edge_precision": 0.2413793103448276,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 22,
+    "edge_fn": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 4,
+    "event_ids_chronological": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8"
+    ],
+    "matrix": [
+      [
+        null,
+        2,
+        3,
+        5,
+        1,
+        1,
+        4,
+        2
+      ],
+      [
+        0,
+        null,
+        4,
+        1,
+        1,
+        4,
+        4,
+        4
+      ],
+      [
+        1,
+        4,
+        null,
+        1,
+        4,
+        6,
+        5,
+        4
+      ],
+      [
+        1,
+        2,
+        2,
+        null,
+        2,
+        2,
+        5,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        null,
+        6,
+        6,
+        5
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1,
+        null,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        null,
+        5
+      ],
+      [
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        5,
+        null
+      ]
+    ],
+    "n_parse_failures": 0,
+    "pearson_r_vs_gold": 0.5058018254706482,
+    "spearman_r_vs_gold": 0.4728644848184738,
+    "directional_accuracy": 0.7142857142857143,
+    "edge_f1": 0.4117647058823529,
+    "edge_precision": 0.25925925925925924,
+    "edge_recall": 1.0,
+    "edge_threshold": 2,
+    "edge_tp": 7,
+    "edge_fp": 20,
+    "edge_fn": 0
+  }
+]

@@ -193,7 +193,6 @@ var IntroSequence = (function () {
           '  <li><strong>Answer six brief questions</strong> about what happened.</li>',
           '  <li><strong>Arrange the events</strong> in the order they occurred.</li>',
           '  <li><strong>Rate pairs of events</strong> for how much one caused the other.</li>',
-          '  <li><strong>Answer a few "what if" questions</strong> about the story.</li>',
           '</ol>',
           '<p>Nothing is timed. Please take the time you need to answer thoughtfully.</p>',
         ].join(''),

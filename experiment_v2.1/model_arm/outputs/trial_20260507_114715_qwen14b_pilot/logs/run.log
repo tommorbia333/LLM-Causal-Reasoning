@@ -1,0 +1,20 @@
+2026-05-07 12:47:15,618 | trial | INFO | Trial spec: model=mlx-community/Qwen2.5-14B-Instruct-4bit stories=['hospital_incident', 'school_trip'] conditions=['linear', 'nonlinear', 'atemporal'] seeds=[0, 1, 2]
+2026-05-07 12:47:15,618 | trial | INFO | [1/18] hospital_incident | linear | seed=0
+2026-05-07 12:52:38,349 | trial | INFO | [2/18] hospital_incident | linear | seed=1
+2026-05-07 12:58:00,033 | trial | INFO | [3/18] hospital_incident | linear | seed=2
+2026-05-07 13:03:22,301 | trial | INFO | [4/18] hospital_incident | nonlinear | seed=0
+2026-05-07 13:08:45,952 | trial | INFO | [5/18] hospital_incident | nonlinear | seed=1
+2026-05-07 13:14:09,279 | trial | INFO | [6/18] hospital_incident | nonlinear | seed=2
+2026-05-07 13:19:39,623 | trial | INFO | [7/18] hospital_incident | atemporal | seed=0
+2026-05-07 13:24:37,408 | trial | INFO | [8/18] hospital_incident | atemporal | seed=1
+2026-05-07 13:29:32,232 | trial | INFO | [9/18] hospital_incident | atemporal | seed=2
+2026-05-07 13:34:26,694 | trial | INFO | [10/18] school_trip | linear | seed=0
+2026-05-07 13:41:12,622 | trial | INFO | [11/18] school_trip | linear | seed=1
+2026-05-07 13:47:58,336 | trial | INFO | [12/18] school_trip | linear | seed=2
+2026-05-07 13:54:44,789 | trial | INFO | [13/18] school_trip | nonlinear | seed=0
+2026-05-07 14:01:36,247 | trial | INFO | [14/18] school_trip | nonlinear | seed=1
+2026-05-07 14:08:34,932 | trial | INFO | [15/18] school_trip | nonlinear | seed=2
+2026-05-07 14:15:33,203 | trial | INFO | [16/18] school_trip | atemporal | seed=0
+2026-05-07 14:22:25,950 | trial | INFO | [17/18] school_trip | atemporal | seed=1
+2026-05-07 14:29:11,791 | trial | INFO | [18/18] school_trip | atemporal | seed=2
+2026-05-07 14:35:58,871 | trial | INFO | Trial complete. 18 story-runs in 6523.3s

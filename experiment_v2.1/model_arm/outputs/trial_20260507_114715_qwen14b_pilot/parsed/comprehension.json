@@ -1,0 +1,1082 @@
+[
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "hosp_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "hosp_2",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "hosp_3",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "hosp_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "hosp_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "hosp_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 1,
+    "item_id": "hosp_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 1,
+    "item_id": "hosp_2",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 1,
+    "item_id": "hosp_3",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 1,
+    "item_id": "hosp_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 1,
+    "item_id": "hosp_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 1,
+    "item_id": "hosp_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 2,
+    "item_id": "hosp_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 2,
+    "item_id": "hosp_2",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 2,
+    "item_id": "hosp_3",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 2,
+    "item_id": "hosp_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 2,
+    "item_id": "hosp_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 2,
+    "item_id": "hosp_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 0,
+    "item_id": "hosp_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 0,
+    "item_id": "hosp_2",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 0,
+    "item_id": "hosp_3",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 0,
+    "item_id": "hosp_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 0,
+    "item_id": "hosp_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 0,
+    "item_id": "hosp_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 1,
+    "item_id": "hosp_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 1,
+    "item_id": "hosp_2",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 1,
+    "item_id": "hosp_3",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 1,
+    "item_id": "hosp_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 1,
+    "item_id": "hosp_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 1,
+    "item_id": "hosp_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 2,
+    "item_id": "hosp_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 2,
+    "item_id": "hosp_2",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 2,
+    "item_id": "hosp_3",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 2,
+    "item_id": "hosp_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 2,
+    "item_id": "hosp_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "nonlinear",
+    "seed": 2,
+    "item_id": "hosp_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 0,
+    "item_id": "hosp_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 0,
+    "item_id": "hosp_2",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 0,
+    "item_id": "hosp_3",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 0,
+    "item_id": "hosp_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 0,
+    "item_id": "hosp_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 0,
+    "item_id": "hosp_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 1,
+    "item_id": "hosp_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 1,
+    "item_id": "hosp_2",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 1,
+    "item_id": "hosp_3",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 1,
+    "item_id": "hosp_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 1,
+    "item_id": "hosp_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 1,
+    "item_id": "hosp_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 2,
+    "item_id": "hosp_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 2,
+    "item_id": "hosp_2",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 2,
+    "item_id": "hosp_3",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 2,
+    "item_id": "hosp_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 2,
+    "item_id": "hosp_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "atemporal",
+    "seed": 2,
+    "item_id": "hosp_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "trip_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "trip_2",
+    "parsed": "No",
+    "gold": "No",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "trip_3",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "trip_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "trip_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "trip_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 1,
+    "item_id": "trip_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 1,
+    "item_id": "trip_2",
+    "parsed": "No",
+    "gold": "No",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 1,
+    "item_id": "trip_3",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 1,
+    "item_id": "trip_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 1,
+    "item_id": "trip_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 1,
+    "item_id": "trip_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 2,
+    "item_id": "trip_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 2,
+    "item_id": "trip_2",
+    "parsed": "No",
+    "gold": "No",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 2,
+    "item_id": "trip_3",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 2,
+    "item_id": "trip_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 2,
+    "item_id": "trip_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "linear",
+    "seed": 2,
+    "item_id": "trip_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 0,
+    "item_id": "trip_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 0,
+    "item_id": "trip_2",
+    "parsed": "No",
+    "gold": "No",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 0,
+    "item_id": "trip_3",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 0,
+    "item_id": "trip_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 0,
+    "item_id": "trip_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 0,
+    "item_id": "trip_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 1,
+    "item_id": "trip_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 1,
+    "item_id": "trip_2",
+    "parsed": "No",
+    "gold": "No",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 1,
+    "item_id": "trip_3",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 1,
+    "item_id": "trip_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 1,
+    "item_id": "trip_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 1,
+    "item_id": "trip_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 2,
+    "item_id": "trip_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 2,
+    "item_id": "trip_2",
+    "parsed": "No",
+    "gold": "No",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 2,
+    "item_id": "trip_3",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 2,
+    "item_id": "trip_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 2,
+    "item_id": "trip_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "nonlinear",
+    "seed": 2,
+    "item_id": "trip_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 0,
+    "item_id": "trip_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 0,
+    "item_id": "trip_2",
+    "parsed": "No",
+    "gold": "No",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 0,
+    "item_id": "trip_3",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 0,
+    "item_id": "trip_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 0,
+    "item_id": "trip_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 0,
+    "item_id": "trip_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 1,
+    "item_id": "trip_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 1,
+    "item_id": "trip_2",
+    "parsed": "No",
+    "gold": "No",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 1,
+    "item_id": "trip_3",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 1,
+    "item_id": "trip_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 1,
+    "item_id": "trip_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 1,
+    "item_id": "trip_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 2,
+    "item_id": "trip_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 2,
+    "item_id": "trip_2",
+    "parsed": "No",
+    "gold": "No",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 2,
+    "item_id": "trip_3",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 2,
+    "item_id": "trip_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 2,
+    "item_id": "trip_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "school_trip",
+    "condition": "atemporal",
+    "seed": 2,
+    "item_id": "trip_6",
+    "parsed": "Unsure",
+    "gold": "No",
+    "correct": false,
+    "n_retries": 0
+  }
+]

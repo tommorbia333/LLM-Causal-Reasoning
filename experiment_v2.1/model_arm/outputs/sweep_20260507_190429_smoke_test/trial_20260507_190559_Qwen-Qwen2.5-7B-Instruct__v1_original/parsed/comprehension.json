@@ -1,0 +1,62 @@
+[
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "hosp_1",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "hosp_2",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "hosp_3",
+    "parsed": "No",
+    "gold": "No",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "hosp_4",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "hosp_5",
+    "parsed": "Yes",
+    "gold": "Yes",
+    "correct": true,
+    "n_retries": 0
+  },
+  {
+    "story_id": "hospital_incident",
+    "condition": "linear",
+    "seed": 0,
+    "item_id": "hosp_6",
+    "parsed": "No",
+    "gold": "No",
+    "correct": true,
+    "n_retries": 0
+  }
+]

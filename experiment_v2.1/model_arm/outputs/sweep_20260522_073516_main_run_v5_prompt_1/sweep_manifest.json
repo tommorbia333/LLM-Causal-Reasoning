@@ -1,0 +1,66 @@
+{
+  "sweep_id": "main_run_v5_prompt",
+  "sweep_dir": "outputs/sweep_20260522_073516_main_run_v5_prompt_1",
+  "timestamp": "2026-05-22T10:47:55.913596Z",
+  "models": [
+    "Qwen/Qwen2.5-7B-Instruct",
+    "Qwen/Qwen2.5-14B-Instruct",
+    "Qwen/Qwen3-8B",
+    "meta-llama/Meta-Llama-3.1-8B-Instruct"
+  ],
+  "prompt_variants": [
+    "v5_human_like"
+  ],
+  "tasks": {
+    "comprehension": true,
+    "ordering": true,
+    "pair_scaling": true,
+    "counterfactual": true
+  },
+  "story_ids": [
+    "hospital_incident",
+    "care_home_incident",
+    "community_fair",
+    "restaurant_fire",
+    "school_trip",
+    "family_conflict",
+    "power_cut",
+    "missed_flight"
+  ],
+  "conditions": [
+    "linear",
+    "nonlinear",
+    "atemporal"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "temperature": 0.7,
+  "max_new_tokens": 80,
+  "n_cells": 4,
+  "n_completed": 1,
+  "n_skipped": 0,
+  "n_failed": 3,
+  "failed_cells": [
+    [
+      "Qwen-Qwen2.5-14B-Instruct__v5_human_like",
+      "\"No MODEL_REGISTRY entry for model_id='Qwen/Qwen2.5-14B-Instruct'. Add one in models.py or fix the config.\\n  claude-sonnet    \u2192 claude-sonnet-4-5-20250929\\n  gpt4o            \u2192 gpt-4o\\n  gpt4o-mini       \u2192 gpt-4o-mini\\n  llama8b          \u2192 meta-llama/Meta-Llama-3.1-8B-Instruct\\n  mistral7b        \u2192 mistralai/Mistral-7B-Instruct-v0.3\\n  mock             \u2192 mock\\n  qwen14b          \u2192 mlx-community/Qwen2.5-14B-Instruct-4bit\\n  qwen3-14b        \u2192 mlx-community/Qwen3-14B-4bit\\n  qwen3-8b         \u2192 Qwen/Qwen3-8B\\n  qwen32b          \u2192 mlx-community/Qwen2.5-32B-Instruct-4bit\\n  qwen7b           \u2192 Qwen/Qwen2.5-7B-Instruct\""
+    ],
+    [
+      "Qwen-Qwen3-8B__v5_human_like",
+      "MPS backend out of memory (MPS allocated: 30.09 GiB, other allocations: 107.16 MiB, max allowed: 30.19 GiB). Tried to allocate 8.00 KiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure)."
+    ],
+    [
+      "meta-llama-Meta-Llama-3.1-8B-Instruct__v5_human_like",
+      "You are trying to access a gated repo.\nMake sure to have access to it at https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct.\n401 Client Error. (Request ID: Root=1-6a10345b-255a875913016e876814b706;3ceb1740-a227-4d24-afc5-755c23992d1f)\n\nCannot access gated repo for url https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct/resolve/main/config.json.\nAccess to model meta-llama/Llama-3.1-8B-Instruct is restricted. You must have access to it and be authenticated to access it. Please log in."
+    ]
+  ],
+  "trial_dirs": [
+    "outputs/sweep_20260522_073516_main_run_v5_prompt_1/trial_20260522_073645_Qwen-Qwen2.5-7B-Instruct__v5_human_like"
+  ],
+  "elapsed_seconds": 11559.2
+}
